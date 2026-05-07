@@ -2,22 +2,21 @@
 
 import Link from "next/link";
 
-import "swiper/css";
-import "swiper/css/pagination";
-export default function FormatacaoProfissional() {
-  const servicos = [
-    "Formatação completa do sistema",
-    "Instalação de programas essenciais",
-    "Backup e remoção de vírus",
-    "Atualização de drivers e sistema",
+export default function LocalizacaoAtendimento() {
+  const infos = [
+    "Atendimento em Belo Horizonte e Contagem",
+    "Buscamos e entregamos seu computador ou notebook",
+    "Atendimento rápido e especializado",
+    "Também aceitamos atendimento presencial",
+    "Suporte para computadores e notebooks",
+    "Orçamento rápido pelo WhatsApp",
   ];
 
   return (
-    <section className="py-24 px-6" id="formatacaoProfissional">
+    <section className="py-24 px-6" id="localizacao">
       <div className="max-w-[1100px] mx-auto py-24 px-6">
         <div
           className="
-
             relative overflow-hidden
             rounded-[30px]
             border border-[rgba(127,61,255,0.25)]
@@ -32,38 +31,39 @@ export default function FormatacaoProfissional() {
           <div className="relative z-10 grid lg:grid-cols-2 gap-12 items-center">
             {/* TEXTO */}
             <div>
-              <div className="flex flex-col gap-[10px] my-[20px]">
+              <div className="flex flex-col justify-center text-center gap-[10px] my-[20px] max-w-[850px] mx-auto">
                 <span className="inline-block text-sm font-semibold text-purple-400 mb-4 uppercase tracking-[2px]">
-                  Formatação Profissional
+                  Área de Atendimento
                 </span>
 
                 <h2 className="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-6">
-                  Seu computador lento ou travando?
+                  Atendimento em Belo Horizonte e Contagem
                 </h2>
 
                 <p className="text-[#cfcfcf] text-[17px] leading-relaxed mb-8">
-                  Deixe seu computador mais rápido, seguro e otimizado com uma
-                  formatação profissional completa. Instalamos os programas
-                  essenciais e deixamos tudo pronto para uso.
+                  Realizamos manutenção em computadores e notebooks com
+                  atendimento rápido e suporte especializado. Para sua
+                  comodidade, buscamos o equipamento no local e entregamos
+                  pronto para uso.
                 </p>
               </div>
 
               {/* LISTA */}
-              <div className="flex justify-between mb-10 infoService">
+              <div className="flex justify-center mb-10 infoService">
                 <div className="grid grid-columns gap-[10px]">
-                  {servicos.map((item, index) => (
+                  {infos.map((item, index) => (
                     <div
                       key={index}
                       className="
-                      flex items-center gap-3
-                      bg-white/[0.03]
-                      border border-white/5
-                      rounded-[10px]
-                      max-w-[400px]
-                      min-w-[280px]
-                      px-[20px] py-[20px]
-                      listaService
-                    "
+                        flex items-center gap-3
+                        bg-white/[0.03]
+                        border border-white/5
+                        rounded-[10px]
+                        max-w-[400px]
+                        min-w-[280px]
+                        px-[20px] py-[20px]
+                        listaService
+                      "
                     >
                       <div className="w-2 h-2 rounded-full bg-purple-500" />
 
@@ -71,43 +71,39 @@ export default function FormatacaoProfissional() {
                     </div>
                   ))}
                 </div>
-                {/* IMAGEM */}
-                <div className="relative ">
+
+                {/* MAPA */}
+                <div className="relative">
                   <div
                     className="
-                  absolute inset-0
-                  bg-purple-600/20
-                  blur-[80px]
-                  rounded-full
-                "
+                      absolute inset-0
+                      bg-purple-600/20
+                      blur-[80px]
+                      rounded-full
+                    "
                   />
 
-                  <img
-                    src="/assets/formatacao.webp"
-                    alt="Formatação de computadores em bh"
+                  <iframe
+                    src="https://www.google.com/maps?q=Rua+Flor+de+Alecrim+41+Belo+Horizonte&output=embed"
                     className="
-                  relative z-10
-                  w-full
-                  h-[300px]
-                  rounded-[24px]
-                  border border-white/10
-                  shadow-[0_0_40px_rgba(0,0,0,0.45)]
-                 imgService"
+                      relative z-10
+                      w-full
+                      h-[400px]
+                      rounded-[24px]
+                      border border-white/10
+                      shadow-[0_0_40px_rgba(0,0,0,0.45)]
+                      imgService
+                    "
+                    loading="lazy"
                   />
-                  <div className="priceManutencao">
-                    <p>Formatação por apenas de:</p>
-                    <span>R$159,90</span>
-                    <p>Entrega no mesmo dia</p>
-                  </div>
+
                   {/* CTA */}
                   <Link
-                    className="
-                 cta-button  mx-auto my-[30px]
-                "
+                    className="cta-button mx-auto my-[30px]"
                     target="_blank"
-                    href="https://wa.me/5538991369873?text=Olá,%20preciso%20de%20manutenção%20no%20meu%20notebook."
+                    href="https://wa.me/5538991369873?text=Olá,%20gostaria%20de%20solicitar%20um%20atendimento%20para%20meu%20computador."
                   >
-                    Clique e solicite orçamento no WhatsApp
+                    Solicitar atendimento no WhatsApp
                   </Link>
                 </div>
               </div>
@@ -115,15 +111,15 @@ export default function FormatacaoProfissional() {
               {/* BENEFÍCIOS */}
               <div className="flex flex-wrap gap-3 mb-10 justify-center p-[20px] gap-[1rem] infoBenefit">
                 <span className="px-[20px] py-[10px] items-center rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300 text-sm">
-                  ⚡ Computador mais rápido ⚡
+                  🚗 Buscamos no local 🚗
                 </span>
 
                 <span className="px-[20px] py-[10px] items-center rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300 text-sm">
-                  💾 Backup seguro 💾
+                  ⚡ Frete Grátis em BH e Contagem ⚡
                 </span>
 
                 <span className="px-[20px] py-[10px] items-center rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300 text-sm">
-                  🛡️ Sistema otimizado 🛡️
+                  🛡️ Suporte especializado 🛡️
                 </span>
               </div>
             </div>

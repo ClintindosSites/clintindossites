@@ -85,8 +85,8 @@ export default function RemocaoVirus() {
                   />
 
                   <img
-                    src="/assets/manutencao-notebook.webp"
-                    alt="Manutenção de Notebook"
+                    src="/assets/remocao-virus.webp"
+                    alt="Remoção de vírus de computador e notebook"
                     className="
                   relative z-10
                   w-full
@@ -97,6 +97,11 @@ export default function RemocaoVirus() {
                  imgService"
                   />
                   {/* CTA */}
+                  <div className="priceManutencao">
+                    <p>Remoção de Vírus a partir de:</p>
+                    <span>R$139,90</span>
+                    <p>Entrega no mesmo dia</p>
+                  </div>
                   <Link
                     className="
                  cta-button  mx-auto my-[30px]

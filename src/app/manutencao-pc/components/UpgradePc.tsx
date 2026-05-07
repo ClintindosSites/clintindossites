@@ -4,7 +4,7 @@ import Link from "next/link";
 
 import "swiper/css";
 import "swiper/css/pagination";
-export default function FormatacaoProfissional() {
+export default function UpgradePC() {
   const servicos = [
     "Upgrade de memória RAM",
     "Instalação de SSD de alta velocidade",
@@ -84,8 +84,8 @@ export default function FormatacaoProfissional() {
                   />
 
                   <img
-                    src="/assets/manutencao-notebook.webp"
-                    alt="Manutenção de Notebook"
+                    src="/assets/upgrade-pc.webp"
+                    alt="Upgrade e conserto de computador e Notebook"
                     className="
                   relative z-10
                   w-full
@@ -95,6 +95,11 @@ export default function FormatacaoProfissional() {
                   shadow-[0_0_40px_rgba(0,0,0,0.45)]
                  imgService"
                   />
+                  <div className="priceManutencao">
+                    <p>Upgrade por apenas:</p>
+                    <span>R$149,90</span>
+                    <p>Entrega no mesmo dia</p>
+                  </div>
                   {/* CTA */}
                   <Link
                     className="
@@ -109,7 +114,7 @@ export default function FormatacaoProfissional() {
               </div>
 
               {/* BENEFÍCIOS */}
-              <div className="flex flex-wrap gap-3 mb-10 justify-center p-[20px] gap-[1rem] infoBenefit">
+              <div className="infoExtra flex flex-wrap gap-3 mb-10 justify-center p-[20px] gap-[1rem] infoBenefit">
                 <span className="px-[20px] py-[10px] items-center rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300 text-sm">
                   ⚡ Mais velocidade ⚡
                 </span>

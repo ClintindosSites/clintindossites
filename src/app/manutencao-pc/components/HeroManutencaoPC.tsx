@@ -4,7 +4,7 @@ export default function HeroManutencaoPC() {
   return (
     <section className="hero heroManutencao" id="heroManutencao">
       <div className="heroManuText">
-        <h1>
+        <h1 className="text-[40px]">
           Seu computador estragou? <br /> Clintin dos Sites consertou!
         </h1>
         <p>Assistência Técnica de Computadores e Notebooks em Belo Horizonte</p>

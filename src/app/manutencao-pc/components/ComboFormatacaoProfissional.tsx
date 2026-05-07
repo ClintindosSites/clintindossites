@@ -86,7 +86,7 @@ export default function ComboFormatacaoExpert() {
                   />
 
                   <img
-                    src="/assets/manutencao-notebook.webp"
+                    src="/assets/combo-formatacao.webp"
                     alt="Manutenção de Notebook"
                     className="
                   relative z-10
@@ -97,6 +97,11 @@ export default function ComboFormatacaoExpert() {
                   shadow-[0_0_40px_rgba(0,0,0,0.45)]
                  imgService"
                   />
+                  <div className="priceManutencao">
+                    <p>Combo formatação por apenas:</p>
+                    <span>R$249,90</span>
+                    <p>Entrega no mesmo dia</p>
+                  </div>
                   {/* CTA */}
                   <Link
                     className="

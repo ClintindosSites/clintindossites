@@ -4,7 +4,7 @@ import Link from "next/link";
 
 import "swiper/css";
 import "swiper/css/pagination";
-export default function FormatacaoProfissional() {
+export default function BackupRecovery() {
   const servicos = [
     "Recuperação de arquivos apagados",
     "Backup completo dos seus dados",
@@ -86,8 +86,8 @@ export default function FormatacaoProfissional() {
                   />
 
                   <img
-                    src="/assets/manutencao-notebook.webp"
-                    alt="Manutenção de Notebook"
+                    src="/assets/combo-formatacao.webp"
+                    alt="Backup e recuperação de arquivos"
                     className="
                   relative z-10
                   w-full
@@ -97,6 +97,11 @@ export default function FormatacaoProfissional() {
                   shadow-[0_0_40px_rgba(0,0,0,0.45)]
                  imgService"
                   />
+                  <div className="priceManutencao">
+                    <p>Backup e recuperação a partir de:</p>
+                    <span>R$100,00</span>
+                    <p>Por Giga</p>
+                  </div>
                   {/* CTA */}
                   <Link
                     className="

@@ -8,15 +8,15 @@ export default function ServicosPC() {
       descricao:
         "Diagnóstico completo e solução de problemas no seu computador.",
       apartir: "A partir de:",
-      preco: "R$150,00",
+      preco: "R$149,90",
       frete: "Com Frete Grátis",
       imagem: "/assets/manutencao-pc.webp",
       mensagem:
         "Olá, preciso de manutenção no meu computador. Pode me passar mais detalhes?",
     },
     {
-      id: "manutencaoNotebook",
-      titulo: "Backup de arquivos",
+      id: "backupRecuperacao",
+      titulo: "Backup e recuperação de arquivos",
       descricao:
         "Backup de arquivos importantes para o seu empreendimento ou sua vida pessoal",
       apartir: "A partir de:",
@@ -31,7 +31,7 @@ export default function ServicosPC() {
       titulo: "Formatação Profissional",
       descricao: "Formatação completa com instalação de programas essenciais.",
       porapenas: "Por apenas:",
-      preco: "R$159,00",
+      preco: "R$159,90",
       frete: "Com Frete Grátis",
       imagem: "/assets/formatacao.webp",
       mensagem:
@@ -42,7 +42,7 @@ export default function ServicosPC() {
       titulo: "🔥 Combo Formatação Expert",
       descricao: "Formatação + limpeza interna + troca de pasta térmica.",
       porapenas: "Por apenas:",
-      preco: "R$220,00",
+      preco: "R$249,90",
       frete: "Com Frete Grátis",
       imagem: "/assets/combo-formatacao.webp",
       mensagem:
@@ -53,7 +53,7 @@ export default function ServicosPC() {
       titulo: "Remoção de Vírus",
       descricao: "Eliminação de vírus e otimização para melhorar desempenho.",
       apartir: "A partir de:",
-      preco: "R$120,00",
+      preco: "R$139,90",
       frete: "Com Frete Grátis",
       imagem: "/assets/remocao-virus.webp",
       mensagem: "Olá, acho que meu computador está com vírus. Pode me ajudar?",
@@ -63,7 +63,7 @@ export default function ServicosPC() {
       titulo: "Upgrade (SSD / RAM)",
       descricao: "Deixe seu computador muito mais rápido com upgrade de peças.",
       apartir: "A partir de:",
-      preco: "R$150,00",
+      preco: "R$149,90",
       frete: "Com Frete Grátis",
       imagem: "/assets/upgrade-pc.webp",
       mensagem: "Olá, quero fazer upgrade no meu computador. Pode me orientar?",
@@ -74,9 +74,9 @@ export default function ServicosPC() {
       {" "}
       <div className="max-w-[1100px] mx-auto px-6">
         {" "}
-        <h2 className="text-metal text-4xl md:text-5xl font-extrabold">
+        <h2 className="my-[20px] text-metal text-4xl md:text-5xl font-extrabold">
           {" "}
-          Serviços de Manutenção{" "}
+          Assistência técnica de computadores e notebook{" "}
         </h2>{" "}
         <p className="text-[#bdbdbd] mt-3 mb-[60px] text-[16px] max-w-2xl mx-auto">
           {" "}
@@ -114,10 +114,7 @@ export default function ServicosPC() {
                     <p>
                       {item.porapenas} {item.apartir}
                     </p>
-                    <p className="text-[30px] font-bold text-green-400 mb-4">
-                      {" "}
-                      {item.preco}{" "}
-                    </p>
+                    <h2 className="text-[60px]"> {item.preco} </h2>
                     <span className="text-sm">{item.giga}</span>{" "}
                     {item.frete}{" "}
                   </div>
@@ -127,7 +124,7 @@ export default function ServicosPC() {
                     className="cta-button whatsapp-track mt-auto"
                   >
                     {" "}
-                    Falar com técnico{" "}
+                    Clique e solicite um atendimento agora{" "}
                   </Link>{" "}
                 </div>{" "}
               </div>

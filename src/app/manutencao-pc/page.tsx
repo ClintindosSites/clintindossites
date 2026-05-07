@@ -1,7 +1,5 @@
 import { Metadata } from "next";
-import AtendimentoPC from "./components/AtendimentoPC";
-import CtaManutencao from "./components/CtaManutencao";
-import DiferencialPC from "./components/DiferencialPC";
+
 import HeroManutencaoPC from "./components/HeroManutencaoPC";
 import ManutencaoNotebook from "./components/ManutencaoNotebook";
 import ManutencaoPC from "./components/ManutencaoPC";
@@ -9,6 +7,12 @@ import ServicosPC from "./components/ServicosPC";
 import FormatacaoProfissional from "./components/FormatacaoProfissional";
 import ComboFormatacaoExpert from "./components/ComboFormatacaoProfissional";
 import RemocaoVirus from "./components/RemocaoVirus";
+import LocalizacaoAtendimento from "./components/LocalizacaoAtendimento";
+import ComoFuncionaAtendimento from "./components/ComoFunciona";
+import UpgradePc from "./components/UpgradePc";
+import FAQManutencao from "./components/FAQManutencao";
+import CtaFinalManutencao from "./components/CtaManutencao";
+import BackupRecovery from "./components/BackupRecuperacao";
 export const metadata: Metadata = {
   title: "Manutenção em Computadores em Belo Horizonte",
   description:
@@ -42,9 +46,12 @@ export default function ManutencaoComputador() {
         <FormatacaoProfissional />
         <ComboFormatacaoExpert />
         <RemocaoVirus />
-        <DiferencialPC />
-        <AtendimentoPC />
-        <CtaManutencao />
+        <UpgradePc />
+        <BackupRecovery />
+        <ComoFuncionaAtendimento />
+        <LocalizacaoAtendimento />
+        <FAQManutencao />
+        <CtaFinalManutencao />
       </div>
     </div>
   );

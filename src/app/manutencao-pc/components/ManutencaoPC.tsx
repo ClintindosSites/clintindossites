@@ -86,8 +86,8 @@ export default function ManutencaoPC() {
                   />
 
                   <img
-                    src="/assets/manutencao-notebook.webp"
-                    alt="Manutenção de Notebook"
+                    src="/assets/manutencao-pc.webp"
+                    alt="Manutenção de Computadores em Belo Horizonte"
                     className="
                   relative z-10
                   w-full
@@ -97,6 +97,10 @@ export default function ManutencaoPC() {
                   shadow-[0_0_40px_rgba(0,0,0,0.45)]
                  imgService"
                   />
+                  <div className="priceManutencao">
+                    <p>Manutenção a partir de:</p>
+                    <span>R$149,90</span>
+                  </div>
                   {/* CTA */}
                   <Link
                     className="
