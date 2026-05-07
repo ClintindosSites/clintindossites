@@ -4,18 +4,17 @@ import Link from "next/link";
 
 import "swiper/css";
 import "swiper/css/pagination";
-export default function ManutencaoNotebook() {
+export default function FormatacaoProfissional() {
   const servicos = [
-    "Formatação completa",
-    "Remoção de vírus",
-    "Backup e recuperação de arquivos",
-    "Troca de tela",
-    "Upgrade de memória RAM e SSD",
-    "Limpeza interna e troca de pasta térmica",
+    "Upgrade de memória RAM",
+    "Instalação de SSD de alta velocidade",
+    "Troca de HD e armazenamento",
+    "Upgrade de placa de vídeo",
+    "Substituição de fonte e componentes",
+    "Otimização de desempenho para jogos e trabalho",
   ];
-
   return (
-    <section className="py-24 px-6" id="manutencaoNotebook">
+    <section className="py-24 px-6" id="upgradePc">
       <div className="max-w-[1100px] mx-auto py-24 px-6">
         <div
           className="
@@ -36,18 +35,17 @@ export default function ManutencaoNotebook() {
             <div>
               <div className="flex flex-col gap-[10px] my-[20px]">
                 <span className="inline-block text-sm font-semibold text-purple-400 mb-4 uppercase tracking-[2px]">
-                  Assistência Técnica Especializada
+                  Upgrade de Computador ou Notebook
                 </span>
 
                 <h2 className="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-6">
-                  Notebook lento, travando ou com defeito?
+                  Deixe seu computador mais rápido e poderoso
                 </h2>
 
                 <p className="text-[#cfcfcf] text-[17px] leading-relaxed mb-8">
-                  Realizamos manutenção completa em notebooks com diagnóstico
-                  rápido, atendimento em Belo Horizonte e Contagem e retirada no
-                  local. Deixe seu notebook mais rápido, seguro e funcionando
-                  como novo.
+                  Fazemos upgrade completo do seu computador com instalação de
+                  SSD, memória RAM, placa de vídeo e outros componentes para
+                  aumentar desempenho, velocidade e produtividade.
                 </p>
               </div>
 
@@ -103,7 +101,7 @@ export default function ManutencaoNotebook() {
                  cta-button  mx-auto my-[30px]
                 "
                     target="_blank"
-                    href="https://wa.me/5538991369873?text=Olá,%20preciso%20de%20manutenção%20no%20meu%20notebook."
+                    href="https://wa.me/5538991369873?text=Olá,%20preciso%20de%20backup%20ou%20recuperação%20de%20arquivos."
                   >
                     Clique e solicite orçamento no WhatsApp
                   </Link>
@@ -113,15 +111,15 @@ export default function ManutencaoNotebook() {
               {/* BENEFÍCIOS */}
               <div className="flex flex-wrap gap-3 mb-10 justify-center p-[20px] gap-[1rem] infoBenefit">
                 <span className="px-[20px] py-[10px] items-center rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300 text-sm">
-                  ⚡ Atendimento rápido ⚡
+                  ⚡ Mais velocidade ⚡
                 </span>
 
                 <span className="px-[20px] py-[10px] items-center rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300 text-sm">
-                  🚗 Retirada no local 🚗
+                  🎮 Melhor desempenho 🎮
                 </span>
 
                 <span className="px-[20px] py-[10px] items-center rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300 text-sm">
-                  🛡️ Garantia no serviço 🛡️
+                  🚀 Upgrade profissional 🚀
                 </span>
               </div>
             </div>

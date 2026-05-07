@@ -4,18 +4,18 @@ import Link from "next/link";
 
 import "swiper/css";
 import "swiper/css/pagination";
-export default function ManutencaoNotebook() {
+export default function RemocaoVirus() {
   const servicos = [
-    "Formatação completa",
-    "Remoção de vírus",
-    "Backup e recuperação de arquivos",
-    "Troca de tela",
-    "Upgrade de memória RAM e SSD",
-    "Limpeza interna e troca de pasta térmica",
+    "Remoção completa de vírus e malwares",
+    "Limpeza de arquivos suspeitos",
+    "Otimização do sistema",
+    "Proteção contra ameaças futuras",
+    "Verificação de segurança",
+    "Instalação de antivírus e proteção",
   ];
 
   return (
-    <section className="py-24 px-6" id="manutencaoNotebook">
+    <section className="py-24 px-6" id="remocaoVirus">
       <div className="max-w-[1100px] mx-auto py-24 px-6">
         <div
           className="
@@ -36,18 +36,17 @@ export default function ManutencaoNotebook() {
             <div>
               <div className="flex flex-col gap-[10px] my-[20px]">
                 <span className="inline-block text-sm font-semibold text-purple-400 mb-4 uppercase tracking-[2px]">
-                  Assistência Técnica Especializada
+                  Remoção de Vírus Avançada
                 </span>
 
                 <h2 className="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-6">
-                  Notebook lento, travando ou com defeito?
+                  Seu computador está lento ou com vírus?
                 </h2>
 
                 <p className="text-[#cfcfcf] text-[17px] leading-relaxed mb-8">
-                  Realizamos manutenção completa em notebooks com diagnóstico
-                  rápido, atendimento em Belo Horizonte e Contagem e retirada no
-                  local. Deixe seu notebook mais rápido, seguro e funcionando
-                  como novo.
+                  Eliminamos vírus, malwares e ameaças que deixam seu computador
+                  lento, travando ou inseguro. Proteja seus arquivos e volte a
+                  usar seu computador com segurança e desempenho.
                 </p>
               </div>
 
@@ -113,15 +112,15 @@ export default function ManutencaoNotebook() {
               {/* BENEFÍCIOS */}
               <div className="flex flex-wrap gap-3 mb-10 justify-center p-[20px] gap-[1rem] infoBenefit">
                 <span className="px-[20px] py-[10px] items-center rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300 text-sm">
-                  ⚡ Atendimento rápido ⚡
+                  🛡️ Mais segurança 🛡️
                 </span>
 
                 <span className="px-[20px] py-[10px] items-center rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300 text-sm">
-                  🚗 Retirada no local 🚗
+                  ⚡ Melhor desempenho ⚡
                 </span>
 
                 <span className="px-[20px] py-[10px] items-center rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300 text-sm">
-                  🛡️ Garantia no serviço 🛡️
+                  🔒 Proteção dos arquivos 🔒
                 </span>
               </div>
             </div>

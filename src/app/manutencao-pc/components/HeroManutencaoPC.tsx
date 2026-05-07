@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function HeroManutencaoPC() {
   return (
-    <section className="hero heroManutencao">
+    <section className="hero heroManutencao" id="heroManutencao">
       <div className="heroManuText">
         <h1>
           Seu computador estragou? <br /> Clintin dos Sites consertou!

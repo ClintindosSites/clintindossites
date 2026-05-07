@@ -6,6 +6,9 @@ import HeroManutencaoPC from "./components/HeroManutencaoPC";
 import ManutencaoNotebook from "./components/ManutencaoNotebook";
 import ManutencaoPC from "./components/ManutencaoPC";
 import ServicosPC from "./components/ServicosPC";
+import FormatacaoProfissional from "./components/FormatacaoProfissional";
+import ComboFormatacaoExpert from "./components/ComboFormatacaoProfissional";
+import RemocaoVirus from "./components/RemocaoVirus";
 export const metadata: Metadata = {
   title: "Manutenção em Computadores em Belo Horizonte",
   description:
@@ -36,6 +39,9 @@ export default function ManutencaoComputador() {
         <ServicosPC />
         <ManutencaoNotebook />
         <ManutencaoPC />
+        <FormatacaoProfissional />
+        <ComboFormatacaoExpert />
+        <RemocaoVirus />
         <DiferencialPC />
         <AtendimentoPC />
         <CtaManutencao />
