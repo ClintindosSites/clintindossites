@@ -16,14 +16,14 @@ export default function Header() {
       <header className="site-header">
         <div className="container">
           {/* LOGO */}
-          <Link href="/" className="logo">
+          <a href="#" className="logo">
             <Image
               src="/logo.svg"
               alt="Clintin dos Sites"
               width={160}
               height={100}
             />
-          </Link>
+          </a>
 
           {/* MENU */}
           <nav className={`menu ${menuOpen ? "active" : "items-center"}`}>
@@ -35,7 +35,10 @@ export default function Header() {
               Tráfego Pago
             </Link>
 
-            <Link href="/manutencao-pc" onClick={closeMenu}>
+            <Link
+              href="/manutencao-computadores-bh-contagem"
+              onClick={closeMenu}
+            >
               Manutenção Computadores
             </Link>
 

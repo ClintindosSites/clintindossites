@@ -3,6 +3,28 @@ import Link from "next/link";
 export default function ServicosPC() {
   const servicos = [
     {
+      id: "formatacaoProfissional",
+      titulo: "Formatação Profissional",
+      descricao: "Formatação completa com instalação de programas essenciais.",
+      porapenas: "Por apenas:",
+      preco: "R$159,90",
+      frete: "Com Frete Grátis",
+      imagem: "/assets/formatacao.webp",
+      mensagem:
+        "Olá, gostaria de formatar meu computador. Pode me explicar como funciona?",
+    },
+    {
+      id: "comboFormatacaoProfissional",
+      titulo: "🔥 Combo Formatação Expert 🔥 ",
+      descricao: "Formatação + limpeza interna + troca de pasta térmica.",
+      porapenas: "Por apenas:",
+      preco: "R$249,90",
+      frete: "Com Frete Grátis",
+      imagem: "/assets/combo-formatacao.webp",
+      mensagem:
+        "Olá, tenho interesse no combo formatação profissional. Pode me passar mais detalhes?",
+    },
+    {
       id: "manutencaoComputador",
       titulo: "Manutenção de Computador e notebook",
       descricao:
@@ -14,40 +36,7 @@ export default function ServicosPC() {
       mensagem:
         "Olá, preciso de manutenção no meu computador. Pode me passar mais detalhes?",
     },
-    {
-      id: "backupRecuperacao",
-      titulo: "Backup e recuperação de arquivos",
-      descricao:
-        "Backup de arquivos importantes para o seu empreendimento ou sua vida pessoal",
-      apartir: "A partir de:",
-      preco: "R$100,00",
-      giga: "Por Giga",
-      imagem: "/assets/manutencao-notebook.webp",
-      mensagem:
-        "Olá, meu notebook está com problema. Pode me passar um orçamento?",
-    },
-    {
-      id: "formatacao",
-      titulo: "Formatação Profissional",
-      descricao: "Formatação completa com instalação de programas essenciais.",
-      porapenas: "Por apenas:",
-      preco: "R$159,90",
-      frete: "Com Frete Grátis",
-      imagem: "/assets/formatacao.webp",
-      mensagem:
-        "Olá, gostaria de formatar meu computador. Pode me explicar como funciona?",
-    },
-    {
-      id: "comboFormatacao",
-      titulo: "🔥 Combo Formatação Expert",
-      descricao: "Formatação + limpeza interna + troca de pasta térmica.",
-      porapenas: "Por apenas:",
-      preco: "R$249,90",
-      frete: "Com Frete Grátis",
-      imagem: "/assets/combo-formatacao.webp",
-      mensagem:
-        "Olá, tenho interesse no combo formatação profissional. Pode me passar mais detalhes?",
-    },
+
     {
       id: "remocaoVirus",
       titulo: "Remoção de Vírus",
@@ -59,7 +48,20 @@ export default function ServicosPC() {
       mensagem: "Olá, acho que meu computador está com vírus. Pode me ajudar?",
     },
     {
-      id: "upgrade",
+      id: "recuperacaoBackup",
+      titulo: "Backup e recuperação de arquivos",
+      descricao:
+        "Backup de arquivos importantes para o seu empreendimento ou sua vida pessoal",
+      apartir: "A partir de:",
+      preco: "R$100,00",
+      giga: "Por Giga",
+      imagem: "/assets/manutencao-notebook.webp",
+      mensagem:
+        "Olá, meu notebook está com problema. Pode me passar um orçamento?",
+    },
+
+    {
+      id: "upgradePc",
       titulo: "Upgrade (SSD / RAM)",
       descricao: "Deixe seu computador muito mais rápido com upgrade de peças.",
       apartir: "A partir de:",
@@ -114,10 +116,13 @@ export default function ServicosPC() {
                     <p>
                       {item.porapenas} {item.apartir}
                     </p>
-                    <h2 className="text-[60px]"> {item.preco} </h2>
+                    <h2 className="text-[3rem]"> {item.preco} </h2>
                     <span className="text-sm">{item.giga}</span>{" "}
                     {item.frete}{" "}
                   </div>
+                  <Link href={`#${item.id}`} className="saibaMais">
+                    Clique para saber mais detalhes
+                  </Link>
                   <Link
                     href={url}
                     target="_blank"

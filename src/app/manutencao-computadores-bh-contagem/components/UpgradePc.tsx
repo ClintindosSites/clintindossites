@@ -4,7 +4,7 @@ import Link from "next/link";
 
 import "swiper/css";
 import "swiper/css/pagination";
-export default function UpgradePC() {
+export default function TesteUpgrgrade() {
   const servicos = [
     "Upgrade de memória RAM",
     "Instalação de SSD de alta velocidade",
@@ -13,6 +13,7 @@ export default function UpgradePC() {
     "Substituição de fonte e componentes",
     "Otimização de desempenho para jogos e trabalho",
   ];
+
   return (
     <section className="py-24 px-6" id="upgradePc">
       <div className="max-w-[1100px] mx-auto py-24 px-6">
@@ -101,12 +102,13 @@ export default function UpgradePC() {
                     <p>Entrega no mesmo dia</p>
                   </div>
                   {/* CTA */}
+
                   <Link
                     className="
                  cta-button  mx-auto my-[30px]
                 "
                     target="_blank"
-                    href="https://wa.me/5538991369873?text=Olá,%20preciso%20de%20backup%20ou%20recuperação%20de%20arquivos."
+                    href="https://wa.me/5538991369873?text=Olá,%20preciso%20de%20manutenção%20no%20meu%20notebook."
                   >
                     Clique e solicite orçamento no WhatsApp
                   </Link>
@@ -114,7 +116,7 @@ export default function UpgradePC() {
               </div>
 
               {/* BENEFÍCIOS */}
-              <div className="infoExtra flex flex-wrap gap-3 mb-10 justify-center p-[20px] gap-[1rem] infoBenefit">
+              <div className="flex flex-wrap gap-3 mb-10 justify-center p-[20px] gap-[1rem] infoBenefit">
                 <span className="px-[20px] py-[10px] items-center rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300 text-sm">
                   ⚡ Mais velocidade ⚡
                 </span>

@@ -38,7 +38,7 @@ export default function ComoFuncionaAtendimento() {
 
   return (
     <section className="py-24 px-6" id="como-funciona">
-      <div className="max-w-[1100px] mx-auto py-24 px-6">
+      <div className="max-w-[1100px] mx-auto my-[20px]">
         <div
           className="
           glassContainer
@@ -81,7 +81,7 @@ export default function ComoFuncionaAtendimento() {
                     relative
                     overflow-hidden
                     rounded-[24px]
-                    p-[20px] w-[350px]
+                    p-[20px]
                   "
                 >
                   {/* NUMERO */}

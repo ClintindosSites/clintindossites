@@ -8,11 +8,13 @@ import FormatacaoProfissional from "./components/FormatacaoProfissional";
 import ComboFormatacaoExpert from "./components/ComboFormatacaoProfissional";
 import RemocaoVirus from "./components/RemocaoVirus";
 import LocalizacaoAtendimento from "./components/LocalizacaoAtendimento";
-import ComoFuncionaAtendimento from "./components/ComoFunciona";
-import UpgradePc from "./components/UpgradePc";
+
 import FAQManutencao from "./components/FAQManutencao";
 import CtaFinalManutencao from "./components/CtaManutencao";
 import BackupRecovery from "./components/BackupRecuperacao";
+import UpgradePc from "./components/UpgradePc";
+import ComoFuncionaAtendimento from "./components/ComoFunciona";
+
 export const metadata: Metadata = {
   title: "Manutenção em Computadores em Belo Horizonte",
   description:
@@ -33,7 +35,9 @@ export default function ManutencaoComputador() {
         bg-center
         bg-no-repeat
         bg-fixed
-
+        flex
+        flex-col
+        justify-center
         /* DESKTOP */
         md:bg-none
       "
@@ -41,13 +45,13 @@ export default function ManutencaoComputador() {
       <div className="relative z-10">
         <HeroManutencaoPC />
         <ServicosPC />
-        <ManutencaoNotebook />
-        <ManutencaoPC />
         <FormatacaoProfissional />
         <ComboFormatacaoExpert />
+        <ManutencaoPC />
+        <ManutencaoNotebook />
         <RemocaoVirus />
-        <UpgradePc />
         <BackupRecovery />
+        <UpgradePc />
         <ComoFuncionaAtendimento />
         <LocalizacaoAtendimento />
         <FAQManutencao />
