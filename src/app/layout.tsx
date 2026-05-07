@@ -7,6 +7,7 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import TrackingButtons from "@/components/TrackingButtons";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -39,8 +40,9 @@ export const metadata: Metadata = {
     "site one page",
     "sites para construtores",
     "sites para restaurantes",
-    "gestor de tráfego pago",
-    "manutenção de computadores",
+    "gestor de tráfego pago em belo horizonte",
+    "manutenção de computadores em belo horizonte",
+    "técnico de computador perto de mim",
   ],
   robots: {
     index: true,
@@ -167,8 +169,11 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
         {children}
+
         <CookieConsent />
+        <FloatingWhatsApp />
         <Footer />
+
         {/* Meta Pixel fallback */}
         <noscript>
           <Image

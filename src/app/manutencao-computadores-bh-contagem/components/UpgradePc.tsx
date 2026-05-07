@@ -1,5 +1,6 @@
 "use client";
 
+import { reportConversion } from "@/lib/tracking";
 import Link from "next/link";
 
 import "swiper/css";
@@ -13,6 +14,9 @@ export default function TesteUpgrgrade() {
     "Substituição de fonte e componentes",
     "Otimização de desempenho para jogos e trabalho",
   ];
+  const mensagem =
+    "Olá, tenho interesse em fazer upgrade no meu computador/notebook para melhorar o desempenho. Gostaria de solicitar um orçamento.";
+  const whatsappUrl = `https://wa.me/5538991369873?text=${encodeURIComponent(mensagem)}`;
 
   return (
     <section className="py-24 px-6" id="upgradePc">
@@ -108,7 +112,8 @@ export default function TesteUpgrgrade() {
                  cta-button  mx-auto my-[30px]
                 "
                     target="_blank"
-                    href="https://wa.me/5538991369873?text=Olá,%20preciso%20de%20manutenção%20no%20meu%20notebook."
+                    href={whatsappUrl}
+                    onClick={() => reportConversion("Upgrade de Computador")}
                   >
                     Clique e solicite orçamento no WhatsApp
                   </Link>

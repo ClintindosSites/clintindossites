@@ -1,9 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import { reportConversion } from "@/lib/gtag";
 
 import "swiper/css";
 import "swiper/css/pagination";
+
 export default function FormatacaoProfissional() {
   const servicos = [
     "Formatação completa do sistema",
@@ -12,12 +14,29 @@ export default function FormatacaoProfissional() {
     "Atualização de drivers e sistema",
   ];
 
+  const handleWhatsappClick = () => {
+    // Google Ads
+    reportConversion();
+
+    // Google Analytics
+    window.gtag?.("event", "click_whatsapp_formatacao_profissional", {
+      event_category: "WhatsApp",
+      event_label: "Formatacao Profissional",
+      value: 1,
+    });
+
+    // Meta Pixel
+    window.fbq?.("track", "Contact", {
+      content_name: "Formatacao Profissional",
+      content_category: "Formatacao de Computador",
+    });
+  };
+
   return (
     <section className="py-24 px-6" id="formatacaoProfissional">
       <div className="max-w-[1100px] mx-auto py-24 px-6">
         <div
           className="
-
             relative overflow-hidden
             rounded-[30px]
             border border-[rgba(127,61,255,0.25)]
@@ -55,15 +74,15 @@ export default function FormatacaoProfissional() {
                     <div
                       key={index}
                       className="
-                      flex items-center gap-3
-                      bg-white/[0.03]
-                      border border-white/5
-                      rounded-[10px]
-                      max-w-[400px]
-                      min-w-[280px]
-                      px-[20px] py-[20px]
-                      listaService
-                    "
+                        flex items-center gap-3
+                        bg-white/[0.03]
+                        border border-white/5
+                        rounded-[10px]
+                        max-w-[400px]
+                        min-w-[280px]
+                        px-[20px] py-[20px]
+                        listaService
+                      "
                     >
                       <div className="w-2 h-2 rounded-full bg-purple-500" />
 
@@ -71,41 +90,44 @@ export default function FormatacaoProfissional() {
                     </div>
                   ))}
                 </div>
+
                 {/* IMAGEM */}
                 <div className="relative ">
                   <div
                     className="
-                  absolute inset-0
-                  bg-purple-600/20
-                  blur-[80px]
-                  rounded-full
-                "
+                      absolute inset-0
+                      bg-purple-600/20
+                      blur-[80px]
+                      rounded-full
+                    "
                   />
 
                   <img
                     src="/assets/formatacao.webp"
-                    alt="Formatação de computadores em bh"
+                    alt="Formatação de computadores em Belo Horizonte"
                     className="
-                  relative z-10
-                  w-full
-                  h-[300px]
-                  rounded-[24px]
-                  border border-white/10
-                  shadow-[0_0_40px_rgba(0,0,0,0.45)]
-                 imgService"
+                      relative z-10
+                      w-full
+                      h-[300px]
+                      rounded-[24px]
+                      border border-white/10
+                      shadow-[0_0_40px_rgba(0,0,0,0.45)]
+                      imgService
+                    "
                   />
+
                   <div className="priceManutencao">
-                    <p>Formatação por apenas de:</p>
+                    <p>Formatação por apenas:</p>
                     <span>R$159,90</span>
                     <p>Entrega no mesmo dia</p>
                   </div>
+
                   {/* CTA */}
                   <Link
-                    className="
-                 cta-button  mx-auto my-[30px]
-                "
+                    className="cta-button mx-auto my-[30px]"
                     target="_blank"
-                    href="https://wa.me/5538991369873?text=Olá,%20preciso%20de%20manutenção%20no%20meu%20notebook."
+                    onClick={handleWhatsappClick}
+                    href="https://wa.me/5538991369873?text=Olá,%20tenho%20interesse%20na%20formatação%20profissional%20do%20meu%20computador%20ou%20notebook.%20Gostaria%20de%20mais%20informações."
                   >
                     Clique e solicite orçamento no WhatsApp
                   </Link>

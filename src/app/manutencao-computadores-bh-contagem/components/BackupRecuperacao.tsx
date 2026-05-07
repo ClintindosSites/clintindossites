@@ -1,9 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import { reportConversion } from "@/lib/gtag";
 
 import "swiper/css";
 import "swiper/css/pagination";
+
 export default function BackupRecovery() {
   const servicos = [
     "Recuperação de arquivos apagados",
@@ -14,12 +16,33 @@ export default function BackupRecovery() {
     "Organização e salvamento de arquivos importantes",
   ];
 
+  const whatsappMessage = encodeURIComponent(
+    "Olá, preciso de backup ou recuperação de arquivos do meu computador/notebook. Gostaria de solicitar um orçamento."
+  );
+
+  const whatsappUrl = `https://wa.me/5538991369873?text=${whatsappMessage}`;
+
+  const handleWhatsAppClick = () => {
+    // GOOGLE ADS
+    reportConversion();
+
+    // GOOGLE ANALYTICS
+    window.gtag?.("event", "click_whatsapp_backup_recovery", {
+      event_category: "WhatsApp",
+      event_label: "Backup e Recuperação",
+      value: 1,
+    });
+
+    // META PIXEL
+    window.fbq?.("track", "Contact");
+    window.fbq?.("trackCustom", "WhatsAppBackupRecovery");
+  };
+
   return (
     <section className="py-24 px-6" id="recuperacaoBackup">
       <div className="max-w-[1100px] mx-auto py-24 px-6">
         <div
           className="
-
             relative overflow-hidden
             rounded-[30px]
             border border-[rgba(127,61,255,0.25)]
@@ -58,15 +81,15 @@ export default function BackupRecovery() {
                     <div
                       key={index}
                       className="
-                      flex items-center gap-3
-                      bg-white/[0.03]
-                      border border-white/5
-                      rounded-[10px]
-                      max-w-[400px]
-                      min-w-[280px]
-                      px-[20px] py-[20px]
-                      listaService
-                    "
+                        flex items-center gap-3
+                        bg-white/[0.03]
+                        border border-white/5
+                        rounded-[10px]
+                        max-w-[400px]
+                        min-w-[280px]
+                        px-[20px] py-[20px]
+                        listaService
+                      "
                     >
                       <div className="w-2 h-2 rounded-full bg-purple-500" />
 
@@ -74,41 +97,44 @@ export default function BackupRecovery() {
                     </div>
                   ))}
                 </div>
+
                 {/* IMAGEM */}
-                <div className="relative ">
+                <div className="relative">
                   <div
                     className="
-                  absolute inset-0
-                  bg-purple-600/20
-                  blur-[80px]
-                  rounded-full
-                "
+                      absolute inset-0
+                      bg-purple-600/20
+                      blur-[80px]
+                      rounded-full
+                    "
                   />
 
                   <img
                     src="/assets/combo-formatacao.webp"
                     alt="Backup e recuperação de arquivos"
                     className="
-                  relative z-10
-                  w-full
-                  h-[300px]
-                  rounded-[24px]
-                  border border-white/10
-                  shadow-[0_0_40px_rgba(0,0,0,0.45)]
-                 imgService"
+                      relative z-10
+                      w-full
+                      h-[300px]
+                      rounded-[24px]
+                      border border-white/10
+                      shadow-[0_0_40px_rgba(0,0,0,0.45)]
+                      imgService
+                    "
                   />
+
                   <div className="priceManutencao">
                     <p>Backup e recuperação a partir de:</p>
                     <span>R$100,00</span>
                     <p>Por Giga</p>
                   </div>
+
                   {/* CTA */}
                   <Link
-                    className="
-                 cta-button  mx-auto my-[30px]
-                "
+                    className="cta-button mx-auto my-[30px]"
                     target="_blank"
-                    href="https://wa.me/5538991369873?text=Olá,%20preciso%20de%20backup%20ou%20recuperação%20de%20arquivos."
+                    href={whatsappUrl}
+                    onClick={handleWhatsAppClick}
                   >
                     Clique e solicite orçamento no WhatsApp
                   </Link>

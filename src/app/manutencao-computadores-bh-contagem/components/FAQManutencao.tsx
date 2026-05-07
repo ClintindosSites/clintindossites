@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import { reportConversion } from "@/lib/gtag";
 
 export default function FAQManutencao() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -51,6 +52,31 @@ export default function FAQManutencao() {
 
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
+
+    // Track abertura da FAQ
+    window.gtag?.("event", "open_faq_item", {
+      event_category: "FAQ",
+      event_label: perguntas[index].pergunta,
+      value: 1,
+    });
+  };
+
+  const handleWhatsappClick = () => {
+    // Google Ads
+    reportConversion();
+
+    // Google Analytics
+    window.gtag?.("event", "click_whatsapp_faq", {
+      event_category: "WhatsApp",
+      event_label: "FAQ Manutencao",
+      value: 1,
+    });
+
+    // Meta Pixel
+    window.fbq?.("track", "Contact", {
+      content_name: "FAQ Manutencao",
+      content_category: "FAQ Computador",
+    });
   };
 
   return (
@@ -93,7 +119,9 @@ export default function FAQManutencao() {
                     className="
                       stepCard
                       overflow-hidden
-                      rounded-[22px] gap-[20px] flex flex-col
+                      rounded-[22px]
+                      gap-[20px]
+                      flex flex-col
                     "
                   >
                     <button
@@ -103,7 +131,9 @@ export default function FAQManutencao() {
                         flex items-center justify-between
                         text-left
                         p-6
-                        gap-5 px-[20px] py-[20px]
+                        gap-5
+                        px-[20px]
+                        py-[20px]
                       "
                     >
                       <h3 className="text-white font-semibold text-[18px] md:text-[20px] leading-relaxed">
@@ -150,8 +180,9 @@ export default function FAQManutencao() {
             {/* CTA */}
             <div className="flex justify-center my-[20px]">
               <a
-                href="https://wa.me/5538991369873?text=Olá,%20tenho%20algumas%20dúvidas%20sobre%20manutenção%20de%20computadores."
+                href="https://wa.me/5538991369873?text=Olá,%20tenho%20algumas%20dúvidas%20sobre%20manutenção%20de%20computadores%20e%20notebooks.%20Gostaria%20de%20mais%20informações."
                 target="_blank"
+                onClick={handleWhatsappClick}
                 className="cta-button"
               >
                 Tirar dúvidas no WhatsApp

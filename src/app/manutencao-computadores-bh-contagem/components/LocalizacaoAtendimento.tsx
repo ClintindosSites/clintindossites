@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { reportConversion } from "@/lib/gtag";
 
 export default function LocalizacaoAtendimento() {
   const infos = [
@@ -11,6 +12,24 @@ export default function LocalizacaoAtendimento() {
     "Suporte para computadores e notebooks",
     "Orçamento rápido pelo WhatsApp",
   ];
+
+  const handleWhatsappClick = () => {
+    // Google Ads
+    reportConversion();
+
+    // Google Analytics
+    window.gtag?.("event", "click_whatsapp_localizacao", {
+      event_category: "WhatsApp",
+      event_label: "Localizacao Atendimento",
+      value: 1,
+    });
+
+    // Meta Pixel
+    window.fbq?.("track", "Contact", {
+      content_name: "Localizacao Atendimento",
+      content_category: "Manutencao Computador",
+    });
+  };
 
   return (
     <section className="py-24 px-6" id="localizacao">
@@ -101,7 +120,8 @@ export default function LocalizacaoAtendimento() {
                   <Link
                     className="cta-button mx-auto my-[30px]"
                     target="_blank"
-                    href="https://wa.me/5538991369873?text=Olá,%20gostaria%20de%20solicitar%20um%20atendimento%20para%20meu%20computador."
+                    onClick={handleWhatsappClick}
+                    href="https://wa.me/5538991369873?text=Olá,%20gostaria%20de%20solicitar%20um%20atendimento%20para%20manutenção%20de%20computador%20ou%20notebook.%20Gostaria%20de%20mais%20informações."
                   >
                     Solicitar atendimento no WhatsApp
                   </Link>

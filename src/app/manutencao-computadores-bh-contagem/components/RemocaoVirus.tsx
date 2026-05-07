@@ -2,8 +2,11 @@
 
 import Link from "next/link";
 
+import { reportConversion } from "@/lib/tracking";
+
 import "swiper/css";
 import "swiper/css/pagination";
+
 export default function RemocaoVirus() {
   const servicos = [
     "Remoção completa de vírus e malwares",
@@ -14,12 +17,18 @@ export default function RemocaoVirus() {
     "Instalação de antivírus e proteção",
   ];
 
+  const mensagem =
+    "Olá, acredito que meu computador/notebook esteja com vírus ou malware. Gostaria de solicitar uma análise e orçamento para remoção de vírus.";
+
+  const whatsappUrl = `https://wa.me/5538991369873?text=${encodeURIComponent(
+    mensagem
+  )}`;
+
   return (
     <section className="py-24 px-6" id="remocaoVirus">
       <div className="max-w-[1100px] mx-auto py-24 px-6">
         <div
           className="
-
             relative overflow-hidden
             rounded-[30px]
             border border-[rgba(127,61,255,0.25)]
@@ -57,15 +66,15 @@ export default function RemocaoVirus() {
                     <div
                       key={index}
                       className="
-                      flex items-center gap-3
-                      bg-white/[0.03]
-                      border border-white/5
-                      rounded-[10px]
-                      max-w-[400px]
-                      min-w-[280px]
-                      px-[20px] py-[20px]
-                      listaService
-                    "
+                        flex items-center gap-3
+                        bg-white/[0.03]
+                        border border-white/5
+                        rounded-[10px]
+                        max-w-[400px]
+                        min-w-[280px]
+                        px-[20px] py-[20px]
+                        listaService
+                      "
                     >
                       <div className="w-2 h-2 rounded-full bg-purple-500" />
 
@@ -73,41 +82,47 @@ export default function RemocaoVirus() {
                     </div>
                   ))}
                 </div>
+
                 {/* IMAGEM */}
-                <div className="relative ">
+                <div className="relative">
                   <div
                     className="
-                  absolute inset-0
-                  bg-purple-600/20
-                  blur-[80px]
-                  rounded-full
-                "
+                      absolute inset-0
+                      bg-purple-600/20
+                      blur-[80px]
+                      rounded-full
+                    "
                   />
 
                   <img
                     src="/assets/remocao-virus.webp"
                     alt="Remoção de vírus de computador e notebook"
                     className="
-                  relative z-10
-                  w-full
-                  h-[300px]
-                  rounded-[24px]
-                  border border-white/10
-                  shadow-[0_0_40px_rgba(0,0,0,0.45)]
-                 imgService"
+                      relative z-10
+                      w-full
+                      h-[300px]
+                      rounded-[24px]
+                      border border-white/10
+                      shadow-[0_0_40px_rgba(0,0,0,0.45)]
+                      imgService
+                    "
                   />
-                  {/* CTA */}
+
+                  {/* PREÇO */}
                   <div className="priceManutencao">
                     <p>Remoção de Vírus a partir de:</p>
+
                     <span>R$139,90</span>
+
                     <p>Entrega no mesmo dia</p>
                   </div>
+
+                  {/* CTA */}
                   <Link
-                    className="
-                 cta-button  mx-auto my-[30px]
-                "
+                    className="cta-button mx-auto my-[30px]"
                     target="_blank"
-                    href="https://wa.me/5538991369873?text=Olá,%20preciso%20de%20manutenção%20no%20meu%20notebook."
+                    href={whatsappUrl}
+                    onClick={() => reportConversion("Remoção de Vírus")}
                   >
                     Clique e solicite orçamento no WhatsApp
                   </Link>

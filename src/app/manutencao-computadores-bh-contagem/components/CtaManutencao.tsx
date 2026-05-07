@@ -1,8 +1,31 @@
 "use client";
 
 import Link from "next/link";
+import { reportConversion } from "@/lib/gtag";
 
 export default function CtaFinalManutencao() {
+  const whatsappMessage = encodeURIComponent(
+    "Olá, gostaria de solicitar um orçamento para manutenção do meu computador ou notebook."
+  );
+
+  const whatsappUrl = `https://wa.me/5538991369873?text=${whatsappMessage}`;
+
+  const handleWhatsAppClick = () => {
+    // GOOGLE ADS
+    reportConversion();
+
+    // GOOGLE ANALYTICS
+    window.gtag?.("event", "click_whatsapp_cta_final", {
+      event_category: "WhatsApp",
+      event_label: "CTA Final Manutenção",
+      value: 1,
+    });
+
+    // META PIXEL
+    window.fbq?.("track", "Contact");
+    window.fbq?.("trackCustom", "WhatsAppCTAFinal");
+  };
+
   return (
     <section className="py-24 px-6" id="cta-final">
       <div className="max-w-[1100px] mx-auto">
@@ -103,7 +126,7 @@ export default function CtaFinalManutencao() {
             {/* BOX OFERTA */}
             <div
               className="
-              stepCard
+                stepCard
                 max-w-[700px]
                 mx-auto
                 rounded-[28px]
@@ -119,7 +142,7 @@ export default function CtaFinalManutencao() {
             >
               <span
                 className="
-                infoSpan rounded-full w-fit p-[10px] mx-auto
+                  infoSpan rounded-full w-fit p-[10px] mx-auto
                 "
               >
                 Oferta Especial
@@ -138,8 +161,9 @@ export default function CtaFinalManutencao() {
             {/* CTA */}
             <div className="flex flex-col items-center gap-[20px]">
               <Link
-                href="https://wa.me/5538991369873?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20para%20meu%20computador."
+                href={whatsappUrl}
                 target="_blank"
+                onClick={handleWhatsAppClick}
                 className="
                   cta-button
                   text-[17px]

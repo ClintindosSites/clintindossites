@@ -82,6 +82,7 @@ export default function ComoFuncionaAtendimento() {
                     overflow-hidden
                     rounded-[24px]
                     p-[20px]
+                    max-w-[350px] w-full
                   "
                 >
                   {/* NUMERO */}

@@ -1,3 +1,5 @@
+"use client";
+import { reportConversion, trackViewService } from "@/lib/tracking";
 import Image from "next/image";
 import Link from "next/link";
 export default function ServicosPC() {
@@ -120,12 +122,17 @@ export default function ServicosPC() {
                     <span className="text-sm">{item.giga}</span>{" "}
                     {item.frete}{" "}
                   </div>
-                  <Link href={`#${item.id}`} className="saibaMais">
+                  <Link
+                    href={`#${item.id}`}
+                    className="saibaMais"
+                    onClick={() => trackViewService(item.titulo)}
+                  >
                     Clique para saber mais detalhes
                   </Link>
                   <Link
                     href={url}
                     target="_blank"
+                    onClick={() => reportConversion(item.titulo)}
                     className="cta-button whatsapp-track mt-auto"
                   >
                     {" "}
