@@ -18,7 +18,7 @@ export const reportConversion = (service?: string, value: number = 1) => {
   });
 
   // GOOGLE ANALYTICS
-  window.gtag?.("event", "generate_lead", {
+  window.gtag?.("event", "manual_event_CONTACT", {
     service,
     value,
     currency: "BRL",
@@ -33,7 +33,7 @@ export const reportConversion = (service?: string, value: number = 1) => {
 
   // GTM
   window.dataLayer?.push({
-    event: "lead_generated",
+    event: "manual_event_CONTACT",
     service,
     value,
   });
