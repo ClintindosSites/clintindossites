@@ -6,13 +6,12 @@ import ManutencaoPC from "./components/ManutencaoPC";
 import ServicosPC from "./components/ServicosPC";
 import FormatacaoProfissional from "./components/FormatacaoProfissional";
 import ComboFormatacaoExpert from "./components/ComboFormatacaoProfissional";
-import RemocaoVirus from "./components/RemocaoVirus";
+
 import LocalizacaoAtendimento from "./components/LocalizacaoAtendimento";
 
 import FAQManutencao from "./components/FAQManutencao";
 import CtaFinalManutencao from "./components/CtaManutencao";
-import BackupRecovery from "./components/BackupRecuperacao";
-import UpgradePc from "./components/UpgradePc";
+
 import ComoFuncionaAtendimento from "./components/ComoFunciona";
 
 export const metadata: Metadata = {
@@ -49,9 +48,7 @@ export default function ManutencaoComputador() {
         <ComboFormatacaoExpert />
         <ManutencaoPC />
         <ManutencaoNotebook />
-        <RemocaoVirus />
-        <BackupRecovery />
-        <UpgradePc />
+
         <ComoFuncionaAtendimento />
         <LocalizacaoAtendimento />
         <FAQManutencao />

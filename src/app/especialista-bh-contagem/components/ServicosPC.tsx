@@ -38,8 +38,11 @@ export default function ServicosPC() {
       mensagem:
         "Olá, preciso de manutenção no meu computador. Pode me passar mais detalhes?",
     },
-
-    {
+  ];
+  return (
+    <section id="servicosPC" className="py-24 text-center">
+      {/*
+     {
       id: "remocaoVirus",
       titulo: "Remoção de Vírus",
       descricao: "Eliminação de vírus e otimização para melhorar desempenho.",
@@ -72,10 +75,8 @@ export default function ServicosPC() {
       imagem: "/assets/upgrade-pc.webp",
       mensagem: "Olá, quero fazer upgrade no meu computador. Pode me orientar?",
     },
-  ];
-  return (
-    <section id="servicosPC" className="py-24 text-center">
-      {" "}
+  */}
+      ,{" "}
       <div className="max-w-[1100px] mx-auto px-6">
         {" "}
         <h2 className="my-[20px] text-metal text-4xl md:text-5xl font-extrabold">
@@ -119,7 +120,7 @@ export default function ServicosPC() {
                       {item.porapenas} {item.apartir}
                     </p>
                     <h2 className="text-[3rem]"> {item.preco} </h2>
-                    <span className="text-sm">{item.giga}</span>{" "}
+                    {/*   <span className="text-sm">{item.giga}</span>{" "} */}
                     {item.frete}{" "}
                   </div>
                   <Link
