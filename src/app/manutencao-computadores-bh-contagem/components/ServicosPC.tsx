@@ -80,7 +80,7 @@ export default function ServicosPC() {
         {" "}
         <h2 className="my-[20px] text-metal text-4xl md:text-5xl font-extrabold">
           {" "}
-          Assistência técnica de computadores e notebook{" "}
+          Manutenção de computadores e notebook{" "}
         </h2>{" "}
         <p className="text-[#bdbdbd] mt-3 mb-[60px] text-[16px] max-w-2xl mx-auto">
           {" "}

@@ -111,7 +111,7 @@ export default function CtaFinalManutencao() {
               </span>
 
               <span className="px-[20px] py-[12px] rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300 text-sm">
-                🚗 Coleta gratuita em BH e Contagem
+                🚗 Frete grátis em BH e Contagem
               </span>
 
               <span className="px-[20px] py-[12px] rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300 text-sm">

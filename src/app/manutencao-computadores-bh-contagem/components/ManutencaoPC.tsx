@@ -45,7 +45,7 @@ export default function ManutencaoPC() {
             <div>
               <div className="flex flex-col gap-[10px] my-[20px]">
                 <span className="inline-block text-sm font-semibold text-purple-400 mb-4 uppercase tracking-[2px]">
-                  Assistência Técnica Especializada
+                  Conserto de computadores
                 </span>
 
                 <h2 className="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-6">
@@ -127,21 +127,6 @@ export default function ManutencaoPC() {
                     Clique e solicite orçamento no WhatsApp
                   </Link>
                 </div>
-              </div>
-
-              {/* BENEFÍCIOS */}
-              <div className="flex flex-wrap gap-3 mb-10 justify-center p-[20px] gap-[1rem] infoBenefit">
-                <span className="px-[20px] py-[10px] items-center rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300 text-sm">
-                  ⚡ Atendimento rápido ⚡
-                </span>
-
-                <span className="px-[20px] py-[10px] items-center rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300 text-sm">
-                  🚗 Retirada no local 🚗
-                </span>
-
-                <span className="px-[20px] py-[10px] items-center rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300 text-sm">
-                  🛡️ Garantia no serviço 🛡️
-                </span>
               </div>
             </div>
           </div>

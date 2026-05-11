@@ -14,7 +14,7 @@ export default function HeroManutencaoPC() {
         <h1 className="text-[40px]">
           Seu computador estragou? <br /> Clintin dos Sites consertou!
         </h1>
-        <p>Assistência Técnica de Computadores e Notebooks em Belo Horizonte</p>
+        <p>Conserto de Computadores e Notebooks em Belo Horizonte</p>
         <p>Entrega no mesmo dia ou em até 24 horas</p>
         <p>Atendimento a domicílio</p>
 

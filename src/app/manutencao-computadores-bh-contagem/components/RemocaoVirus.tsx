@@ -128,21 +128,6 @@ export default function RemocaoVirus() {
                   </Link>
                 </div>
               </div>
-
-              {/* BENEFÍCIOS */}
-              <div className="flex flex-wrap gap-3 mb-10 justify-center p-[20px] gap-[1rem] infoBenefit">
-                <span className="px-[20px] py-[10px] items-center rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300 text-sm">
-                  🛡️ Mais segurança 🛡️
-                </span>
-
-                <span className="px-[20px] py-[10px] items-center rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300 text-sm">
-                  ⚡ Melhor desempenho ⚡
-                </span>
-
-                <span className="px-[20px] py-[10px] items-center rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300 text-sm">
-                  🔒 Proteção dos arquivos 🔒
-                </span>
-              </div>
             </div>
           </div>
         </div>
