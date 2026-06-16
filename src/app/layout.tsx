@@ -24,32 +24,37 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://clintindossites.com.br"),
+
   title: {
     default: "Clintin dos Sites - Criação de Sites e Google Ads",
     template: "%s | Clintin dos Sites",
   },
+
   description:
     "Criação de sites profissionais, landing pages e gestão de tráfego pago para empresas e prestadores de serviço.",
-  keywords: [
-    "criação de sites em bh",
-    "criação de sites em sp",
-    "preço site para empresas",
-    "criação de sites",
-    "desenvolvedor web",
-    "landing page",
-    "site one page",
-    "sites para construtores",
-    "sites para restaurantes",
-    "gestor de tráfego pago em belo horizonte",
-    "manutenção de computadores em belo horizonte",
-    "técnico de computador perto de mim",
-  ],
-  robots: {
-    index: true,
-    follow: true,
+
+  openGraph: {
+    title: "Clintin dos Sites - Criação de Sites e Google Ads",
+    description:
+      "Criação de sites profissionais, landing pages e gestão de tráfego pago.",
+    url: "https://clintindossites.com.br",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Clintin dos Sites - Criação de Sites e Google Ads",
+    description:
+      "Criação de sites profissionais, landing pages e gestão de tráfego pago.",
+    images: ["/og-image.jpg"],
   },
 };
-
 export default function RootLayout({
   children,
 }: {
