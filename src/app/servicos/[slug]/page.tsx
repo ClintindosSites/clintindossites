@@ -3,12 +3,14 @@ import { services } from "@/data/services";
 
 import AudienceServicos from "./components/AudienceServicos";
 import BenefitsServicos from "./components/BenefitsServicos";
-import CTAServicos from "./components/CTAServicos";
+import CTAServicos from "./components/PricingServicos";
 import FaqServicos from "./components/FaqServicos";
 import HeroServicos from "./components/HeroServicos";
 import PortfolioServicos from "./components/PortfolioServicos";
 import TechnologiesServicos from "./components/TechnologiesServicos";
-import TestimonialsServicos from "./components/TestimonialsServicos";
+import TestimonialsServicos from "./components/QuebraObjecoes";
+import PricingServicos from "./components/PricingServicos";
+import QuebraObjecoes from "./components/QuebraObjecoes";
 
 interface PageProps {
   params: Promise<{
@@ -49,13 +51,13 @@ export default async function ServicePage({ params }: PageProps) {
   return (
     <>
       <HeroServicos service={service} />
-      <BenefitsServicos service={service} />
       <AudienceServicos service={service} />
-      <PortfolioServicos />
-      <TechnologiesServicos />
-      <FaqServicos service={service} />
-      <TestimonialsServicos />
-      <CTAServicos service={service} />
+      <BenefitsServicos service={service} />
+      <TechnologiesServicos service={service} />
+      <PortfolioServicos service={service} />
+
+      <PricingServicos service={service} />
+      <QuebraObjecoes service={service} />
     </>
   );
 }

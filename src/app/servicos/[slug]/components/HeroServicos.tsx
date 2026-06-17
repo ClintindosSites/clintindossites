@@ -24,14 +24,14 @@ export default function HeroServicos({ service }: HeroServicosProps) {
 
         <h3>{service.description}</h3>
 
-        <ul>
+        <ul className="list-none">
           <li>
             {service.title} a partir de {service.price}
           </li>
         </ul>
 
         <a
-          href={`https://wa.me/5538991369873?text=${whatsappMessage}`}
+          href={`https://wa.me/5531984362710?text=${whatsappMessage}`}
           target="_blank"
           rel="noopener noreferrer"
           className="cta-button"
