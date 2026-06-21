@@ -28,15 +28,43 @@ export default function Header() {
           {/* MENU */}
           <nav className={`menu ${menuOpen ? "active" : "items-center"}`}>
             <Link href="/" onClick={closeMenu}>
-              Websites
+              Página Inicial
             </Link>
-
-            <Link href="/trafego-pago" onClick={closeMenu}>
-              Tráfego Pago
+            <Link href="/servicos/criacao-de-sites" onClick={closeMenu}>
+              Criação de Site Profissional
             </Link>
-
-            <Link href="/especialista-bh-contagem" onClick={closeMenu}>
-              Manutenção Computadores
+            <Link href="/servicos/criacao-landing-page" onClick={closeMenu}>
+              Criação de Landing Page
+            </Link>
+            <Link href="/servicos/criacao-loja-virtual" onClick={closeMenu}>
+              Criação de Loja Virtual
+            </Link>
+            <Link
+              href="/servicos/desenvolvimento-app-android"
+              onClick={closeMenu}
+            >
+              Desenvolvimento App Android
+            </Link>
+            <Link
+              href="/servicos/desenvolvimento-app-android-ios"
+              onClick={closeMenu}
+            >
+              Desenvolvimento App Android e iOS
+            </Link>
+            <Link
+              href="/servicos/desenvolvimento-sistema-web-personalizado"
+              onClick={closeMenu}
+            >
+              Sistemas Web Personalizado
+            </Link>
+            <Link
+              href="/servicos/manutencao-sites-sistemas"
+              onClick={closeMenu}
+            >
+              Manutenção em Sites e Sistemas
+            </Link>
+            <Link href="/servicos/assistencia-tecnica-ti" onClick={closeMenu}>
+              Assistência Técnica em TI
             </Link>
 
             <Link href="/portfolio" onClick={closeMenu}>
@@ -56,7 +84,7 @@ export default function Header() {
               className="cta-button"
               onClick={closeMenu}
             >
-              Sites para Construtores
+              Cursos profissionais
             </Link>
           </nav>
 

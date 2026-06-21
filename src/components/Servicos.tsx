@@ -4,51 +4,63 @@ export default function Servicos() {
   const servicos = [
     {
       id: "sites-profissionais",
-      titulo: "Websites Profissionais",
+      titulo: "Criação de Sites Profissionais",
       descricao:
-        "Sites modernos, rápidos e responsivos, pensados para posicionar sua marca e gerar credibilidade. Websites a partir de R$997.",
-      mensagem:
-        "Olá, tenho interesse em criar um site profissional. Pode me passar mais informações?",
+        "Sites modernos, rápidos e responsivos, pensados para posicionar sua marca e gerar credibilidade. Websites a partir de R$1.497.",
+      link: "/servicos/criacao-de-sites",
     },
     {
       id: "landing-page",
-      titulo: "Landing Pages",
+      titulo: "Criação de Landing Page Profissional",
       descricao:
-        "Páginas focadas em conversão, ideais para anúncios e captação de leads qualificados. Landing Pages a partir de R$497.",
-      mensagem:
-        "Olá, quero uma landing page para gerar mais leads. Pode me explicar como funciona?",
-    },
-    {
-      id: "aplicacoes",
-      titulo: "Aplicações Web & Apps",
-      descricao:
-        "Sistemas e aplicações sob medida para automatizar processos e escalar operações. App mobile a partir de R$2.497.",
-      mensagem:
-        "Olá, tenho interesse em desenvolver uma aplicação ou app. Pode me dar mais detalhes?",
-    },
-    {
-      id: "trafego-pago",
-      titulo: "Tráfego Pago",
-      descricao:
-        "Gestão estratégica de anúncios no Google e redes sociais com foco em resultado real. Gestão Google a partir de R$1.197 por mês.",
-      mensagem:
-        "Olá, quero investir em tráfego pago. Pode me explicar como você trabalha?",
+        "Páginas focadas em conversão, ideais para anúncios e captação de leads qualificados. Landing Pages a partir de R$997.",
+      link: "/servicos/criacao-landing-page",
     },
     {
       id: "ecommerce",
-      titulo: "Loja Virtual / E-Commerce",
+      titulo: "Loja Virtual Profissional ",
       descricao:
-        "Lojas virtuais completas, rápidas e seguras, prontas para vender. E-commerce a partir de R$ R$2.497",
-      mensagem:
-        "Olá, quero criar uma loja virtual. Pode me passar mais informações?",
+        "Lojas virtuais completas, rápidas e seguras, prontas para vender. E-commerce a partir de R$ R$2.997",
+      link: "/servicos/criacao-loja-virtual",
     },
     {
-      id: "manutencao-seo",
-      titulo: "Manutenção e Otimização SEO",
+      id: "sistemas-web",
+      titulo: "Desenvolvimento de Sistemas Web",
       descricao:
-        "Correção de bugs, falhas, layout quebrado, funções e otimizações no seu site. ",
+        "Sistemas e aplicações sob medida para automatizar processos e escalar operações. Desenvolvimento de Sistema WEB a partir de R$3.997.",
+      link: "/servicos/desenvolvimento-sistema-web-personalizado",
+    },
+
+    {
+      id: "aplicativos-android-ios",
+      titulo: "Desenvolvimento de App para  Android e IOS",
+      descricao:
+        "Criação de aplicativos para dispositivos móveis android a partir de R$4.997.",
+      link: "/servicos/desenvolvimento-app-android-ios",
+    },
+    {
+      id: "aplicativos-android",
+      titulo: "Desenvolvimento de Aplicativo Android",
+      descricao:
+        "Criação de aplicativos multiplataforma com publicação para dispositivos Android e iOS a partir de R$6.997. ",
+      link: "/servicos/desenvolvimento-app-android",
+    },
+
+    {
+      id: "manutencao-seo",
+      titulo: "Manutenção em sites e sistemas",
+      descricao:
+        "Correção de bugs, falhas, layout quebrado, funções e otimizações no seu site. Hora técnica a partir de R$80,00",
       mensagem:
         "Olá, tenho interesse em automações e integrações. Pode me explicar melhor?",
+      link: "/servicos/manutencao-sites-e-sistemas",
+    },
+    {
+      id: "manutencao-computadores",
+      titulo: "Manutenção de computador e servidor",
+      descricao:
+        "Manutenção e formatação em servidores, computadores e notebooks. Clique em saiba mais e confira a área de atendimento.",
+      link: "/servicos/assistencia-tecnica-ti",
     },
   ];
 
@@ -56,20 +68,17 @@ export default function Servicos() {
     <section id="servicos" className="py-24 text-center">
       <div className="max-w-[1100px] mx-auto px-6">
         <h2 className="text-metal text-4xl md:text-5xl font-extrabold">
-          Nossos serviços
+          Soluções digitais completas para atrair, converter e escalar seu
+          negócio.
         </h2>
 
         <p className="text-[#bdbdbd] mt-3 mb-[60px] text-[16px] max-w-2xl mx-auto">
-          Soluções digitais completas para atrair, converter e escalar seu
-          negócio.
+          Confira os serviços digitais ofertados pelo Clintin dos Sites e o que
+          de melhor ele pode fazer para você ou sua empresa:
         </p>
 
         <div className="grid gap-[1.3rem] [grid-template-columns:repeat(auto-fit,minmax(260px,1fr))]">
           {servicos.map((item, index) => {
-            const url = `https://wa.me/5538991369873?text=${encodeURIComponent(
-              item.mensagem
-            )}`;
-
             return (
               <div
                 key={index}
@@ -85,11 +94,10 @@ export default function Servicos() {
                 </p>
 
                 <Link
-                  href={url}
-                  target="_blank"
+                  href={item.link}
                   className="cta-button whatsapp-track mx-auto mt-[20px]"
                 >
-                  Solicitar orçamento no WhatsApp
+                  Saiba mais
                 </Link>
               </div>
             );

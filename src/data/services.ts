@@ -164,8 +164,8 @@ export const services: Record<string, Service> = {
     pricing: [
       {
         titulo: "Site Essencial",
-        preco: "R$ 1.297",
-        parcela: "12x de R$ 129,90",
+        preco: "R$ 1.497",
+        parcela: "5x de R$ 299,90",
         descricao:
           "Ideal para empresas que precisam de presença profissional na internet.",
         itens: [
@@ -254,7 +254,7 @@ export const services: Record<string, Service> = {
 
   "criacao-de-sites-bh": {
     slug: "criacao-de-sites-bh",
-    title: "Criação de Sites em Belo Horizonte",
+    title: "  Criação de sites em BH que geram clientes todos os dias",
     h1: "Criação de Sites em Belo Horizonte e Região",
     description:
       "Desenvolvemos sites profissionais para empresas de Belo Horizonte, Contagem, Betim e toda a região metropolitana.",
@@ -297,8 +297,8 @@ export const services: Record<string, Service> = {
     ],
   },
 
-  "landing-page": {
-    slug: "landing-page",
+  "criacao-landing-page": {
+    slug: "criacao-landing-page",
     title: "Criação de Landing Pages",
     h1: "Landing Pages que Geram Leads e Vendas",
     description:
@@ -363,7 +363,7 @@ export const services: Record<string, Service> = {
       },
     ],
   },
-  "desenvolvimento-loja-virtual": {
+  "criacao-loja-virtual": {
     slug: "criacao-loja-virtual",
     title: "Criação de Loja Virtual",
     h1: "Loja Virtual Profissional para Seu Negócio",
@@ -471,7 +471,7 @@ export const services: Record<string, Service> = {
     ],
   },
   "desenvolvimento-app-android-ios": {
-    slug: "desenvolvimento-android-ios",
+    slug: "desenvolvimento-app-android-ios",
     title: "Desenvolvimento de Aplicativos Android e iOS",
     h1: "Aplicativos Android e iPhone para Empresas",
     description:
@@ -533,7 +533,7 @@ export const services: Record<string, Service> = {
     ],
   },
   "desenvolvimento-sistema-web-personalizado": {
-    slug: "sistema-web-personalizado",
+    slug: "desenvolvimento-sistema-web-personalizado",
     title: "Sistema Web Personalizado",
     h1: "Desenvolvimento de Sistemas Web Sob Medida",
     description:
