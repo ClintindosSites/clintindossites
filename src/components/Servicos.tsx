@@ -28,7 +28,7 @@ export default function Servicos() {
       titulo: "Desenvolvimento de Sistemas Web",
       descricao:
         "Sistemas e aplicações sob medida para automatizar processos e escalar operações. Desenvolvimento de Sistema WEB a partir de R$3.997.",
-      link: "/servicos/desenvolvimento-sistema-web-personalizado",
+      link: "/servicos/sistema-web-personalizado",
     },
 
     {
@@ -36,14 +36,7 @@ export default function Servicos() {
       titulo: "Desenvolvimento de App para  Android e IOS",
       descricao:
         "Criação de aplicativos para dispositivos móveis android a partir de R$4.997.",
-      link: "/servicos/desenvolvimento-app-android-ios",
-    },
-    {
-      id: "aplicativos-android",
-      titulo: "Desenvolvimento de Aplicativo Android",
-      descricao:
-        "Criação de aplicativos multiplataforma com publicação para dispositivos Android e iOS a partir de R$6.997. ",
-      link: "/servicos/desenvolvimento-app-android",
+      link: "/servicos/desenvolvimento-mobile",
     },
 
     {
@@ -60,7 +53,7 @@ export default function Servicos() {
       titulo: "Manutenção de computador e servidor",
       descricao:
         "Manutenção e formatação em servidores, computadores e notebooks. Clique em saiba mais e confira a área de atendimento.",
-      link: "/servicos/assistencia-tecnica-ti",
+      link: "/servicos/manutencao-computadores-servidores",
     },
   ];
 

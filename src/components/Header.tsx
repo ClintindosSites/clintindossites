@@ -40,11 +40,14 @@ export default function Header() {
               Criação de Loja Virtual
             </Link>
 
+            <Link href="/servicos/desenvolvimento-mobile" onClick={closeMenu}>
+              Desenvolvimento App Mobile
+            </Link>
             <Link
-              href="/servicos/desenvolvimento-app-android-ios"
+              href="/servicos/sistema-web-personalizado"
               onClick={closeMenu}
             >
-              Desenvolvimento App Mobile
+              Sistemas Web Personalizado
             </Link>
 
             <Link href="/portfolio" onClick={closeMenu}>
@@ -55,12 +58,7 @@ export default function Header() {
               Contato
             </Link>
             {/*
-            <Link
-              href="/servicos/desenvolvimento-sistema-web-personalizado"
-              onClick={closeMenu}
-            >
-              Sistemas Web Personalizado
-            </Link>
+          
             <Link
               href="/servicos/desenvolvimento-app-android"
               onClick={closeMenu}

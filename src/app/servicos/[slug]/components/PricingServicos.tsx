@@ -57,7 +57,7 @@ export default function PricingServicos({ service }: PricingProps) {
 
                 <div className="mb-6">
                   <p className="text-[#bdbdbd]">{plan.condicaoPagamento}</p>
-                  <h3 className="text-[50px] font-extrabold text-metal">
+                  <h3 className="text-[2.5rem] font-extrabold text-metal">
                     {plan.preco}
                   </h3>
 
