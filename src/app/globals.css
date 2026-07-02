@@ -1527,3 +1527,24 @@ h4,
   flex-direction: column;
   gap: 2rem;
 }
+@media screen and (max-width: 768px) {
+  .results-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .ctafinal img {
+    max-width: 360px;
+    width: 100%;
+  }
+}
+.texts {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.ctafinal img {
+  max-width: 600px;
+}

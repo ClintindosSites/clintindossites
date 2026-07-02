@@ -13,6 +13,7 @@ import QuebraObjecoes from "./components/QuebraObjecoes";
 import PaymentGuaranteeServicos from "./components/PaymentGuaranteeServicos";
 import ResultsServicos from "./components/ResultServicos";
 import ClientsServicos from "./components/ClientsServicos";
+import FinalCtaServicos from "./components/FinalCta";
 
 interface PageProps {
   params: Promise<{
@@ -63,6 +64,7 @@ export default async function ServicePage({ params }: PageProps) {
       <ResultsServicos />
       <ClientsServicos service={service} />
       <QuebraObjecoes service={service} />
+      <FinalCtaServicos service={service} />
     </>
   );
 }

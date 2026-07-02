@@ -484,13 +484,225 @@ export const services: Record<string, Service> = {
       items: [
         {
           nome: "Vidrosa",
-          segmento: "Esquadrias",
+          segmento: "Vidraçaria",
 
           descricao: "Site institucional desenvolvido em Next.js.",
 
-          logo: "/logos/vidrosa.webp",
+          logo: "/assets/logos/vidrosa-logo.webp",
 
           link: "https://vidrosa.com.br",
+        },
+        {
+          nome: "0800 Mobily",
+          segmento: "Aplicativo de transporte",
+
+          descricao:
+            "Landing page desenvolvida para direcionar para a playstore e baixar o app da 0800 mobily.",
+
+          logo: "/assets/logos/0800mobily-logo.webp",
+
+          link: "https://0800mobily.vercel.app",
+        },
+        {
+          nome: "DLL International Group",
+          segmento: "Intermediação de crédito",
+
+          descricao: "Landing page desenvolvida para agente bancário",
+
+          logo: "/assets/logos/dllbank-logo.png",
+
+          link: "https://bdllgroup.vercel.app/",
+        },
+        {
+          nome: "Turn One Technology",
+          segmento: "Empresa de segurança no transporte rodoviario",
+
+          descricao:
+            "Landing page desenvolvida para captar leads de empresas que precisam de segurança rodoviaria.",
+
+          logo: "/assets/logos/turnone-logo.svg",
+
+          link: "https://turnone.com.br",
+        },
+
+        {
+          nome: "Aliança Proteção Veicular",
+          segmento: "Proteção veicular",
+
+          descricao:
+            "Site institucional desenvolvido para apresentar os serviços da associação e gerar novos associados.",
+
+          logo: "/assets/logos/allianca-logo.png",
+
+          link: "https://alliancaest.com.br",
+        },
+
+        {
+          nome: "Ceará Burguer",
+          segmento: "Hamburgueria",
+
+          descricao:
+            "Sistema de delivery desenvolvido para pedidos online da hamburgueria.",
+
+          logo: "/assets/logos/cearacaiburguer-logo.png",
+
+          link: "https://cearacaiburguer.com.br",
+        },
+
+        {
+          nome: "DNB",
+          segmento: "Empresa",
+
+          descricao:
+            "Site institucional desenvolvido para divulgação dos serviços da empresa.",
+
+          logo: "/assets/logos/dnb-logo.png",
+
+          link: "https://dnbluxembourg.vercel.app/",
+        },
+
+        {
+          nome: "Eu Arrumo",
+          segmento: "Assistência técnica",
+
+          descricao:
+            "Site institucional desenvolvido para divulgação dos serviços de manutenção.",
+
+          logo: "/assets/logos/euarrumo-logo.png",
+
+          link: "https://euarrumo.vercel.app",
+        },
+
+        {
+          nome: "Fujitel",
+          segmento: "Telecom",
+
+          descricao:
+            "Landing page desenvolvida para divulgação dos serviços da empresa.",
+
+          logo: "/assets/logos/fujitel-logo.png",
+
+          link: "https://fujitel.com.br",
+        },
+
+        {
+          nome: "GM Glass",
+          segmento: "Esquadrias de Alumínio",
+
+          descricao:
+            "Site institucional desenvolvido para apresentação da empresa e geração de clientes.",
+
+          logo: "/assets/logos/gmglass-logo.png",
+
+          link: "https://gmglass.com.br",
+        },
+
+        {
+          nome: "Gran Natural",
+          segmento: "Mármores e Granitos",
+
+          descricao:
+            "Site institucional desenvolvido para apresentação dos produtos e serviços.",
+
+          logo: "/assets/logos/grannatural-logo.png",
+
+          link: "https://grannatural.vercel.app/",
+        },
+
+        {
+          nome: "I9SEG",
+          segmento: "Medicina do Trabalho",
+
+          descricao:
+            "Site institucional para apresentação e captação de leads que querem contratar empresas de segurança do trabalho.",
+
+          logo: "/assets/logos/i9seg-logo.webp",
+
+          link: "https://i9seg.vercel.app/",
+        },
+
+        {
+          nome: "NewForm",
+          segmento: "Empresa",
+
+          descricao:
+            "Site institucional desenvolvido para fortalecer a presença digital da empresa.",
+
+          logo: "/assets/logos/newform-logo.png",
+
+          link: "https://newformesquadrias.com.br",
+        },
+
+        {
+          nome: "Saude Vida",
+          segmento: "Plano de Saúde",
+
+          descricao:
+            "Landing page desenvolvida para captação de novos clientes.",
+
+          logo: "/assets/logos/saudevidamed-logo.png",
+
+          link: "https://saudevidamed.com.br",
+        },
+
+        {
+          nome: "Turn One Technology",
+          segmento: "Empresa de segurança no transporte rodoviário",
+
+          descricao:
+            "Landing page desenvolvida para captar leads de empresas que precisam de segurança rodoviária.",
+
+          logo: "/assets/logos/turnone-logo.svg",
+
+          link: "https://turnone.com.br",
+        },
+
+        {
+          nome: "VH Refrigeração",
+          segmento: "Técnico de refrigeração",
+
+          descricao:
+            "Site desesnvolvido para captar leads precisando de tecnico de refrigeração",
+
+          logo: "/assets/logos/vhrefrigeracao-logo.webp",
+
+          link: "https://...",
+        },
+
+        {
+          nome: "Vital Telecom",
+          segmento: "Provedor de Internet",
+
+          descricao:
+            "Landing page desenvolvida para venda de planos de internet.",
+
+          logo: "/assets/logos/vital-logo.png",
+
+          link: "https://vitaltelecom.vercel.app",
+        },
+
+        {
+          nome: "Wedson",
+          segmento: "Empresa",
+
+          descricao:
+            "Site institucional desenvolvido para fortalecer a presença digital da empresa.",
+
+          logo: "/assets/logos/wedson-logo.webp",
+
+          link: "https://wedsonconstrucoes.com.br",
+        },
+
+        {
+          nome: "WMA",
+          segmento: "Empresa",
+
+          descricao:
+            "Landing page desenvolvida para divulgação dos serviços da empresa.",
+
+          logo: "/assets/logos/wma-logo.png",
+
+          link: "https://wmaesquadriasevidros.com.br",
         },
       ],
     },
@@ -557,6 +769,39 @@ export const services: Record<string, Service> = {
       button: "Quero meu site profissional!",
       whatsappMessage:
         "Olá, vim pelo site e queria um orçamento para fazer um site...",
+    },
+    finalCTA: {
+      title: "Seu novo site começa hoje",
+      plan: "Site Profissional",
+      subtitle:
+        "Solicite agora um orçamento e tenha um site profissional desenvolvido sob medida para sua empresa.",
+
+      oldPrice: "R$ 2.997",
+
+      price: "R$ 1.997",
+
+      installment: "Parcele em até 6x",
+
+      badge: "Oferta por tempo limitado",
+
+      cta: "Envie o seu projeto direto para o desenvolvedor",
+
+      whatsapp: "Olá! Quero contratar um site profissional.",
+
+      benefits: [
+        "Design exclusivo",
+        "Site Responsivo",
+        "SEO Google",
+        "Integração WhatsApp",
+        "Hospedagem",
+        "SSL",
+        "Suporte",
+        "Treinamento",
+      ],
+
+      guarantee: "Garantia de suporte após a entrega.",
+
+      urgency: "Vagas limitadas para início imediato.",
     },
   },
 };

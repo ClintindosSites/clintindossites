@@ -16,6 +16,7 @@ export interface Service {
   results?: ResultsSection;
   process?: ProcessSection;
   cta?: CTASection;
+  finalCTA?: FinalCTA;
 }
 export interface HeroSection {
   title: string;
@@ -198,4 +199,29 @@ export interface CTASection {
   button: string;
 
   whatsappMessage: string;
+}
+export interface FinalCTA {
+  badge: string;
+
+  title: string;
+
+  subtitle: string;
+
+  plan: string;
+
+  oldPrice?: string;
+
+  price: string;
+
+  installment: string;
+
+  cta: string;
+
+  whatsapp: string;
+
+  guarantee: string;
+
+  urgency: string;
+
+  benefits: string[];
 }
