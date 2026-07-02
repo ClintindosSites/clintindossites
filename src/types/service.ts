@@ -1,53 +1,60 @@
 export interface Service {
   slug: string;
+
+  seo: SEO;
+
+  hero: HeroSection;
+
+  pains?: PainSection;
+  benefits?: BenefitSection;
+  technologies?: TechnologySection;
+  portfolio?: PortfolioSection;
+  pricing?: PricingSection;
+  payment?: PaymentSection;
+  faq?: FAQSection;
+  clients?: ClientsSection;
+  results?: ResultsSection;
+  process?: ProcessSection;
+  cta?: CTASection;
+}
+export interface HeroSection {
   title: string;
-  h1: string;
-  description: string;
+  subtitle: string;
   image: string;
+  ctaBtn: string;
+}
+export interface SEO {
+  title: string;
+  description: string;
   keywords: string[];
-
-  cta?: string;
-
-  // Seção de dores
-  painTitle?: string;
-  painSubtitle?: string;
-  pains?: PainItem[];
-
-  // Seção de benefícios
-  benefitsTitle?: string;
-  benefitsSubtitle?: string;
-  benefits?: BenefitItem[];
-
-  // Seção de tecnologias
-  techTitle?: string;
-  techSubtitle?: string;
-  technologies?: TechnologyItem[];
-
-  // Seção de portfólio
-  portfolioTitle?: string;
-  portfolioSubtitle?: string;
-  portfolio?: PortfolioSection[];
-
-  checkoutTitle: string;
-  checkoutSubtitile: string;
-
-  pricingTitle?: string;
-  pricingSubtitle?: string;
-  pricing?: PricingCard[];
-
-  objectionsTitle?: string;
-  objectionsSubtitle?: string;
-  objections?: ObjectionItem[];
+  image?: string;
+}
+export interface PainSection {
+  title: string;
+  subtitle: string;
+  items: PainItem[];
 }
 
 export interface PainItem {
   titulo: string;
   descricao: string;
 }
+export interface BenefitSection {
+  title: string;
+  subtitle: string;
+  items: BenefitItem[];
+  ctaButton: string;
+}
 
 export interface BenefitItem {
   titulo: string;
   descricao: string;
+}
+export interface TechnologySection {
+  title: string;
+  subtitle: string;
+  items: TechnologyItem[];
+  ctaButton: string;
 }
 
 export interface TechnologyItem {
@@ -55,32 +62,140 @@ export interface TechnologyItem {
   descricao: string;
   image: string;
 }
-
+export interface PortfolioSection {
+  title: string;
+  subtitle: string;
+  items: PortfolioItem[];
+}
 export interface PortfolioItem {
   titulo: string;
-  img: string;
-  link?: string;
-  segmento?: string;
-  tecnologias?: string[];
-}
 
-export interface PortfolioSection {
-  titulo: string;
-  itens: PortfolioItem[];
+  img: string;
+
+  link?: string;
+
+  segmento?: string;
+
+  tecnologias?: string[];
+
+  descricao?: string;
+
+  cliente?: string;
+}
+export interface PricingSection {
+  title: string;
+  subtitle: string;
+
+  cards: PricingCard[];
 }
 export interface PricingCard {
   titulo: string;
+
+  condicaoPagamento: string;
+
   preco: string;
+
   parcela?: string;
+
   descricao: string;
+
   destaque?: boolean;
+
   promocao?: boolean;
+
   itens: string[];
-  cta: string;
+
+  ctaBtn: string;
+
   href?: string;
 }
+export interface PaymentSection {
+  title: string;
 
-export interface ObjectionItem {
+  subtitle: string;
+
+  methods: PaymentMethod[];
+
+  trust: TrustItem[];
+}
+export interface PaymentMethod {
+  titulo: string;
+  descricao: string;
+  icon: string;
+}
+
+export interface TrustItem {
+  titulo: string;
+  descricao: string;
+  icon: string;
+}
+export interface FAQSection {
+  title: string;
+  subtitle: string;
+
+  items: FAQItem[];
+}
+
+export interface FAQItem {
   pergunta: string;
+
   resposta: string;
+}
+export interface ClientsSection {
+  title: string;
+
+  subtitle: string;
+
+  items: Client[];
+}
+
+export interface Client {
+  nome: string;
+
+  segmento: string;
+
+  descricao: string;
+
+  logo: string;
+
+  link: string;
+}
+export interface ResultsSection {
+  title: string;
+
+  subtitle: string;
+
+  items: ResultItem[];
+}
+
+export interface ResultItem {
+  number: string;
+
+  title: string;
+
+  description: string;
+}
+export interface ProcessSection {
+  title: string;
+
+  subtitle: string;
+
+  items: ProcessItem[];
+}
+
+export interface ProcessItem {
+  titulo: string;
+
+  descricao: string;
+
+  icon: string;
+}
+export interface CTASection {
+  title: string;
+
+  subtitle: string;
+
+  button: string;
+
+  whatsappMessage: string;
 }

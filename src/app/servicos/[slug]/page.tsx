@@ -3,14 +3,16 @@ import { services } from "@/data/services";
 
 import AudienceServicos from "./components/AudienceServicos";
 import BenefitsServicos from "./components/BenefitsServicos";
-import CTAServicos from "./components/PricingServicos";
-import FaqServicos from "./components/FaqServicos";
+
 import HeroServicos from "./components/HeroServicos";
 import PortfolioServicos from "./components/PortfolioServicos";
 import TechnologiesServicos from "./components/TechnologiesServicos";
-import TestimonialsServicos from "./components/QuebraObjecoes";
+
 import PricingServicos from "./components/PricingServicos";
 import QuebraObjecoes from "./components/QuebraObjecoes";
+import PaymentGuaranteeServicos from "./components/PaymentGuaranteeServicos";
+import ResultsServicos from "./components/ResultServicos";
+import ClientsServicos from "./components/ClientsServicos";
 
 interface PageProps {
   params: Promise<{
@@ -32,9 +34,9 @@ export async function generateMetadata({ params }: PageProps) {
   }
 
   return {
-    title: `${service.title} | Clintin dos Sites`,
-    description: service.description,
-    keywords: service.keywords,
+    title: `${service.seo.title} | Clintin dos Sites`,
+    description: service.seo.description,
+    keywords: service.seo.keywords,
     alternates: {
       canonical: `https://clintindossites.com.br/servicos/${slug}`,
     },
@@ -57,6 +59,9 @@ export default async function ServicePage({ params }: PageProps) {
       <PortfolioServicos service={service} />
 
       <PricingServicos service={service} />
+      <PaymentGuaranteeServicos />
+      <ResultsServicos />
+      <ClientsServicos service={service} />
       <QuebraObjecoes service={service} />
     </>
   );

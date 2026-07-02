@@ -8,17 +8,17 @@ interface TechnologiesProps {
 
 export default function TechnologiesServicos({ service }: TechnologiesProps) {
   const whatsappMessage = encodeURIComponent(
-    `Olá! Acabei de visitar a página de ${service.title} no site da Clintin dos Sites e gostaria de receber um orçamento sem compromisso.`
+    `Olá! Acabei de visitar a página de ${service.technologies} no site da Clintin dos Sites e gostaria de receber um orçamento sem compromisso.`
   );
-  const tecnologias = service.technologies ?? [];
+  const tecnologias = service.technologies?.items ?? [];
 
   return (
     <section className="technologies">
       <div className="container flex flex-col gap-[30px]">
         <div className="flex flex-col gap-[10px] text-center">
           {" "}
-          <h2>{service.techTitle}</h2>
-          <p className="text-[#cfcfcf]">{service.techSubtitle}</p>
+          <h2>{service.technologies?.title}</h2>
+          <p className="text-[#cfcfcf]">{service.technologies?.subtitle}</p>
         </div>
         <div className="grid gap-[1.3rem] [grid-template-columns:repeat(auto-fit,minmax(300px,1fr))]">
           {tecnologias.map((tech, index) => (
@@ -41,7 +41,7 @@ export default function TechnologiesServicos({ service }: TechnologiesProps) {
           rel="noopener noreferrer"
           className="cta-button mx-auto"
         >
-          {service.cta}
+          {service.technologies?.ctaButton}
         </a>
       </div>
     </section>

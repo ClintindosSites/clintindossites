@@ -8,7 +8,7 @@ interface ObjectionsProps {
 }
 
 export default function QuebraObjecoes({ service }: ObjectionsProps) {
-  const objections = service.objections ?? [];
+  const objections = service.faq?.items ?? [];
 
   const [open, setOpen] = useState<number | null>(0);
 
@@ -20,11 +20,11 @@ export default function QuebraObjecoes({ service }: ObjectionsProps) {
     <section className="py-24">
       <div className="max-w-[900px] mx-auto px-6">
         <h2 className="text-center text-4xl md:text-5xl font-extrabold text-metal">
-          {service.objectionsTitle}
+          {service.faq?.title}
         </h2>
 
         <p className="text-center text-[#bdbdbd] mt-4 mb-[30px]">
-          {service.objectionsSubtitle}
+          {service.faq?.subtitle}
         </p>
 
         <div

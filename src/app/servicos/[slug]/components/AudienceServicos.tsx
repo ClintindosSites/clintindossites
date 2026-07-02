@@ -1,19 +1,21 @@
+import { Service } from "@/types/service";
+
 interface AudienceServicosProps {
   service: Service;
 }
 
 export default function AudienceServicos({ service }: AudienceServicosProps) {
-  const servicos = service.pains ?? [];
+  const servicos = service.pains?.items ?? [];
 
   return (
     <section className="py-24 text-center">
       <div className="max-w-[1100px] mx-auto px-6">
         <h2 className="text-metal text-4xl md:text-5xl font-extrabold">
-          {service.painTitle}
+          {service.pains?.title}
         </h2>
 
         <p className="text-[#bdbdbd] mt-3 mb-[60px] text-[16px] max-w-2xl mx-auto">
-          {service.painSubtitle}
+          {service.pains?.subtitle}
         </p>
 
         <div className="grid gap-[1.3rem] [grid-template-columns:repeat(auto-fit,minmax(260px,1fr))]">

@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { Service } from "@/types/service";
 
 interface PricingProps {
@@ -8,22 +7,19 @@ interface PricingProps {
 }
 
 export default function PricingServicos({ service }: PricingProps) {
-  const plans = service.pricing ?? [];
+  const plans = service.pricing?.cards ?? [];
 
-  if (!plans.length) {
-    return null;
-  }
-
+  if (plans.length === 0) return null;
   return (
     <section className="py-24">
       <div className="max-w-[1200px] mx-auto px-6 gap-[30px] flex flex-col">
         <div className="flex flex-col gap-[10px] text-center">
           {" "}
           <h2 className="text-center text-4xl md:text-5xl font-extrabold text-metal">
-            {service.pricingTitle}
+            {service.pricing?.title}
           </h2>
           <p className="text-center text-[#bdbdbd] mt-4 mb-14">
-            {service.pricingSubtitle}
+            {service.pricing?.subtitle}
           </p>
         </div>
 
@@ -60,7 +56,7 @@ export default function PricingServicos({ service }: PricingProps) {
                 </h3>
 
                 <div className="mb-6">
-                  <p className="text-[#bdbdbd]">A partir de:</p>
+                  <p className="text-[#bdbdbd]">{plan.condicaoPagamento}</p>
                   <h3 className="text-[50px] font-extrabold text-metal">
                     {plan.preco}
                   </h3>
@@ -82,11 +78,11 @@ export default function PricingServicos({ service }: PricingProps) {
 
                 <div className="mt-auto flex flex-col gap-3">
                   <a
-                    href={plan.href}
+                    href={whatsapp}
                     target="_blank"
                     className="cta-button text-center"
                   >
-                    {plan.cta}
+                    {plan.ctaBtn}
                   </a>
                 </div>
               </div>

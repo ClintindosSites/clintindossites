@@ -1,18 +1,19 @@
+import { Service } from "@/types/service";
 interface BenefitsServicosProps {
   service: Service;
 }
 
 export default function BenefitsServicos({ service }: BenefitsServicosProps) {
-  const servicos = service.benefits ?? [];
+  const servicos = service.benefits?.items ?? [];
   return (
     <section className="py-24 text-center">
       <div className="max-w-[1100px] mx-auto px-6">
         <h2 className="text-metal text-4xl md:text-5xl font-extrabold">
-          {service.benefitsTitle}
+          {service.benefits?.title}
         </h2>
 
         <p className="text-[#bdbdbd] mt-3 mb-[60px] text-[16px] max-w-2xl mx-auto">
-          {service.benefitsSubtitle}
+          {service.benefits?.subtitle}
         </p>
 
         <div className="grid gap-[1.3rem] [grid-template-columns:repeat(auto-fit,minmax(260px,1fr))]">

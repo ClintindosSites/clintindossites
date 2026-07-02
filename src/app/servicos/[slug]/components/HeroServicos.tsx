@@ -1,43 +1,37 @@
+import { Service } from "@/types/service";
+
 interface HeroServicosProps {
-  service: {
-    title: string;
-    headline: string;
-    description: string;
-    price: string;
-    cta: string;
-  };
+  service: Service;
 }
 
 export default function HeroServicos({ service }: HeroServicosProps) {
   const whatsappMessage = encodeURIComponent(
-    `Olá! Acabei de visitar a página de ${service.title} no site da Clintin dos Sites e gostaria de receber um orçamento sem compromisso.`
+    `Olá! Acabei de visitar a página de ${service.hero.title} no site da Clintin dos Sites e gostaria de receber um orçamento sem compromisso.`
   );
 
   return (
-    <section className="hero">
+    <section className="hero heroservicos">
       <div className="container">
-        <h1>{service.title}</h1>
+        <div className="text">
+          <h1>{service.hero.title}</h1>
 
-        <p>
-          <strong>{service.headline}</strong>
-        </p>
+          <p>{service.hero.subtitle}</p>
 
-        <h3>{service.description}</h3>
-
-        <ul className="list-none">
-          <li>
-            {service.title} a partir de {service.price}
-          </li>
-        </ul>
-
-        <a
-          href={`https://wa.me/5531984362710?text=${whatsappMessage}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="cta-button"
-        >
-          {service.cta}
-        </a>
+          <a
+            href={`https://wa.me/5531984362710?text=${whatsappMessage}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cta-button"
+          >
+            {service.hero.ctaBtn}
+          </a>
+        </div>
+        <div className="img">
+          <img
+            src={"/hero-criacao-de-sites.webp"}
+            alt="Imagem de criação de sites"
+          />
+        </div>
       </div>
     </section>
   );
