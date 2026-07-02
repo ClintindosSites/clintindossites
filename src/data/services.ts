@@ -2689,8 +2689,9 @@ export const services: Record<string, Service> = {
         "suporte técnico",
         "manutenção servidor",
         "windows",
-        "linux",
+        "formatação de linux",
         "servidor empresarial",
+        "formatação de computador",
       ],
 
       image: "/manutencao-computadores.webp",
