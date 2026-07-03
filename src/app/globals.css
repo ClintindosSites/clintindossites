@@ -1537,6 +1537,16 @@ h4,
     max-width: 360px;
     width: 100%;
   }
+  .heroservicos {
+    margin-top: 120px;
+  }
+  .heroservicos .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .heroservicos .container .text {
+    text-align: center;
+  }
 }
 .texts {
   justify-content: center;

@@ -30,9 +30,9 @@ export const services: Record<string, Service> = {
     },
 
     hero: {
-      title: "Criação de Sites Profissionais para Empresas",
+      title: "Criação de Sites Profissionais que vendem todos os dias",
       subtitle:
-        "Desenvolvimento de sites profissionais, rápidos e responsivos para empresas e empreendedores.",
+        "Desenvolvimento de sites profissionais sob medida, rápidos e responsivos para empresas e empreendedores.",
       ctaBtn: "Quero um site profissional para minha empresa",
       image: "/logo.png",
     },
