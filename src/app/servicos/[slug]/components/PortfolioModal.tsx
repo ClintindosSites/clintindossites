@@ -1,5 +1,6 @@
 "use client";
 
+import { reportConversion } from "@/lib/tracking";
 import Image from "next/image";
 
 interface PortfolioModalProps {
@@ -20,7 +21,7 @@ export default function PortfolioModal({
   if (!open || !item) return null;
 
   const whatsapp =
-    "https://wa.me/5538991369873?text=" +
+    "https://wa.me/5531984362710?text=" +
     encodeURIComponent(
       `Olá, vi o projeto "${item.titulo}" no seu portfólio e gostaria de solicitar um orçamento.`
     );
@@ -88,7 +89,16 @@ export default function PortfolioModal({
           </a>
         )}
 
-        <a href={whatsapp} target="_blank" className="cta-button">
+        <a
+          href={whatsapp}
+          target="_blank"
+          className="cta-button"
+          onClick={e => {
+            e.preventDefault();
+
+            reportConversion(whatsapp);
+          }}
+        >
           💬 Solicitar Orçamento
         </a>
 

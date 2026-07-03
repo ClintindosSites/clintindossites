@@ -1,3 +1,6 @@
+"use client";
+
+import { reportConversion } from "@/lib/tracking";
 import Image from "next/image";
 import Link from "next/link";
 export default function Footer() {
@@ -9,8 +12,9 @@ export default function Footer() {
             <h3 className="text-metal">Clintin dos Sites</h3>
 
             <p>
-              Criação de sites, landing pages, loja virtual, aplicativos,
-              sistemas SaaS e tráfego pago.
+              Programador Full Stack com experiência em criação de sites,
+              landing pages, loja virtual, aplicativos mobile e sistemas web
+              personalizado. Programado para tirar o seu projeto do papel!
             </p>
 
             <span className="global-badge">
@@ -28,11 +32,20 @@ export default function Footer() {
           </div>
           <div className="footer-links">
             <h4>Links rápidos</h4>
-            <Link href="/">Websites</Link>
-            <Link href="/trafego-Pago">Tráfego Pago</Link>
+            <Link href="/servicos/criacao-de-sites">Criação de sites</Link>
+            <Link href={"/servicos/criacao-landing-page"}>Landing Page</Link>
+            <Link href={"/servicos/criacao-loja-virtual"}>Loja Virtual</Link>
+            <Link href={"/servicos/sistema-web-personalizado"}>
+              Sistema Web
+            </Link>
+            <Link href={"/servicos/desenvolvimento-mobile"}>App Mobile</Link>
+            <Link href={"/servicos/manutencao-sites-e-sistemas"}>
+              Manutenção em sites e sistemas
+            </Link>
+            <Link href={"/servicos/manutencao-computadores-servidores"}>
+              Manutenção de computadores
+            </Link>
             <Link href="/portfolio">Portfólio</Link>
-            <Link href="/sitesparaconstrutores">Sites para Construtores</Link>
-            <Link href="/blog">Blog</Link>
 
             <Link href="/contato">Contato</Link>
           </div>
@@ -41,7 +54,18 @@ export default function Footer() {
             <h4>Redes sociais</h4>
 
             <div className="social-icons">
-              <a href="https://github.com/Domclinton1" target="_blank">
+              <a
+                href="https://wa.me/5531984362710"
+                onClick={e => {
+                  e.preventDefault();
+
+                  reportConversion("https://wa.me/5531984362710");
+                }}
+              >
+                <span></span>
+              </a>
+
+              <a href="https://github.com/ClintindosSites" target="_blank">
                 <span className="icon icon-github"></span>
               </a>
 
@@ -57,6 +81,9 @@ export default function Footer() {
                 target="_blank"
               >
                 <span className="icon icon-linkedin"></span>
+              </a>
+              <a href="https://instagram.com/clintindossites" target="_blank">
+                <span className="icon icon-instagram"></span>
               </a>
             </div>
           </div>

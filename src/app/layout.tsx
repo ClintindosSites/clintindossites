@@ -7,7 +7,6 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import TrackingButtons from "@/components/TrackingButtons";
-import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -176,7 +175,7 @@ export default function RootLayout({
         {children}
 
         <CookieConsent />
-        <FloatingWhatsApp />
+
         <Footer />
 
         {/* Meta Pixel fallback */}

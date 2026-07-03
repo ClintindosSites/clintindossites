@@ -1,5 +1,6 @@
 "use client";
 
+import { reportConversion } from "@/lib/tracking";
 import { useState } from "react";
 
 export default function HeroForm() {
@@ -31,7 +32,7 @@ export default function HeroForm() {
 📝 *Projeto:* ${form.mensagem}
 `.trim();
 
-    const url = `https://wa.me/5538991369873?text=${encodeURIComponent(texto)}`;
+    const url = `https://wa.me/5531984362710?text=${encodeURIComponent(texto)}`;
 
     // GOOGLE ADS
     window.gtag?.("event", "conversion", {
@@ -75,7 +76,7 @@ export default function HeroForm() {
           <option>E-commerce/Loja Virtual</option>
           <option>Landing Page</option>
           <option>App Mobile</option>
-          <option>Tráfego Pago</option>
+          <option>Sistema Web Personalizado</option>
         </select>
       </div>
 
@@ -109,7 +110,15 @@ export default function HeroForm() {
         />
       </div>
 
-      <button type="submit" className="cta-button">
+      <button
+        type="submit"
+        className="cta-button"
+        onClick={e => {
+          e.preventDefault();
+
+          reportConversion();
+        }}
+      >
         Enviar para WhatsApp
       </button>
     </form>

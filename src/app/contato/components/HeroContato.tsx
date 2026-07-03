@@ -1,3 +1,5 @@
+"use client";
+
 import CtaButton from "@/components/CTAButton";
 import HeroForm from "@/components/HeroForm";
 
@@ -15,7 +17,7 @@ export default function HeroContato() {
             por consultoria em Tráfego Pago para aumentar suas vendas?
           </p>
 
-          <CtaButton href="https://wa.me/5538991369873?text=Quero%20realizar%20um%20orçamento">
+          <CtaButton href="https://wa.me/5531984362710?text=Quero%20realizar%20um%20orçamento">
             Orçamento no Whatsapp
             <span className="icon icon-whatsapp whatsapp-track" />
           </CtaButton>
@@ -28,4 +30,3 @@ export default function HeroContato() {
     </section>
   );
 }
-<h1>Faça contato agora mesmo</h1>;

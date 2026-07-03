@@ -1,3 +1,6 @@
+"use client";
+
+import { reportConversion } from "@/lib/tracking";
 import { Service } from "@/types/service";
 
 interface HeroServicosProps {
@@ -22,6 +25,11 @@ export default function HeroServicos({ service }: HeroServicosProps) {
             target="_blank"
             rel="noopener noreferrer"
             className="cta-button"
+            onClick={e => {
+              e.preventDefault();
+
+              reportConversion(whatsappMessage);
+            }}
           >
             {service.hero.ctaBtn}
           </a>

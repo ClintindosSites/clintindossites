@@ -1,5 +1,6 @@
 "use client";
 
+import { reportConversion } from "@/lib/tracking";
 import { Service } from "@/types/service";
 
 interface PricingProps {
@@ -81,6 +82,11 @@ export default function PricingServicos({ service }: PricingProps) {
                     href={whatsapp}
                     target="_blank"
                     className="cta-button text-center"
+                    onClick={e => {
+                      e.preventDefault();
+
+                      reportConversion(whatsapp);
+                    }}
                   >
                     {plan.ctaBtn}
                   </a>

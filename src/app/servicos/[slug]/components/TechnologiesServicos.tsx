@@ -1,3 +1,6 @@
+"use client";
+
+import { reportConversion } from "@/lib/tracking";
 import { Service } from "@/types/service";
 
 import Image from "next/image";
@@ -40,6 +43,11 @@ export default function TechnologiesServicos({ service }: TechnologiesProps) {
           target="_blank"
           rel="noopener noreferrer"
           className="cta-button mx-auto"
+          onClick={e => {
+            e.preventDefault();
+
+            reportConversion(whatsappMessage);
+          }}
         >
           {service.technologies?.ctaButton}
         </a>

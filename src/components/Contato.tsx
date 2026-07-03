@@ -1,3 +1,5 @@
+"use client";
+
 import HeroForm from "./HeroForm";
 
 export default function Contato() {

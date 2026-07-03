@@ -2,6 +2,7 @@
 
 import { Check, ShieldCheck, Clock } from "lucide-react";
 import { Service } from "@/types/service";
+import { reportConversion } from "@/lib/tracking";
 
 interface Props {
   service: Service;
@@ -119,6 +120,11 @@ export default function FinalCtaServicos({ service }: Props) {
             target="_blank"
             rel="noopener noreferrer"
             className="cta-button mt-10 w-full block text-center mx-auto"
+            onClick={e => {
+              e.preventDefault();
+
+              reportConversion(whatsapp);
+            }}
           >
             {cta.cta}
           </a>
