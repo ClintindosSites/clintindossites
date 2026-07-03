@@ -120,11 +120,7 @@ export default function FinalCtaServicos({ service }: Props) {
             target="_blank"
             rel="noopener noreferrer"
             className="cta-button mt-10 w-full block text-center mx-auto"
-            onClick={e => {
-              e.preventDefault();
-
-              reportConversion(whatsapp);
-            }}
+            onClick={() => reportConversion()}
           >
             {cta.cta}
           </a>

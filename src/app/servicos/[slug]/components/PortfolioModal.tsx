@@ -93,11 +93,7 @@ export default function PortfolioModal({
           href={whatsapp}
           target="_blank"
           className="cta-button"
-          onClick={e => {
-            e.preventDefault();
-
-            reportConversion(whatsapp);
-          }}
+          onClick={() => reportConversion()}
         >
           💬 Solicitar Orçamento
         </a>

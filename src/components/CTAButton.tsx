@@ -15,10 +15,7 @@ export default function CTAButton({ href, children }: Props) {
       target="_blank"
       rel="noopener noreferrer"
       className="cta-button whatsapp-track m-auto"
-      onClick={e => {
-        e.preventDefault();
-        reportConversion(href);
-      }}
+      onClick={() => reportConversion()}
     >
       {children}
     </Link>

@@ -29,13 +29,7 @@ export default function Hero() {
             className="cta-button whatsapp-track"
             id="orcamento-wpp"
             target="_blank"
-            onClick={e => {
-              e.preventDefault();
-
-              reportConversion(
-                "https://wa.me/5531984362710?text=Olá,%20tenho%20interesse%20em%20fazer%20um%20projeto..."
-              );
-            }}
+            onClick={() => reportConversion()}
           >
             Enviar projeto direto para o desenvolvedor
           </Link>

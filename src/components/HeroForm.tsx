@@ -113,11 +113,7 @@ export default function HeroForm() {
       <button
         type="submit"
         className="cta-button"
-        onClick={e => {
-          e.preventDefault();
-
-          reportConversion();
-        }}
+        onClick={() => reportConversion()}
       >
         Enviar para WhatsApp
       </button>

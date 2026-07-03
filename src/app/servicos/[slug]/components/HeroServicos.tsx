@@ -25,11 +25,7 @@ export default function HeroServicos({ service }: HeroServicosProps) {
             target="_blank"
             rel="noopener noreferrer"
             className="cta-button"
-            onClick={e => {
-              e.preventDefault();
-
-              reportConversion(whatsappMessage);
-            }}
+            onClick={() => reportConversion()}
           >
             {service.hero.ctaBtn}
           </a>

@@ -82,11 +82,7 @@ export default function PricingServicos({ service }: PricingProps) {
                     href={whatsapp}
                     target="_blank"
                     className="cta-button text-center"
-                    onClick={e => {
-                      e.preventDefault();
-
-                      reportConversion(whatsapp);
-                    }}
+                    onClick={() => reportConversion()}
                   >
                     {plan.ctaBtn}
                   </a>

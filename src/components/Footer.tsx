@@ -56,11 +56,7 @@ export default function Footer() {
             <div className="social-icons">
               <a
                 href="https://wa.me/5531984362710"
-                onClick={e => {
-                  e.preventDefault();
-
-                  reportConversion("https://wa.me/5531984362710");
-                }}
+                onClick={() => reportConversion()}
               >
                 <span></span>
               </a>
