@@ -23,7 +23,7 @@ export const reportConversion = ({
 }: TrackingParams) => {
   const callback = () => {
     if (url) {
-      window.location.href = url;
+      window.open(url, "_blank", "noopener,noreferrer");
     }
   };
 
