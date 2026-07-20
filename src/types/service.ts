@@ -4,7 +4,7 @@ export interface Service {
   seo: SEO;
 
   hero: HeroSection;
-
+  form: FormSection;
   pains?: PainSection;
   benefits?: BenefitSection;
   technologies?: TechnologySection;
@@ -23,6 +23,20 @@ export interface HeroSection {
   subtitle: string;
   image: string;
   ctaBtn: string;
+}
+
+export interface FormSection {
+  title: string;
+
+  subtitle: string;
+
+  button: string;
+
+  whatsappMessage: string;
+
+  servicos: string[];
+
+  orcamentos: string[];
 }
 export interface SEO {
   title: string;

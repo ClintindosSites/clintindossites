@@ -12,7 +12,7 @@ export default function PricingServicos({ service }: PricingProps) {
 
   if (plans.length === 0) return null;
   return (
-    <section className="py-24">
+    <section className="py-24" id="checkout">
       <div className="max-w-[1200px] mx-auto px-6 gap-[30px] flex flex-col">
         <div className="flex flex-col gap-[10px] text-center">
           {" "}
@@ -32,6 +32,7 @@ export default function PricingServicos({ service }: PricingProps) {
 
             return (
               <div
+                id="checkout-item"
                 key={index}
                 className={`
                   rounded-[25px]

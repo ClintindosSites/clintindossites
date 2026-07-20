@@ -2,9 +2,14 @@
 
 import { reportConversion } from "@/lib/tracking";
 import { useState } from "react";
+import { FormSection } from "@/types/service";
 
-export default function HeroForm() {
-  const [form, setForm] = useState({
+interface HeroFormProps {
+  form: FormSection;
+}
+
+export default function HeroForm({ form }: HeroFormProps) {
+  const [dados, setDados] = useState({
     nome: "",
     servico: "",
     orcamento: "",
@@ -17,19 +22,20 @@ export default function HeroForm() {
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
     >
   ) {
-    setForm({ ...form, [e.target.name]: e.target.value });
+    setDados({ ...dados, [e.target.name]: e.target.value });
   }
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
 
     const texto = `
-📩 *Novo orçamento - Site*
-👤 *Nome:* ${form.nome}
-💼 *Serviço:* ${form.servico}
-💰 *Orçamento:* ${form.orcamento}
-📍 *Cidade:* ${form.endereco}
-📝 *Projeto:* ${form.mensagem}
+${form.whatsappMessage}
+
+ *Nome:* ${dados.nome}
+ *Serviço:* ${dados.servico}
+ *Orçamento:* ${dados.orcamento}
+ *Cidade:* ${dados.endereco}
+ *Projeto:* ${dados.mensagem}
 `.trim();
 
     const url = `https://wa.me/5531984362710?text=${encodeURIComponent(texto)}`;
@@ -52,16 +58,14 @@ export default function HeroForm() {
 
   return (
     <form onSubmit={handleSubmit} className="form-whatsapp">
-      <h2>Solicite um orçamento</h2>
-      <p>
-        Preencha o formulário e envie seu pedido para o Whatsapp e receba a
-        resposta hoje mesmo
-      </p>
+      <h2>{form.title}</h2>
+      <p>{form.subtitle}</p>
 
       <div>
         <label>Nome</label>
         <input
           name="nome"
+          value={dados.nome}
           required
           placeholder="Seu nome"
           onChange={handleChange}
@@ -70,24 +74,38 @@ export default function HeroForm() {
 
       <div>
         <label>Serviço desejado</label>
-        <select name="servico" required onChange={handleChange}>
-          <option value="">Selecione</option>
-          <option>Website</option>
-          <option>E-commerce/Loja Virtual</option>
-          <option>Landing Page</option>
-          <option>App Mobile</option>
-          <option>Sistema Web Personalizado</option>
+        <select
+          name="servico"
+          value={dados.servico}
+          required
+          defaultValue=""
+          onChange={handleChange}
+        >
+          <option value="" disabled>
+            Selecione
+          </option>
+
+          {form.servicos.map(servico => (
+            <option key={servico} value={servico}>
+              {servico}
+            </option>
+          ))}
         </select>
       </div>
 
       <div>
         <label>Orçamento estimado</label>
-        <select name="orcamento" required onChange={handleChange}>
-          <option value="">Selecione</option>
-          <option>Até R$ 1.000</option>
-          <option>R$ 1.000 – R$ 3.000</option>
-          <option>R$ 3.000 – R$ 5.000</option>
-          <option>Acima de R$ 5.000</option>
+        <select
+          name="orcamento"
+          value={dados.orcamento}
+          required
+          onChange={handleChange}
+        >
+          {form.orcamentos.map(orcamento => (
+            <option key={orcamento} value={orcamento}>
+              {orcamento}
+            </option>
+          ))}
         </select>
       </div>
 
@@ -95,6 +113,7 @@ export default function HeroForm() {
         <label>Cidade / Estado</label>
         <input
           name="endereco"
+          value={dados.endereco}
           placeholder="Ex: Belo Horizonte - MG"
           onChange={handleChange}
         />
@@ -103,6 +122,8 @@ export default function HeroForm() {
       <div>
         <label>Mensagem</label>
         <textarea
+          className="resize-none"
+          value={dados.mensagem}
           name="mensagem"
           rows={4}
           placeholder="Descreva seu projeto"
@@ -110,12 +131,8 @@ export default function HeroForm() {
         />
       </div>
 
-      <button
-        type="submit"
-        className="cta-button"
-        onClick={() => reportConversion()}
-      >
-        Enviar para WhatsApp
+      <button type="submit" className="" onClick={() => reportConversion()}>
+        {form.button}
       </button>
     </form>
   );

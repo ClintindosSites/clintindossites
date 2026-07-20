@@ -1,5 +1,6 @@
 "use client";
 
+import HeroForm from "@/components/HeroForm";
 import { reportConversion } from "@/lib/tracking";
 import { Service } from "@/types/service";
 
@@ -8,10 +9,6 @@ interface HeroServicosProps {
 }
 
 export default function HeroServicos({ service }: HeroServicosProps) {
-  const whatsappMessage = encodeURIComponent(
-    `Olá! Acabei de visitar a página de ${service.hero.title} no site da Clintin dos Sites e gostaria de receber um orçamento sem compromisso.`
-  );
-
   return (
     <section className="hero heroservicos">
       <div className="container">
@@ -21,20 +18,20 @@ export default function HeroServicos({ service }: HeroServicosProps) {
           <p>{service.hero.subtitle}</p>
 
           <a
-            href={`https://wa.me/5531984362710?text=${whatsappMessage}`}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#checkout"
             className="cta-button"
             onClick={() => reportConversion()}
           >
             {service.hero.ctaBtn}
           </a>
+
+          <div className="img">
+            <img src="/hero-criacao-de-sites.webp" alt="" />
+          </div>
         </div>
+
         <div className="img">
-          <img
-            src={"/hero-criacao-de-sites.webp"}
-            alt="Imagem de criação de sites"
-          />
+          <HeroForm form={service.form} />
         </div>
       </div>
     </section>

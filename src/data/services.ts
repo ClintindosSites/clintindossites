@@ -11,19 +11,24 @@ export const services: Record<string, Service> = {
         "Desenvolvimento de websites profissionais construídos do zero até a publicação. Sites rápidos, responsivos e otimizados para Google. Entrega em até 36 horas.",
 
       keywords: [
-        "criação de sites",
+        "empresa de criação de sites",
         "criação de sites profissionais",
         "criação de sites em BH",
         "empresa que cria sites",
         "desenvolvimento de sites",
-        "site profissional",
+        "programador web",
         "site para empresas",
         "desenvolvimento web",
-        "landing page",
-        "criação de landing page",
-        "site institucional",
-        "desenvolvedor full stack",
-        "criação de sites preço",
+        "quanto custa um site",
+        "quanto custa para fazer um site",
+        "criação de site preço",
+        "criação de sites sob medida",
+        "sites sob medida",
+        "profissional que faz site",
+        "criação de sites em belo horizonte",
+        "criação de sites em são paulo",
+        "criação de sites em sp",
+        "quanto custa para fazer um site",
       ],
 
       image: "/criacao-de-sites.webp",
@@ -32,9 +37,33 @@ export const services: Record<string, Service> = {
     hero: {
       title: "Criação de Sites Profissionais que vendem todos os dias",
       subtitle:
-        "Desenvolvimento de sites profissionais sob medida, rápidos e responsivos para empresas e empreendedores.",
+        "Desenvolvimento de sites profissionais sob medida para pequenas e grandes empresas a partir de R$997",
+
       ctaBtn: "Quero um site profissional para minha empresa",
       image: "/logo.png",
+    },
+
+    form: {
+      title: "Solicite um orçamento",
+
+      subtitle: "Preencha o formulário e receba uma proposta personalizada.",
+
+      button: "Enviar para WhatsApp",
+
+      whatsappMessage: "Olá! Gostaria de um orçamento para um site.",
+
+      servicos: [
+        "Site Institucional Básico",
+        "Site Profissional",
+        "Site Oferta Especial",
+      ],
+
+      orcamentos: [
+        "Até R$ 1.497",
+        "R$ 1.497 a R$ 2.997",
+        "Acima de R$ 2.997",
+        "R$997 (Oferta Especial)",
+      ],
     },
 
     pains: {
@@ -415,10 +444,10 @@ export const services: Record<string, Service> = {
         "Investir em um site profissional custa menos do que perder clientes todos os dias para os seus concorrentes.",
       cards: [
         {
-          titulo: "Site Essencial",
+          titulo: "Site Institucional",
           condicaoPagamento: "A partir de",
           preco: "R$ 1.497",
-          parcela: "5x de R$ 299,40",
+          parcela: "Ou parcele em até 5 vezes",
           descricao:
             "Ideal para empresas que precisam de presença profissional na internet.",
           itens: [
@@ -435,7 +464,7 @@ export const services: Record<string, Service> = {
           titulo: "Site Profissional",
           condicaoPagamento: "A partir de",
           preco: "R$ 2.997",
-          parcela: "5x de R$ 599,40",
+          parcela: "Ou parcele em até 5 vezes",
           descricao:
             "Ideal para empresas que precisam de funcionalidades avançadas e banco de dados.",
           destaque: true,
@@ -453,7 +482,7 @@ export const services: Record<string, Service> = {
           titulo: "Oferta Especial",
           condicaoPagamento: "Por apenas",
           preco: "R$ 997",
-          parcela: "5x de R$ 199,40",
+          parcela: "No pagamento à vista",
           descricao:
             "Oferta por tempo limitado para pequenas empresas e empreendedores.",
           promocao: true,
@@ -771,33 +800,25 @@ export const services: Record<string, Service> = {
         "Olá, vim pelo site e queria um orçamento para fazer um site...",
     },
     finalCTA: {
-      title: "Seu novo site começa hoje",
+      title: "Transforme visitantes em clientes com um site profissional",
       plan: "Site Profissional",
       subtitle:
-        "Solicite agora um orçamento e tenha um site profissional desenvolvido sob medida para sua empresa.",
+        "Desenvolvemos um site moderno, rápido e totalmente personalizado para destacar sua empresa na internet, transmitir mais credibilidade e facilitar o contato com seus clientes através do WhatsApp e formulários inteligentes. Você recebe um projeto completo, pronto para divulgar seu negócio e começar a vender.",
 
-      oldPrice: "R$ 2.997",
+      oldPrice: "R$ 1.497",
 
-      price: "R$ 1.997",
+      price: "R$ 997",
 
-      installment: "Parcele em até 6x",
+      installment: "Pagamento à vista",
 
-      badge: "Oferta por tempo limitado",
+      badge: "Oferta válida até 31/07/2026",
 
-      cta: "Envie o seu projeto direto para o desenvolvedor",
+      cta: "Quero essa promoção",
 
-      whatsapp: "Olá! Quero contratar um site profissional.",
+      whatsapp:
+        "Olá! Vi a promoção do Site Profisional por R$997 e gostaria de fazer um projeto...",
 
-      benefits: [
-        "Design exclusivo",
-        "Site Responsivo",
-        "SEO Google",
-        "Integração WhatsApp",
-        "Hospedagem",
-        "SSL",
-        "Suporte",
-        "Treinamento",
-      ],
+      benefits: [],
 
       guarantee: "Garantia de suporte após a entrega.",
 
@@ -841,7 +862,28 @@ export const services: Record<string, Service> = {
 
       image: "/logo.png",
     },
+    form: {
+      title: "Solicite um orçamento",
 
+      subtitle: "Preencha o formulário e receba uma proposta personalizada.",
+
+      button: "Quero minha Landing Page",
+
+      whatsappMessage: "Olá! Gostaria de um orçamento para uma landing page.",
+
+      servicos: [
+        "Landing Page Básica",
+        "Landing Page Premium",
+        "Landing Page Oferta Especial",
+      ],
+
+      orcamentos: [
+        "Até R$ 697",
+        "R$ 697 a R$ 1.297",
+        "R$ 1.297 a R$ 2.000",
+        "R$497 (Oferta Especial)",
+      ],
+    },
     pains: {
       title: "Sua campanha gera visitas, mas quase ninguém entra em contato?",
 
@@ -958,15 +1000,242 @@ export const services: Record<string, Service> = {
     },
 
     portfolio: {
-      title: "Landing Pages desenvolvidas",
-
-      subtitle: "Alguns projetos desenvolvidos para campanhas de tráfego pago.",
+      title: "Landing Pages Desenvolvidas",
+      subtitle:
+        "Alguns projetos desenvolvidos voltados para campanhas de tráfego pago.",
 
       items: [
-        // seus projetos
+        {
+          titulo: "Vidrosa",
+
+          cliente: "Vidraçaria Vidrosa",
+
+          segmento: "Esquadrias de Alumínio",
+
+          descricao:
+            "Site institucional desenvolvido para apresentar os serviços da empresa.",
+
+          tecnologias: ["HTML", "CSS", "JavaScript"],
+
+          img: "/assets/images/vidrosa-site.webp",
+
+          link: "https://vidrosa.com.br",
+        },
+        {
+          titulo: "NewForm Esquadrias",
+
+          cliente: "NewForm Esquadrias de Alumínio e Vidros",
+
+          segmento: "Vidraçaria e Serralheria de Alumínio",
+
+          descricao: "...",
+
+          tecnologias: ["HTML", "CSS", "Javascript"],
+
+          img: "/assets/images/newformesquadrias-site.webp",
+
+          link: "https://newformesquadrias.com.br",
+        },
+        {
+          titulo: "Termo Lipo",
+
+          cliente: "Termo Lipo",
+
+          segmento: "Encapsulados",
+
+          descricao: "...",
+
+          tecnologias: ["HTML", "CSS", "JAVASCRIPT"],
+
+          img: "/assets/images/termolipo-lp.webp",
+
+          link: "https://termolipo.com.br",
+        },
+        {
+          titulo: "Fujitel Telecom",
+
+          cliente: "Fujitel Telecom",
+
+          segmento: "Empresa de Telecomunicações",
+
+          descricao: "...",
+
+          tecnologias: ["HTML", "CSS", "JAVASCRIPT"],
+
+          img: "/assets/images/paidosestofados-site.webp",
+
+          link: "https://paidosestofados-ten.vercel.app/",
+        },
+        {
+          titulo: "Harmonia Psicanalitica",
+
+          cliente: "Leandro Morais",
+
+          segmento: "Psicoterapeuta",
+
+          descricao: "...",
+
+          tecnologias: ["HTML", "CSS", "JavaScript"],
+
+          img: "/assets/images/harmoniapsicanalitica-site.webp",
+
+          link: "https://harmoniapsicanalitica.com.br",
+        },
+        {
+          titulo: "Vital Telecom Serviços",
+
+          cliente: "Vital Telecom",
+
+          segmento: "Empresa de telecomunicações",
+
+          descricao: "...",
+
+          tecnologias: ["HTML", "CSS", "JAVASCRIPT"],
+
+          img: "/assets/images/vitalservicos-site.webp",
+
+          link: "https://vitaltelecom.vercel.app",
+        },
+        {
+          titulo: "Turn One Technology",
+
+          cliente: "Turn One Technology",
+
+          segmento: "Segurança de Transito",
+
+          descricao: "...",
+
+          tecnologias: ["HTML", "CSS", "JAVASCRIPT", "PHP"],
+
+          img: "/assets/images/turnone.webp",
+
+          link: "https://turnone.com.br",
+        },
+        {
+          titulo: "BN Esquadrias",
+
+          cliente: "BN Esquadrias",
+
+          segmento: "Esquadrias de Alumínio",
+
+          descricao:
+            "Site desenvolvido para atrair clientes para serralheria de alumínio",
+
+          tecnologias: ["HTML", "CSS", "JavaScript"],
+
+          img: "/assets/images/bnesquadrias-site.webp",
+
+          link: "https://bnesquadrias.com.br",
+        },
+
+        {
+          titulo: "ClicksChat",
+
+          cliente: "ClicksChat",
+
+          segmento: "Chatbot",
+
+          descricao: "...",
+
+          tecnologias: ["HTML", "CSS"],
+
+          img: "/assets/images/clickschat-site.webp",
+
+          link: "https://clickschat.com.br",
+        },
+        {
+          titulo: "Wedson Engenharia",
+
+          cliente: "Wedson Engenharia Construções e Reformas em geral",
+
+          segmento: "Construtora",
+
+          descricao: "...",
+
+          tecnologias: ["HTML", "CSS"],
+
+          img: "/assets/images/wedsonengenharia.webp",
+
+          link: "https://wedsonconstrucoes.com.br",
+        },
+
+        {
+          titulo: "0800 Mobily",
+
+          cliente: "0800 Mobily",
+
+          segmento: "Aplicativo de transporte",
+
+          descricao: "...",
+
+          tecnologias: ["HTML", "CSS"],
+
+          img: "/assets/images/0800mobily.webp",
+
+          link: "https://0800mobily.vercel.app",
+        },
+        {
+          titulo: "VH Refrigeração",
+
+          cliente: "VH Refrigeração",
+
+          segmento: "Técnico de refrigeração",
+
+          descricao: "...",
+
+          tecnologias: ["Next.js", "React"],
+
+          img: "/assets/images/vhrefrigeracao.webp",
+
+          link: "https://vhrefrigeracao.com.br",
+        },
+        {
+          titulo: "FCE Serralheria",
+
+          cliente: "FCE Serralheria",
+
+          segmento: "Serralheria",
+
+          descricao: "...",
+
+          tecnologias: ["Next.js", "React"],
+
+          img: "/assets/images/fceserralherianew.webp",
+
+          link: "https://fceserralheria.vercel.app",
+        },
+        {
+          titulo: "Alliança EST",
+
+          cliente: "Alliança EST",
+
+          segmento: "Segurança do trabalho",
+
+          descricao: "...",
+
+          tecnologias: ["HTML", "CSS"],
+
+          img: "/assets/images/alliancaest.webp",
+
+          link: "https://alliancaest.com.br",
+        },
+        {
+          titulo: "I9Seg",
+
+          cliente: "I9Seg",
+
+          segmento: "Segurança do trabalho",
+
+          descricao: "...",
+
+          tecnologias: ["NEXT.JS", "REACT"],
+
+          img: "/assets/images/ie9seg.webp",
+
+          link: "https://i9seg.vercel.app",
+        },
       ],
     },
-
     pricing: {
       title: "Quanto custa uma Landing Page?",
 
@@ -1212,7 +1481,28 @@ export const services: Record<string, Service> = {
 
       image: "/logo.png",
     },
+    form: {
+      title: "Solicite um orçamento",
 
+      subtitle: "Preencha o formulário e receba uma proposta personalizada.",
+
+      button: "Enviar para WhatsApp",
+
+      whatsappMessage: "Olá! Gostaria de um orçamento para uma loja virtual.",
+
+      servicos: [
+        "Loja Virtual Profissional",
+        "Loja Virtual Premium",
+        "Loja Virtual Oferta Especial",
+      ],
+
+      orcamentos: [
+        "Até R$ 2.497",
+        "R$ 2.497 a R$ 3.497",
+        "Acima de R$ 4.497",
+        "R$1.997 (Oferta Especial)",
+      ],
+    },
     pains: {
       title: "Sua empresa ainda depende apenas das vendas presenciais?",
 
@@ -1371,7 +1661,7 @@ export const services: Record<string, Service> = {
 
           preco: "R$ 2.497",
 
-          parcela: "6x de R$ 416,17",
+          parcela: "Parcele em até 6x",
 
           descricao:
             "Ideal para pequenas empresas que desejam começar a vender online.",
@@ -1392,9 +1682,9 @@ export const services: Record<string, Service> = {
 
           condicaoPagamento: "A partir de",
 
-          preco: "R$ 4.997",
+          preco: "R$ 4.497",
 
-          parcela: "6x de R$ 832,83",
+          parcela: "Parcele em até 6x",
 
           destaque: true,
 
@@ -1422,7 +1712,7 @@ export const services: Record<string, Service> = {
 
           preco: "R$ 1.997",
 
-          parcela: "6x de R$ 332,83",
+          parcela: "Pagamento à vista",
 
           promocao: true,
 
@@ -1597,6 +1887,7 @@ export const services: Record<string, Service> = {
         "criação de aplicativos",
         "aplicativo android",
         "aplicativo ios",
+        "mobile developer",
         "desenvolvimento mobile",
         "empresa de aplicativos",
         "programador flutter",
@@ -1619,6 +1910,24 @@ export const services: Record<string, Service> = {
       ctaBtn: "Quero desenvolver meu aplicativo",
 
       image: "/logo.png",
+    },
+    form: {
+      title: "Solicite um orçamento",
+
+      subtitle: "Preencha o formulário e receba uma proposta personalizada.",
+
+      button: "Enviar para WhatsApp",
+
+      whatsappMessage:
+        "Olá! Gostaria de um orçamento para um aplicativo mobile.",
+
+      servicos: [
+        "Aplicativo Mobile Simples",
+        "Aplicativo mobile Profissional",
+        "Loja Virtual Oferta Especial",
+      ],
+
+      orcamentos: ["Até R$ 2.997", "R$ 2.997 a R$ 4.997", "Acima de R$ 4.997"],
     },
 
     pains: {
@@ -1774,9 +2083,9 @@ export const services: Record<string, Service> = {
 
           condicaoPagamento: "A partir de",
 
-          preco: "R$ 4.997",
+          preco: "R$ 2.997",
 
-          parcela: "12x de R$ 416,42",
+          parcela: "Parcele em até 6x",
 
           descricao:
             "Ideal para empresas que desejam lançar seu primeiro aplicativo.",
@@ -1797,9 +2106,9 @@ export const services: Record<string, Service> = {
 
           condicaoPagamento: "A partir de",
 
-          preco: "R$ 9.997",
+          preco: "R$ 4.997",
 
-          parcela: "12x de R$ 833,08",
+          parcela: "Parcele em até 6x",
 
           destaque: true,
 
@@ -1822,11 +2131,11 @@ export const services: Record<string, Service> = {
         {
           titulo: "Projeto Personalizado",
 
-          condicaoPagamento: "Sob consulta",
+          condicaoPagamento: "Seu projeto desenvolvido",
 
-          preco: "Orçamento",
+          preco: "Sob Medida",
 
-          parcela: "Conforme escopo",
+          parcela: "Valores a combinar",
 
           promocao: true,
 
@@ -2025,7 +2334,20 @@ export const services: Record<string, Service> = {
 
       image: "/logo.png",
     },
+    form: {
+      title: "Solicite um orçamento",
 
+      subtitle: "Preencha o formulário e receba uma proposta personalizada.",
+
+      button: "Enviar para WhatsApp",
+
+      whatsappMessage:
+        "Olá! Gostaria de um orçamento para um sistema web personalizado.",
+
+      servicos: ["Sistema Web Básico", "Sistema Web Empresarial"],
+
+      orcamentos: ["A partir R$ 4.497", "Valor sob medida"],
+    },
     pains: {
       title: "Sua empresa enfrenta algum destes problemas?",
 
@@ -2360,6 +2682,19 @@ export const services: Record<string, Service> = {
       ctaBtn: "Solicitar análise gratuita",
 
       image: "/logo.png",
+    },
+    form: {
+      title: "Solicite um orçamento",
+
+      subtitle: "Preencha o formulário e receba uma proposta personalizada.",
+
+      button: "Enviar para WhatsApp",
+
+      whatsappMessage: "Olá! Gostaria de fazer uma menutenção no meu site.",
+
+      servicos: ["Manutenção em site", "Manutenção em sistema"],
+
+      orcamentos: ["Orçamento sob medida"],
     },
 
     pains: {
@@ -2707,7 +3042,27 @@ export const services: Record<string, Service> = {
 
       image: "/logo.png",
     },
+    form: {
+      title: "Solicite um orçamento",
 
+      subtitle: "Preencha o formulário e receba uma proposta personalizada.",
+
+      button: "Enviar para WhatsApp",
+
+      whatsappMessage: "Olá! Gostaria de um orçamento para uma loja virtual.",
+
+      servicos: [
+        "Loja Virtual Profissional",
+        "Loja Virtual Premium",
+        "Loja Virtual Oferta Especial",
+      ],
+
+      orcamentos: [
+        "A partir de R$120",
+        "A partir de R$180",
+        "A definir de acordo com a quantidade",
+      ],
+    },
     pains: {
       title: "Seu equipamento apresenta algum destes problemas?",
 

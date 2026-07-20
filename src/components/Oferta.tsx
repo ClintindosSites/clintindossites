@@ -23,29 +23,35 @@ export default function Oferta() {
             uppercase tracking-wider
           "
           >
-            Oferta Limitada
+            OFERTA LIMITADA ATÉ O DIA 31/07
           </span>
 
           {/* TÍTULO */}
-          <h2 className="text-metal text-3xl md:text-4xl max-w-3xl">
-            Condições Especiais para Profissionais da construção
+          <h2 className="text-metal text-3xl md:text-4xl max-w-3xl mb-[20px]">
+            Está precisando de um site profissional sob medida?
           </h2>
 
           {/* SUBTÍTULO */}
-          <p className="text-zinc-400 max-w-2xl">
-            Criação de sites e landing pages profissionais com foco em
-            conversão, performance e presença digital para construtores,
-            vidraceiros, serralheiros, pintores e etc.
+          <p className="text-zinc-400 max-w-2xl mb-[10px]">
+            O Clintin dos Sites desenvolve sites profissionais com páginas
+            rápidas, responsivas e com layout moderno e exclusivo com foco em
+            resultados e está com uma promoção de Site Institucional por apenas
+            R$997 para pagamentos à vista valendo até dia 31/07/2026.
           </p>
 
           {/* ALERTA */}
-          <p className="uppercase text-sm text-zinc-300 tracking-wide">
-            Vagas limitadas para manter a qualidade e o suporte personalizado.
+          <p className="uppercase text-sm text-zinc-300 tracking-wide mb-[20px]">
+            Quer aproveitar a promoção de site profissional por apenas R$997?
+            <br />
+            Clique em saiba mais para mais informações
           </p>
 
           {/* BOTÃO */}
-          <Link href="/sitesparaconstrutores" className="cta-button mt-2">
-            Ver Oferta Completa
+          <Link
+            href="/servicos/criacao-de-sites#checkout"
+            className="cta-button mt-2"
+          >
+            Saiba mais
           </Link>
         </div>
       </div>

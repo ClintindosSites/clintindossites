@@ -1,12 +1,8 @@
 import { notFound } from "next/navigation";
 import { services } from "@/data/services";
 
-import AudienceServicos from "./components/AudienceServicos";
-import BenefitsServicos from "./components/BenefitsServicos";
-
 import HeroServicos from "./components/HeroServicos";
 import PortfolioServicos from "./components/PortfolioServicos";
-import TechnologiesServicos from "./components/TechnologiesServicos";
 
 import PricingServicos from "./components/PricingServicos";
 import QuebraObjecoes from "./components/QuebraObjecoes";
@@ -54,9 +50,7 @@ export default async function ServicePage({ params }: PageProps) {
   return (
     <>
       <HeroServicos service={service} />
-      <AudienceServicos service={service} />
-      <BenefitsServicos service={service} />
-      <TechnologiesServicos service={service} />
+
       <PortfolioServicos service={service} />
 
       <PricingServicos service={service} />

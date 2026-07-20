@@ -18,8 +18,8 @@ export default function Footer() {
             </p>
 
             <span className="global-badge">
-              📍 Localizado em Belo Horizonte, mas o atendimento acontece para o
-              Brasil inteiroe também para o exterior. 🌎
+              Atendimento online no Brasil inteiro e atendimento presencial na
+              Grande BH
             </span>
           </div>
           <div>

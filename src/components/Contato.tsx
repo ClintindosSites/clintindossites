@@ -1,16 +1,58 @@
 "use client";
+import { FormSection } from "@/types/service";
+import CtaButton from "@/components/CTAButton";
+import HeroForm from "@/components/HeroForm";
 
-import HeroForm from "./HeroForm";
+const contatoForm: FormSection = {
+  title: "Solicite um orçamento",
 
-export default function Contato() {
+  subtitle:
+    "Preencha o formulário e receba um orçamento personalizado pelo WhatsApp.",
+
+  button: "Enviar para WhatsApp",
+
+  whatsappMessage: "📩 *Novo orçamento pelo site*",
+
+  servicos: [
+    "Criação de Sites",
+    "Landing Page",
+    "Loja Virtual",
+    "Aplicativo Mobile",
+    "Sistema Web Personalizado",
+  ],
+
+  orcamentos: [
+    "Até R$ 1.000",
+    "R$ 1.000 a R$ 3.000",
+    "R$ 3.000 a R$ 5.000",
+    "Acima de R$ 5.000",
+  ],
+};
+export default function HeroContato() {
   return (
-    <div className="flex flex-col items-center gap-[2rem] py-[2rem]">
-      <div className="flex flex-col gap-[10px] text-center">
-        <h2>Vamos tirar seu projeto do papel?</h2>
-        <p>Preencha o formulário abaixo e receba um orçamento pelo Whatsapp</p>
-      </div>
+    <section className="max-w-[1200px] mx-auto p-10">
+      <div className="hero flex-col gap-8 justify-center items-center text-center">
+        <div className="heroText flex flex-col gap-8 flex-1">
+          <h1 className="text-4xl font-title">
+            Desenvolvo soluções digitais completas para seu problema digital
+          </h1>
 
-      <HeroForm />
-    </div>
+          <p className="text-lg text-gray-300">
+            Precisando de um programador experiente para desenvolver um projeto
+            web ou mobile? Clique enviar mensagem no WhatsApp ou envia uma
+            mensagem pelo formulário de contato.
+          </p>
+
+          <CtaButton href="https://wa.me/5531984362710?text=Quero%20realizar%20um%20orçamento">
+            Orçamento no Whatsapp
+            <span className="icon icon-whatsapp whatsapp-track" />
+          </CtaButton>
+        </div>
+
+        <div className="flex-1 justify-center items-center mx-auto">
+          <HeroForm form={contatoForm} />
+        </div>
+      </div>
+    </section>
   );
 }

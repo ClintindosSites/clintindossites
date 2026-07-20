@@ -82,38 +82,12 @@ export default function PortfolioServicos({ service }: PortfolioServicosProps) {
           group-hover:-translate-y-[55%]
         "
             />
-
-            <div
-              className="
-          absolute inset-0
-          bg-[linear-gradient(to_top,rgba(11,11,15,0.95),rgba(11,11,15,0.2))]
-          flex flex-col items-center justify-end
-          pb-5
-          gap-[1rem]
-          opacity-0
-          transition
-          duration-300
-          group-hover:opacity-100
-          
-        "
-            >
-              <h4 className="font-bold text-lg text-[30px] ">{item.titulo}</h4>
-
-              <span className="mt-2 text-[#fff] cursor-pointer text-sm text-purple-300 text-[30px]">
-                Ver projeto →
-              </span>
-            </div>
           </button>
         ))}
       </div>
       <a href="/portfolio" className="cta-button mx-auto">
         Ver portfolio completo
       </a>
-      <PortfolioModal
-        open={!!selected}
-        item={selected}
-        onClose={() => setSelected(null)}
-      />
     </section>
   );
 }

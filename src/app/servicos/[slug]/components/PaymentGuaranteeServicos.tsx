@@ -15,7 +15,7 @@ import Image from "next/image";
 export default function PaymentGuaranteeServicos() {
   return (
     <section className="max-w-[1200px] mx-auto py-24 px-6">
-      <div className="text-center mb-14">
+      <div className="text-center mb-14 flex flex-col gap-[1rem] mb-[1.5rem]">
         <h2 className="text-metal text-4xl md:text-5xl font-extrabold">
           Pagamento Facilitado e Desenvolvimento Profissional
         </h2>

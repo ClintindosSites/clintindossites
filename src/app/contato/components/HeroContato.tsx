@@ -1,8 +1,33 @@
 "use client";
-
+import { FormSection } from "@/types/service";
 import CtaButton from "@/components/CTAButton";
 import HeroForm from "@/components/HeroForm";
 
+const contatoForm: FormSection = {
+  title: "Solicite um orçamento",
+
+  subtitle:
+    "Preencha o formulário e receba um orçamento personalizado pelo WhatsApp.",
+
+  button: "Enviar para WhatsApp",
+
+  whatsappMessage: "📩 *Novo orçamento pelo site*",
+
+  servicos: [
+    "Criação de Sites",
+    "Landing Page",
+    "Loja Virtual",
+    "Aplicativo Mobile",
+    "Sistema Web Personalizado",
+  ],
+
+  orcamentos: [
+    "Até R$ 1.000",
+    "R$ 1.000 a R$ 3.000",
+    "R$ 3.000 a R$ 5.000",
+    "Acima de R$ 5.000",
+  ],
+};
 export default function HeroContato() {
   return (
     <section className="max-w-[1200px] mx-auto p-10">
@@ -24,7 +49,7 @@ export default function HeroContato() {
         </div>
 
         <div className="flex-1 justify-center items-center mx-auto">
-          <HeroForm />
+          <HeroForm form={contatoForm} />
         </div>
       </div>
     </section>

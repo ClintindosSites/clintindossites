@@ -18,7 +18,7 @@ export default function FinalCtaServicos({ service }: Props) {
   )}`;
 
   return (
-    <section className="py-28 px-6 ctafinal">
+    <section className="py-28 px-6 ctafinal" id="promo-cta">
       <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-[3rem] flex flex-col items-center">
         {/* Texto */}
 
@@ -42,9 +42,9 @@ export default function FinalCtaServicos({ service }: Props) {
         "
         >
           <div className="gap-[1rem] flex flex-col">
-            <div className="title">
+            <div className="title flex flex-col gap-[1rem]">
               {" "}
-              <span className="text-purple-400 font-semibold">{cta.badge}</span>
+              <span className="">{cta.badge}</span>
               <h2 className="text-metal text-4xl md:text-5xl font-extrabold mt-4">
                 {cta.title}
               </h2>
@@ -52,7 +52,7 @@ export default function FinalCtaServicos({ service }: Props) {
                 {cta.subtitle}
               </p>
             </div>
-            <div className="flex gap-[1rem] justify-between items-center text-left">
+            <div className="flex gap-[1rem] justify-between items-center text-left flex-auto flex-col">
               <div className="mt-10 space-y-4">
                 {cta.benefits.map((benefit, index) => (
                   <div
