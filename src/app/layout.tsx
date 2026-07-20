@@ -97,7 +97,9 @@ export default function RootLayout({
           crossOrigin="anonymous"
           strategy="afterInteractive"
         />
+      </head>
 
+      <body className={`${inter.variable} ${poppins.variable}`}>
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-3P5VRB3EH9"
@@ -113,7 +115,6 @@ export default function RootLayout({
         gtag('config', 'AW-17677408224'); 
       `}
         </Script>
-
         {/* Meta Pixel */}
         <Script id="meta-pixel" strategy="afterInteractive">
           {`
@@ -154,8 +155,6 @@ export default function RootLayout({
             src="https://www.facebook.com/tr?id=886826747308036&ev=PageView&noscript=1"
           />
         </noscript>
-      </head>
-      <body className={`${inter.variable} ${poppins.variable}`}>
         <TrackingButtons />
         <Header />
         <script
