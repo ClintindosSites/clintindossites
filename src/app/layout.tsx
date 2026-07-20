@@ -146,15 +146,7 @@ export default function RootLayout({
     fbq('track', 'PageView');
   `}
         </Script>
-        <noscript>
-          <Image
-            height={1}
-            width={1}
-            alt="Meta Pixel"
-            style={{ display: "none" }}
-            src="https://www.facebook.com/tr?id=886826747308036&ev=PageView&noscript=1"
-          />
-        </noscript>
+
         <TrackingButtons />
         <Header />
         <script
