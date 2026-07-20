@@ -1,6 +1,6 @@
 "use client";
 
-import { reportConversion } from "@/lib/tracking";
+import { reportConversion, trackEvent } from "@/lib/tracking";
 import { useState } from "react";
 import { FormSection } from "@/types/service";
 
@@ -31,29 +31,21 @@ export default function HeroForm({ form }: HeroFormProps) {
     const texto = `
 ${form.whatsappMessage}
 
- *Nome:* ${dados.nome}
- *Serviço:* ${dados.servico}
- *Orçamento:* ${dados.orcamento}
- *Cidade:* ${dados.endereco}
- *Projeto:* ${dados.mensagem}
+👤 Nome: ${dados.nome}
+💼 Serviço: ${dados.servico}
+💰 Orçamento: ${dados.orcamento}
+📍 Cidade: ${dados.endereco}
+📝 Projeto: ${dados.mensagem}
 `.trim();
 
     const url = `https://wa.me/5531984362710?text=${encodeURIComponent(texto)}`;
 
-    // GOOGLE ADS
-    window.gtag?.("event", "conversion", {
-      send_to: "AW-17677408224/8Zy7CLmXj5ocEOCvn-1B",
-      value: 1.0,
-      currency: "BRL",
+    reportConversion({
+      url,
+      service: dados.servico,
+      origin: "Hero Form",
+      value: 1,
     });
-
-    // META PIXEL
-    window.fbq?.("track", "Lead");
-
-    // Delay para garantir tracking antes de abrir whatsapp
-    setTimeout(() => {
-      window.open(url, "_blank");
-    }, 300);
   }
 
   return (
@@ -65,6 +57,11 @@ ${form.whatsappMessage}
         <label>Nome</label>
         <input
           name="nome"
+          onFocus={() =>
+            trackEvent("StartForm", {
+              origin: "Hero Form",
+            })
+          }
           value={dados.nome}
           required
           placeholder="Seu nome"
@@ -76,10 +73,16 @@ ${form.whatsappMessage}
         <label>Serviço desejado</label>
         <select
           name="servico"
+          onChange={e => {
+            handleChange(e);
+
+            trackEvent("SelectService", {
+              service: e.target.value,
+            });
+          }}
           value={dados.servico}
           required
           defaultValue=""
-          onChange={handleChange}
         >
           <option value="" disabled>
             Selecione
@@ -131,7 +134,7 @@ ${form.whatsappMessage}
         />
       </div>
 
-      <button type="submit" className="" onClick={() => reportConversion()}>
+      <button type="submit" className="cta-button">
         {form.button}
       </button>
     </form>

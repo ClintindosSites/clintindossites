@@ -1,11 +1,38 @@
 "use client";
 
-import { reportConversion } from "@/lib/tracking";
+import { useEffect, useRef } from "react";
+import { reportConversion, trackEvent } from "@/lib/tracking";
 import Link from "next/link";
 
 export default function Hero() {
+  const heroRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const element = heroRef.current;
+
+    if (!element) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          trackEvent("ViewHero", {
+            page: "Home",
+          });
+
+          observer.disconnect();
+        }
+      },
+      {
+        threshold: 0.5,
+      }
+    );
+
+    observer.observe(element);
+
+    return () => observer.disconnect();
+  }, []);
   return (
-    <section className="max-w-[1200px] mx-auto p-10">
+    <section ref={heroRef} className="max-w-[1200px] mx-auto p-10">
       <div className="hero flex gap-8 justify-center items-center">
         <div className="heroText flex flex-col gap-8 flex-1">
           <h1 className="text-4xl font-title">
@@ -29,7 +56,16 @@ export default function Hero() {
             className="cta-button whatsapp-track"
             id="orcamento-wpp"
             target="_blank"
-            onClick={() => reportConversion()}
+            onClick={e => {
+              e.preventDefault();
+
+              reportConversion({
+                url: "https://wa.me/5531984362710?text=Olá,%20tenho%20interesse%20em%20adquirir%20um%20website.%20Pode%20me%20explicar%20como%20funciona?",
+                service: "Home",
+                origin: "Hero Home",
+                value: 1,
+              });
+            }}
           >
             Enviar projeto direto para o desenvolvedor
           </Link>

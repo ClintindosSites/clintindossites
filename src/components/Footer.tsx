@@ -56,7 +56,15 @@ export default function Footer() {
             <div className="social-icons">
               <a
                 href="https://wa.me/5531984362710"
-                onClick={() => reportConversion()}
+                onClick={e => {
+                  e.preventDefault();
+
+                  reportConversion({
+                    url: "https://wa.me/5531984362710",
+                    service: "Footer",
+                    origin: "Footer WhatsApp",
+                  });
+                }}
               >
                 <span></span>
               </a>
