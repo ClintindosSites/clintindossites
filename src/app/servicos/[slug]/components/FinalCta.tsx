@@ -116,6 +116,7 @@ export default function FinalCtaServicos({ service }: Props) {
           <div className="absolute -top-24 -right-24 w-56 h-56 bg-purple-600/20 blur-[120px]" />
 
           <a
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className="cta-button mt-10 w-full block text-center mx-auto"

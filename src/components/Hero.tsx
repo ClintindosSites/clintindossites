@@ -52,7 +52,7 @@ export default function Hero() {
             <span>✔ Suporte direto com o desenvolvedor</span>
           </div>
           <Link
-            href="https://wa.me/5531984362710?text=Olá,%20tenho%20interesse%20em%20adquirir%20um%20website.%20Pode%20me%20explicar%20como%20funciona?"
+            href="#"
             className="cta-button whatsapp-track"
             id="orcamento-wpp"
             target="_blank"

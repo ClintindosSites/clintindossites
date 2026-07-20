@@ -68,6 +68,8 @@ export default function TechnologiesServicos({ service }: TechnologiesProps) {
         </div>
         <a
           href="#"
+          target="_blank"
+          rel="noopener noreferrer"
           className="cta-button mx-auto"
           onClick={e => {
             e.preventDefault();

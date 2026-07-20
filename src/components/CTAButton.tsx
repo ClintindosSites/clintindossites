@@ -20,7 +20,7 @@ export default function CTAButton({
 }: Props) {
   return (
     <Link
-      href={href}
+      href="#"
       target="_blank"
       rel="noopener noreferrer"
       className="cta-button whatsapp-track m-auto"

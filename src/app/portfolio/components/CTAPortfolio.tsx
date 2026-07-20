@@ -14,7 +14,7 @@ export default function PortfolioForm() {
   function handleChange(
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >,
+    >
   ) {
     setForm({ ...form, [e.target.name]: e.target.value });
   }
@@ -23,12 +23,12 @@ export default function PortfolioForm() {
     e.preventDefault();
 
     const texto = `
-📩 *Novo orçamento - Site*
-👤 *Nome:* ${form.nome}
-💼 *Serviço:* ${form.servico}
-💰 *Orçamento:* ${form.orcamento}
-📍 *Cidade:* ${form.endereco}
-📝 *Projeto:* ${form.mensagem}
+ *Novo orçamento - Site*
+ *Nome:* ${form.nome}
+ *Serviço:* ${form.servico}
+ *Orçamento:* ${form.orcamento}
+ *Cidade:* ${form.endereco}
+ *Projeto:* ${form.mensagem}
 `.trim();
 
     const url = `https://wa.me/5538991369873?text=${encodeURIComponent(texto)}`;

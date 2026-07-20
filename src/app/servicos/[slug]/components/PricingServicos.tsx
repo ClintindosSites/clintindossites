@@ -114,8 +114,9 @@ export default function PricingServicos({ service }: PricingProps) {
 
                 <div className="mt-auto flex flex-col gap-3">
                   <a
-                    href={whatsapp}
+                    href="#"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="cta-button text-center"
                     onClick={e => {
                       e.preventDefault();

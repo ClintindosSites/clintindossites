@@ -109,8 +109,9 @@ export default function PortfolioModal({
         )}
 
         <a
-          href={whatsapp}
+          href="#"
           target="_blank"
+          rel="noopener noreferrer"
           className="cta-button"
           onClick={e => {
             e.preventDefault();

@@ -13,7 +13,7 @@ export default function HeroPortfolio() {
           desenvolvidas com estratégia e dedicação
         </p>
         <Link
-          href="https://wa.me/5538991369873"
+          href="https://wa.me/5531984362710"
           target="blank"
           className="cta-button whatsapp-track"
         >
