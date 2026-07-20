@@ -20,10 +20,15 @@ export const reportConversion = ({
   origin,
   plan,
   value = 1,
-}: TrackingParams) => {
+  newTab = true,
+}: TrackingParams & { newTab?: boolean }) => {
   const callback = () => {
-    if (url) {
+    if (!url) return;
+
+    if (newTab) {
       window.open(url, "_blank", "noopener,noreferrer");
+    } else {
+      window.location.href = url;
     }
   };
 
