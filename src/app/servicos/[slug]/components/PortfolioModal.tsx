@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import { reportConversion } from "@/lib/tracking";
 import Image from "next/image";
 
@@ -18,6 +19,18 @@ export default function PortfolioModal({
   onClose,
   item,
 }: PortfolioModalProps) {
+  useEffect(() => {
+    if (!open || !item) return;
+
+    window.fbq?.("trackCustom", "ViewPortfolio", {
+      project: item.titulo,
+    });
+
+    window.dataLayer?.push({
+      event: "view_portfolio",
+      project: item.titulo,
+    });
+  }, [open, item]);
   if (!open || !item) return null;
 
   const whatsapp =
@@ -79,11 +92,17 @@ export default function PortfolioModal({
           <a
             href={item.link}
             target="_blank"
-            className="
-            px-6 py-3 rounded-full
-            border border-white/20
-            hover:border-white
-            "
+            rel="noopener noreferrer"
+            onClick={() => {
+              window.fbq?.("trackCustom", "VisitPortfolio", {
+                project: item.titulo,
+              });
+
+              window.dataLayer?.push({
+                event: "visit_portfolio",
+                project: item.titulo,
+              });
+            }}
           >
             🌐 Visitar Projeto
           </a>
@@ -93,13 +112,28 @@ export default function PortfolioModal({
           href={whatsapp}
           target="_blank"
           className="cta-button"
-          onClick={() => reportConversion()}
+          onClick={e => {
+            e.preventDefault();
+
+            reportConversion({
+              url: whatsapp,
+              origin: "Portfolio Modal",
+              service: item.titulo,
+              value: 1,
+            });
+          }}
         >
           💬 Solicitar Orçamento
         </a>
 
         <button
-          onClick={onClose}
+          onClick={() => {
+            window.dataLayer?.push({
+              event: "close_portfolio",
+            });
+
+            onClose();
+          }}
           className="
           px-6 py-3 rounded-full
           border border-white/20

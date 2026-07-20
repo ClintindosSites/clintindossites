@@ -99,6 +99,7 @@ h4,
   font-size: 1rem;
   text-decoration: none;
   color: #fff;
+  cursor: pointer;
 }
 .site-header {
   align-items: center;

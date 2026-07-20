@@ -1,7 +1,8 @@
 "use client";
 
-import { reportConversion } from "@/lib/tracking";
 import { Service } from "@/types/service";
+import { reportConversion, trackEvent } from "@/lib/tracking";
+import { useEffect, useRef } from "react";
 
 import Image from "next/image";
 
@@ -11,12 +12,39 @@ interface TechnologiesProps {
 
 export default function TechnologiesServicos({ service }: TechnologiesProps) {
   const whatsappMessage = encodeURIComponent(
-    `Olá! Acabei de visitar a página de ${service.technologies} no site da Clintin dos Sites e gostaria de receber um orçamento sem compromisso.`
+    `Olá! Acabei de visitar a página de ${service.slug} e gostaria de receber um orçamento sem compromisso.`
   );
   const tecnologias = service.technologies?.items ?? [];
 
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const element = sectionRef.current;
+
+    if (!element) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          trackEvent("ViewTechnologies", {
+            service: service.slug,
+          });
+
+          observer.disconnect();
+        }
+      },
+      {
+        threshold: 0.4,
+      }
+    );
+
+    observer.observe(element);
+
+    return () => observer.disconnect();
+  }, [service.slug]);
+
   return (
-    <section className="technologies">
+    <section ref={sectionRef} className="technologies">
       <div className="container flex flex-col gap-[30px]">
         <div className="flex flex-col gap-[10px] text-center">
           {" "}
@@ -39,11 +67,18 @@ export default function TechnologiesServicos({ service }: TechnologiesProps) {
           ))}
         </div>
         <a
-          href={`https://wa.me/5531984362710?text=${whatsappMessage}`}
-          target="_blank"
-          rel="noopener noreferrer"
+          href="#"
           className="cta-button mx-auto"
-          onClick={() => reportConversion()}
+          onClick={e => {
+            e.preventDefault();
+
+            reportConversion({
+              url: `https://wa.me/5531984362710?text=${whatsappMessage}`,
+              service: service.slug,
+              origin: "Technologies CTA",
+              value: 1,
+            });
+          }}
         >
           {service.technologies?.ctaButton}
         </a>

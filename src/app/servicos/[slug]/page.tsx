@@ -10,6 +10,7 @@ import PaymentGuaranteeServicos from "./components/PaymentGuaranteeServicos";
 import ResultsServicos from "./components/ResultServicos";
 import ClientsServicos from "./components/ClientsServicos";
 import FinalCtaServicos from "./components/FinalCta";
+import ServiceTracker from "@/components/ServiceTracker";
 
 interface PageProps {
   params: Promise<{
@@ -49,6 +50,7 @@ export default async function ServicePage({ params }: PageProps) {
 
   return (
     <>
+      <ServiceTracker slug={slug} />
       <HeroServicos service={service} />
 
       <PortfolioServicos service={service} />

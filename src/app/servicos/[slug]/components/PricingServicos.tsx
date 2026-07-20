@@ -2,6 +2,8 @@
 
 import { reportConversion } from "@/lib/tracking";
 import { Service } from "@/types/service";
+import { useEffect, useRef } from "react";
+import { trackEvent } from "@/lib/tracking";
 
 interface PricingProps {
   service: Service;
@@ -9,10 +11,36 @@ interface PricingProps {
 
 export default function PricingServicos({ service }: PricingProps) {
   const plans = service.pricing?.cards ?? [];
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const element = sectionRef.current;
+
+    if (!element) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          trackEvent("ViewPricing", {
+            service: service.slug,
+          });
+
+          observer.disconnect();
+        }
+      },
+      {
+        threshold: 0.4,
+      }
+    );
+
+    observer.observe(element);
+
+    return () => observer.disconnect();
+  }, [service.slug]);
 
   if (plans.length === 0) return null;
   return (
-    <section className="py-24" id="checkout">
+    <section ref={sectionRef} className="py-24" id="checkout">
       <div className="max-w-[1200px] mx-auto px-6 gap-[30px] flex flex-col">
         <div className="flex flex-col gap-[10px] text-center">
           {" "}
@@ -32,6 +60,12 @@ export default function PricingServicos({ service }: PricingProps) {
 
             return (
               <div
+                onClick={() =>
+                  trackEvent("SelectPlan", {
+                    service: service.slug,
+                    plan: plan.titulo,
+                  })
+                }
                 id="checkout-item"
                 key={index}
                 className={`
@@ -83,7 +117,16 @@ export default function PricingServicos({ service }: PricingProps) {
                     href={whatsapp}
                     target="_blank"
                     className="cta-button text-center"
-                    onClick={() => reportConversion()}
+                    onClick={e => {
+                      e.preventDefault();
+
+                      reportConversion({
+                        url: whatsapp,
+                        service: service.slug,
+                        origin: `Pricing - ${plan.titulo}`,
+                        value: 1,
+                      });
+                    }}
                   >
                     {plan.ctaBtn}
                   </a>

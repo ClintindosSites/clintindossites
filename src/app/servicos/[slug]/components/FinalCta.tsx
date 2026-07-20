@@ -116,11 +116,19 @@ export default function FinalCtaServicos({ service }: Props) {
           <div className="absolute -top-24 -right-24 w-56 h-56 bg-purple-600/20 blur-[120px]" />
 
           <a
-            href={whatsapp}
             target="_blank"
             rel="noopener noreferrer"
             className="cta-button mt-10 w-full block text-center mx-auto"
-            onClick={() => reportConversion()}
+            onClick={e => {
+              e.preventDefault();
+
+              reportConversion({
+                url: whatsapp,
+                service: service.slug,
+                origin: "Final CTA",
+                value: 1,
+              });
+            }}
           >
             {cta.cta}
           </a>

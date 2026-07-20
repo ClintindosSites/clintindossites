@@ -115,7 +115,6 @@ export default function RootLayout({
         </Script>
 
         {/* Meta Pixel */}
-        {/* Meta Pixel */}
         <Script id="meta-pixel" strategy="afterInteractive">
           {`
     !function(f,b,e,v,n,t,s)
@@ -142,26 +141,17 @@ export default function RootLayout({
       'https://connect.facebook.net/en_US/fbevents.js'
     );
 
-    fbq('init', '1253175769645630');
-    fbq('init', '1819571058719593');
-
+    fbq('init', '886826747308036');
     fbq('track', 'PageView');
   `}
         </Script>
         <noscript>
           <Image
-            alt="meta pixel 1"
-            height="1"
-            width="1"
+            height={1}
+            width={1}
+            alt="Meta Pixel"
             style={{ display: "none" }}
-            src="https://www.facebook.com/tr?id=1253175769645630&ev=PageView&noscript=1"
-          />
-          <Image
-            alt="meta pixel 2"
-            height="1"
-            width="1"
-            style={{ display: "none" }}
-            src="https://www.facebook.com/tr?id=1819571058719593&ev=PageView&noscript=1"
+            src="https://www.facebook.com/tr?id=886826747308036&ev=PageView&noscript=1"
           />
         </noscript>
       </head>

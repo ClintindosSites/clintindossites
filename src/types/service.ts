@@ -24,6 +24,13 @@ export interface HeroSection {
   image: string;
   ctaBtn: string;
 }
+export interface TrackingParams {
+  url?: string;
+  service?: string;
+  origin?: string;
+  plan?: string;
+  value?: number;
+}
 
 export interface FormSection {
   title: string;

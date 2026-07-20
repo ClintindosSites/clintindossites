@@ -1,7 +1,6 @@
 "use client";
 
 import HeroForm from "@/components/HeroForm";
-import { reportConversion } from "@/lib/tracking";
 import { Service } from "@/types/service";
 
 interface HeroServicosProps {
@@ -20,7 +19,18 @@ export default function HeroServicos({ service }: HeroServicosProps) {
           <a
             href="#checkout"
             className="cta-button"
-            onClick={() => reportConversion()}
+            onClick={() => {
+              window.fbq?.("trackCustom", "ScrollToCheckout", {
+                service: service.slug,
+                origin: "Hero",
+              });
+
+              window.dataLayer?.push({
+                event: "scroll_to_checkout",
+                service: service.slug,
+                origin: "Hero",
+              });
+            }}
           >
             {service.hero.ctaBtn}
           </a>
