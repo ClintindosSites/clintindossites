@@ -39,8 +39,8 @@ export default function Faq() {
 
   return (
     <section id="faq" className="py-24 px-5">
-      <div className="max-w-[900px] mx-auto flex flex-col gap-[20px]">
-        <h2 className="text-metal text-3xl md:text-4xl text-center">
+      <div className="max-w-225 mx-auto flex flex-col gap-5">
+        <h2 className="title-purple text-metal text-3xl md:text-4xl text-center">
           Perguntas Frequentes
         </h2>
 
@@ -48,7 +48,7 @@ export default function Faq() {
           Tire suas dúvidas antes de entrar em contato
         </p>
 
-        <div className="space-y-4 flex flex-col gap-[20px]">
+        <div className="space-y-4 flex flex-col gap-5">
           {faqs.map((faq, index) => {
             const isOpen = activeIndex === index;
 
@@ -63,7 +63,7 @@ export default function Faq() {
                 <button
                   onClick={() => toggle(index)}
                   className="faq-question w-full flex justify-between items-center
-                  text-left p-[20px] text-white"
+                  text-left p-5 text-white"
                 >
                   {faq.question}
 
@@ -84,7 +84,7 @@ export default function Faq() {
                   }`}
                 >
                   <div className=" overflow-hidden">
-                    <p className="p-[20px] pt-0 text-sm text-zinc-300 leading-relaxed">
+                    <p className="p-5 pt-0 text-sm text-zinc-300 leading-relaxed">
                       {faq.answer}
                     </p>
                   </div>

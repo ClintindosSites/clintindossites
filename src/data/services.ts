@@ -1,7 +1,7 @@
 import { Service } from "@/types/service";
 
 export const services: Record<string, Service> = {
-  "criacao-de-sites": {
+  "desenvolvimento-de-sites": {
     slug: "criacao-de-sites",
 
     seo: {
@@ -19,6 +19,7 @@ export const services: Record<string, Service> = {
         "programador web",
         "site para empresas",
         "desenvolvimento web",
+        "desenvolvedor de sites",
         "quanto custa um site",
         "quanto custa para fazer um site",
         "criação de site preço",
@@ -825,7 +826,7 @@ export const services: Record<string, Service> = {
       urgency: "Vagas limitadas para início imediato.",
     },
   },
-  "criacao-landing-page": {
+  "desenvolvimento-landing-page": {
     slug: "criacao-de-landing-page",
 
     seo: {
@@ -1444,7 +1445,7 @@ export const services: Record<string, Service> = {
       urgency: "Agenda limitada para novos projetos neste mês.",
     },
   },
-  "criacao-loja-virtual": {
+  "desenvolvimento-loja-virtual": {
     slug: "criacao-de-loja-virtual",
 
     seo: {

@@ -4,8 +4,8 @@ import Link from "next/link";
 export default function Reviews() {
   return (
     <section id="avaliacoes" className="avaliacoes py-24 px-5">
-      <div className="max-w-[1200px] mx-auto text-center flex flex-col gap-7">
-        <h2 className="text-metal text-3xl md:text-4xl">
+      <div className="max-w-300 mx-auto text-center flex flex-col gap-7">
+        <h2 className="title-purple text-metal text-3xl md:text-4xl">
           Avaliações no Google
         </h2>
 
@@ -14,7 +14,7 @@ export default function Reviews() {
         </p>
 
         {/* GRID */}
-        <div className="container flex gap-[30px] my-[60px] grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="container flex gap-7.5 my-15 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {/* CARD */}
           <ReviewCard
             image="/assets/images/logo-bn-esquadrias-2.jpeg"
@@ -79,8 +79,8 @@ export default function Reviews() {
 /* CARD COMPONENT */
 function ReviewCard({ image, name, time, text }: any) {
   return (
-    <div className="bg-[#0b0b0f] rounded-[18px] p-[15px] border border-[#7f3dff40] text-left max-w-[380px]">
-      <div className="flex items-center gap-3 mb-[10px]">
+    <div className="bg-[#0b0b0f] rounded-[18px] p-3.75 border border-[#7f3dff40] text-left max-w-95">
+      <div className="flex items-center gap-3 mb-2.5">
         <Image
           src={image}
           alt={name}
@@ -95,7 +95,7 @@ function ReviewCard({ image, name, time, text }: any) {
         </div>
       </div>
 
-      <div className="text-[#fbbc04] text-[16px] my-[8px] mb-[12px]">★★★★★</div>
+      <div className="text-[#fbbc04] text-[16px] my-2 mb-3">★★★★★</div>
 
       <p className="text-[14px] text-[#d0d0d0] leading-[1.6]">{text}</p>
     </div>

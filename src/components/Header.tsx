@@ -30,14 +30,8 @@ export default function Header() {
             <Link href="/" onClick={closeMenu}>
               Home
             </Link>
-            <Link href="/servicos/criacao-de-sites" onClick={closeMenu}>
-              Criação de Sites
-            </Link>
-            <Link href="/servicos/criacao-landing-page" onClick={closeMenu}>
-              Criação de Landing Page
-            </Link>
-            <Link href="/servicos/criacao-loja-virtual" onClick={closeMenu}>
-              Criação de Loja Virtual
+            <Link href="/servicos/desenvolvimento-de-sites" onClick={closeMenu}>
+              Desenvolvimento de Sites
             </Link>
 
             <Link href="/servicos/desenvolvimento-mobile" onClick={closeMenu}>
@@ -56,6 +50,9 @@ export default function Header() {
 
             <Link href="/contato" onClick={closeMenu}>
               Contato
+            </Link>
+            <Link href={"/blog"} onClick={closeMenu}>
+              Blog
             </Link>
             {/*
           

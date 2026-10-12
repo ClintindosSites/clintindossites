@@ -6,10 +6,12 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="footer">
-      <div className="container p-[0px] ">
+      <div className="container p-0 ">
         <div className="footer-top ">
           <div className="footer-brand">
-            <h3 className="text-metal">Clintin dos Sites</h3>
+            <h3 className="title-purple text-metal title-purple">
+              Clintin dos Sites
+            </h3>
 
             <p>
               Programador Full Stack com experiência em criação de sites,
@@ -31,7 +33,7 @@ export default function Footer() {
             />
           </div>
           <div className="footer-links">
-            <h4>Links rápidos</h4>
+            <h4 className="title-purple">Links rápidos</h4>
             <Link href="/servicos/criacao-de-sites">Criação de sites</Link>
             <Link href={"/servicos/criacao-landing-page"}>Landing Page</Link>
             <Link href={"/servicos/criacao-loja-virtual"}>Loja Virtual</Link>
@@ -51,7 +53,7 @@ export default function Footer() {
           </div>
 
           <div className="footer-social">
-            <h4>Redes sociais</h4>
+            <h4 className="title-purple">Redes sociais</h4>
 
             <div className="social-icons">
               <a

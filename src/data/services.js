@@ -1,6 +1,6 @@
 export const pages = [
   {
-    slug: "criacao-de-sites",
+    slug: "desenvolvimento-de-sites",
     title: "Criação de Sites Profissionais",
     h1: "Criação de Sites Profissionais para Empresas",
     description:
@@ -28,7 +28,7 @@ export const pages = [
   },
 
   {
-    slug: "landing-page",
+    slug: "desenvolvimento-landing-page",
     title: "Criação de Landing Pages",
     h1: "Landing Pages que Geram Leads e Vendas",
     description:
@@ -42,7 +42,7 @@ export const pages = [
   },
 
   {
-    slug: "criacao-loja-virtual",
+    slug: "desenvolvimento-loja-virtual",
     title: "Criação de Loja Virtual",
     h1: "Loja Virtual Profissional para Seu Negócio",
     description:

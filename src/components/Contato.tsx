@@ -31,9 +31,9 @@ const contatoForm: FormSection = {
 export default function HeroContato() {
   return (
     <section className="hero relative mx-auto min-h-screen p-10 bg-[linear-gradient(90deg,rgba(0,0,0,0.22)_0%,rgba(0,0,0,0.78)_40%,rgba(0,0,0,0.35)_100%),linear-gradient(0deg,rgba(0,0,0,0.65)_0%,transparent_45%,rgba(0,0,0,0.2)_100%),url('/hero.webp')] bg-no-repeat bg-cover bg-center flex items-center justify-center">
-      <div className=" max-w-[1200px] flex gap-8 justify-center items-center text-center">
+      <div className=" max-w-300 flex gap-8 justify-center items-center text-center">
         <div className="heroText text-left flex flex-col gap-8 flex-1">
-          <h1 className="text-4xl font-title">
+          <h1 className="title-purple text-4xl font-title">
             Desenvolvo soluções digitais completas para seu problema digital
           </h1>
 

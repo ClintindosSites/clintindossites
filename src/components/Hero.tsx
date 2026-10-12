@@ -3,8 +3,7 @@
 import { useEffect, useRef } from "react";
 import { reportConversion, trackEvent } from "@/lib/tracking";
 import Link from "next/link";
-import HeroForm from "./HeroForm";
-import Servicos from "./Servicos";
+
 import HeroContato from "@/app/contato/page";
 
 export default function Hero() {
@@ -39,19 +38,19 @@ export default function Hero() {
       ref={heroRef}
       className="hero relative mx-auto min-h-screen p-10 bg-[linear-gradient(90deg,rgba(0,0,0,0.22)_0%,rgba(0,0,0,0.78)_40%,rgba(0,0,0,0.35)_100%),linear-gradient(0deg,rgba(0,0,0,0.65)_0%,transparent_45%,rgba(0,0,0,0.2)_100%),url('/hero.webp')] bg-no-repeat bg-cover bg-center flex items-center justify-center"
     >
-      <div className="container max-w-[1200px] flex gap-8 justify-center items-center">
+      <div className="container max-w-300 flex gap-8 justify-center items-center">
         <div className="heroText flex flex-col text-left gap-8 flex-1 justify-between my-0 mx-0 p-0 ">
-          <h1 className="text-4xl font-title">
+          <h1 className="title-purple text-4xl font-title">
             Desenvolvedor Full Stack de Estruturas Digitais Completas do Zero ao
             Online
           </h1>
 
-          <p className="text-lg text-gray-800">
+          <p className="text-lg text-gray-300">
             Ajudo empresas que precisam de um programador profissional para
             desenvolver estruturas digitais completas e funcionais como:
           </p>
 
-          <div className="heroList flex flex-col gap-6 text-sm text-gray-400">
+          <div className="heroList flex flex-col gap-6 text-sm text-gray-300">
             <span>
               <div className="badgeHeroList">✔</div> Desenvolvimento de Sistema
               Web Personalizado

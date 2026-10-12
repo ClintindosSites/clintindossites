@@ -30,7 +30,7 @@ const contatoForm: FormSection = {
 };
 export default function HeroContato() {
   return (
-    <section className="max-w-[1200px] mx-auto p-10">
+    <section className="max-w-300 mx-auto p-10">
       <div className="hero flex-col gap-8 justify-center items-center text-center">
         <div className="heroText flex flex-col gap-8 flex-1">
           <h1 className="text-4xl font-title">

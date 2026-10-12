@@ -50,7 +50,7 @@ ${form.whatsappMessage}
 
   return (
     <form onSubmit={handleSubmit} className="form-whatsapp">
-      <h2>{form.title}</h2>
+      <h2 className="title-purple">{form.title}</h2>
       <p>{form.subtitle}</p>
 
       <div>

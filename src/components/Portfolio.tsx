@@ -184,28 +184,27 @@ const rows = [
 
 export default function Portfolio() {
   return (
-    <section
-      id="portfolio"
-      className="portfolio max-w-[1200px] m-auto py-[100px] px-5"
-    >
-      <div className="max-w-[100%] mx-auto">
-        <h2 className="text-metal text-center text-4xl md:text-5xl font-extrabold">
+    <section id="portfolio" className="portfolio max-w-300 m-auto py-25 px-5">
+      <div className="max-w-full mx-auto">
+        <h2 className="title-purple text-metal text-center text-4xl md:text-5xl font-extrabold">
           Portfólio
         </h2>
-        <p className="text-[#bdbdbd] text-center mt-3 mt-[1rem] mb-[1rem]">
+        <p className="text-[#bdbdbd] text-center mt-3 mb-4">
           Projetos desenvolvidos para negócios reais
         </p>
 
         {rows.map((row, i) => (
-          <div key={i} className="mb-[60px]">
-            <h3 className="mb-[1.3rem] text-xl font-semibold">{row.titulo}</h3>
+          <div key={i} className="mb-15">
+            <h3 className="title-purple mb-[1.3rem] text-xl font-semibold">
+              {row.titulo}
+            </h3>
 
             {/* SCROLL */}
-            <div className="flex gap-[1rem] overflow-x-auto pb-[1rem] scroll-smooth scrollbar-thin scrollbar-thumb-[rgba(127,61,255,0.4)]">
+            <div className="flex gap-4 overflow-x-auto pb-4 scroll-smooth scrollbar-thin scrollbar-thumb-[rgba(127,61,255,0.4)]">
               {row.itens.map((item, index) => (
                 <button
                   key={index}
-                  className="group relative flex-[0_0_240px] sm:flex-[0_0_260px] md:flex-[0_0_280px] h-[320px] sm:h-[340px] md:h-[380px] rounded-[18px] border border-[rgba(127,61,255,0.25)] bg-[#0b0b0f] overflow-hidden cursor-pointer transition-all duration-300 hover:border-[rgba(127,61,255,0.5)] hover:shadow-[0_0_20px_rgba(127,61,255,0.3)]"
+                  className="group relative flex-[0_0_240px] sm:flex-[0_0_260px] md:flex-[0_0_280px] h-80 sm:h-85 md:h-95 rounded-[18px] border border-[rgba(127,61,255,0.25)] bg-[#0b0b0f] overflow-hidden cursor-pointer transition-all duration-300 hover:border-[rgba(127,61,255,0.5)] hover:shadow-[0_0_20px_rgba(127,61,255,0.3)]"
                 >
                   {/* IMAGE */}
                   <div className="relative h-full overflow-hidden">
@@ -213,7 +212,7 @@ export default function Portfolio() {
                       src={item.img}
                       alt="Projeto"
                       fill
-                      className="object-cover min-h-[120%] transition-transform duration-[6000ms] ease-linear group-hover:-translate-y-[40%]"
+                      className="object-cover min-h-[120%] transition-transform duration-6000 ease-linear group-hover:-translate-y-[40%]"
                     />
                   </div>
 

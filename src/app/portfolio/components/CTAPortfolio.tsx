@@ -38,7 +38,7 @@ export default function PortfolioForm() {
 
   return (
     <form onSubmit={handleSubmit} className="form-whatsapp">
-      <h2>Solicite um orçamento</h2>
+      <h2 className="title-purple">Solicite um orçamento</h2>
       <p>
         Preencha o formulário e envie seu pedido para o Whatsapp e receba a
         resposta hoje mesmo
