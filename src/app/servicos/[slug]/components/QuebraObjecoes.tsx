@@ -18,7 +18,7 @@ export default function QuebraObjecoes({ service }: ObjectionsProps) {
 
   return (
     <section className="py-24">
-      <div className="max-w-[900px] mx-auto px-6">
+      <div className="max-w-[1200px] mx-auto px-6">
         <h2 className="text-center text-4xl md:text-5xl font-extrabold text-metal">
           {service.faq?.title}
         </h2>

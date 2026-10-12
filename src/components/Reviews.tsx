@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Reviews() {
   return (
-    <section id="avaliacoes" className="py-24 px-5">
+    <section id="avaliacoes" className="avaliacoes py-24 px-5">
       <div className="max-w-[1200px] mx-auto text-center flex flex-col gap-7">
         <h2 className="text-metal text-3xl md:text-4xl">
           Avaliações no Google

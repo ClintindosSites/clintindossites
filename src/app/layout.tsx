@@ -25,21 +25,26 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://clintindossites.com.br"),
 
   title: {
-    default: "Clintin dos Sites - Criação de Sites e Google Ads",
+    default:
+      "Esepecialista em Desenvolimento de Sites, App Mobile e Sistemas Web Personalizado",
     template: "%s | Clintin dos Sites",
   },
 
   description:
-    "Criação de sites profissionais, landing pages e gestão de tráfego pago para empresas e prestadores de serviço.",
+    "Desenvolvedor Full Stack programado para desenvolver estruturas digitais completas como sistema web personalizado, desenvolvimento de aplicativos mobile, sites, landing pages e automações.",
 
   openGraph: {
-    title: "Clintin dos Sites - Criação de Sites e Google Ads",
+    title: {
+      default:
+        "Esepecialista em Desenvolimento de Sites, App Mobile e Sistemas Web Personalizado",
+      template: "%s | Clintin dos Sites",
+    },
     description:
-      "Criação de sites profissionais, landing pages e gestão de tráfego pago.",
+      "Desenvolvedor Full Stack programado para desenvolver estruturas digitais completas como sistema web personalizado, desenvolvimento de aplicativos mobile, sites, landing pages e automações.",
     url: "https://clintindossites.com.br",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image.webp",
         width: 1200,
         height: 630,
       },
@@ -48,10 +53,15 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Clintin dos Sites - Criação de Sites e Google Ads",
+    title: {
+      default:
+        "Esepecialista em Desenvolimento de Sites, App Mobile e Sistemas Web Personalizado",
+      template: "%s | Clintin dos Sites",
+    },
+
     description:
-      "Criação de sites profissionais, landing pages e gestão de tráfego pago.",
-    images: ["/og-image.jpg"],
+      "Desenvolvedor Full Stack programado para desenvolver estruturas digitais completas como sistema web personalizado, desenvolvimento de aplicativos mobile, sites, landing pages e automações.",
+    images: ["/og-image.webp"],
   },
 };
 export default function RootLayout({
@@ -63,9 +73,9 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "Clintin dos Sites",
-    image: "https://clintindossites.com.br/logo.svg",
+    image: "https://clintindossites.com.br/og-image.webp",
     url: "https://clintindossites.com.br",
-    telephone: "+55 38 99136-9873",
+    telephone: "+55 31 98436-2710",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Belo Horizonte",

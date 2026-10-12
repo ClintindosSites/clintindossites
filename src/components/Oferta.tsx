@@ -16,32 +16,37 @@ export default function Oferta() {
           {/* BADGE */}
           <span
             className="
-            p-[10px] text-sm rounded-full
+            p-[5px] text-sm rounded-full
             border border-[#7f3dff60]
             bg-[#7f3dff20]
             text-zinc-200
             uppercase tracking-wider
           "
           >
-            OFERTA LIMITADA ATÉ O DIA 31/07
+            Faça seu pedido direto com o desenvolvedor
           </span>
 
           {/* TÍTULO */}
-          <h2 className="text-metal text-3xl md:text-4xl max-w-3xl mb-[20px]">
-            Está precisando de um site profissional sob medida?
-          </h2>
+          <h2 className="text-metal text-3xl md:text-4xl max-w-3xl mb-[20px]"></h2>
 
           {/* SUBTÍTULO */}
           <p className="text-zinc-400 max-w-2xl mb-[10px]">
-            O Clintin dos Sites desenvolve sites profissionais com páginas
-            rápidas, responsivas e com layout moderno e exclusivo com foco em
-            resultados e está com uma promoção de Site Institucional por apenas
-            R$997 para pagamentos à vista valendo até dia 31/07/2026.
+            Precisa de um Site profissional ou até mesmo um sistema web sob
+            medida? Clique no botão abaixo e envie uma mensagem direto par ao
+            desenvolvedor.
           </p>
-
+          <Link
+            href={"https://wa.me/5531984362710"}
+            className="cta-button"
+            id="oferta-checkout-1"
+          >
+            Envie seu projeto direto para o desenvolvedor
+          </Link>
           {/* ALERTA */}
-          <p className="uppercase text-sm text-zinc-300 tracking-wide mb-[20px]">
-            Quer aproveitar a promoção de site profissional por apenas R$997?
+          <p className="text-sm text-zinc-300 tracking-wide mb-[20px] mt-[20px]">
+            Aproveite a nossa oferta especial de site profisional por apenas{" "}
+            <br />
+            <strong className="strong-oferta"> R$997</strong>
             <br />
             Clique em saiba mais para mais informações
           </p>

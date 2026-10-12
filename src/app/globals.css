@@ -22,26 +22,65 @@ section {
     justify-content: space-between;
     margin-top: 80px;
     gap: 1.5rem;
+
+    background-size: cover;
+    background-position: 80%;
+
+    background-repeat: no-repeat;
+
+    min-height: auto;
+    height: auto;
+
+    align-items: flex-start;
   }
   .heroText {
     gap: 1rem;
+    text-align: center;
   }
-  .container {
+  .heroText p {
+    font-size: 1rem;
+  }
+
+  .heroList {
+    justify-content: center;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .hero .container .cta-button {
+    margin: 0 auto;
+  }
+  .formHero {
+    justify-content: center;
+  }
+  .hero .container {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin-top: 80px;
   }
   .footer .container {
     display: flex;
     flex-direction: column;
   }
+  .avaliacoes .container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.strong-oferta {
+  font-size: 4rem;
+  background: linear-gradient(135deg, #4b1fb8, #7f3dff, #9b6cff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 .hero {
   display: flex;
   align-items: center;
   text-align: center;
   margin-top: 80px;
+  background-attachment: fixed;
 }
 .hero .cta-button {
   margin: 0 auto;
@@ -49,6 +88,34 @@ section {
 
 .heroText {
   gap: 1.5rem;
+  justify-content: space-between;
+}
+.heroText .cta-button {
+  margin: 0;
+}
+.heroText h1 {
+  font-size: 3rem;
+}
+.heroText p {
+  font-size: 1.5rem;
+}
+.heroText ul li {
+  color: var(--roxo-brilho-neon);
+}
+.heroList {
+  gap: 1rem;
+}
+.badgeHeroList {
+  background: var(--linear-gradient-roxo);
+  width: fit-content;
+  padding: 5px;
+  border-radius: 50%;
+}
+.heroList span {
+  font-size: 1.3rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 body {
   font-family: var(--font-inter);
