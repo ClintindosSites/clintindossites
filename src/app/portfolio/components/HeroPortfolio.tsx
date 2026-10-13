@@ -5,12 +5,13 @@ import Link from "next/link";
 export default function HeroPortfolio() {
   return (
     <section>
-      <div className=" mx-auto max-w-300 flex flex-col justify-center text-center gap-2 mt-37.5 items-center">
-        <h1>Aplicações online e resultados digitais</h1>
-        <p>
+      <div className=" mx-auto max-w-300 flex flex-col justify-center text-center gap-10 mt-37.5 items-center ">
+        <h1 className="title-purple text-5xl">
+          Portfolio de Projetos de empresas que ajudei alcançar os objetivos
+        </h1>
+        <p className="text-xl">
           Confira websites, landing pages, aplicações mobile e resultados
-          digitais gerados com gestão de tráfego pago eficiente e aplicações
-          desenvolvidas com estratégia e dedicação
+          digitais gerados com desenvolvimento web e gestão de tráfego pago.
         </p>
         <Link
           href="https://wa.me/5531984362710"

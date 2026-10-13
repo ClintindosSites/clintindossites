@@ -95,7 +95,7 @@ section {
   margin: 0;
 }
 .heroText h1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
 }
 .heroText p {
   font-size: 1.5rem;
@@ -2245,6 +2245,9 @@ html {
 }
 
 @media (max-width: 600px) {
+  .contato-home .container {
+    flex-direction: column;
+  }
   .blog-container {
     width: min(100% - 30px, 1180px);
   }
