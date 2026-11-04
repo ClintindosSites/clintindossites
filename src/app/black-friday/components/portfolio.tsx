@@ -84,12 +84,12 @@ export default function PortfolioBlackFriday() {
         {/* CARROSSEL */}
         <div
           ref={carouselRef}
-          className="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-6 scrollbar-hide"
+          className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-7 items-stretch justify-center  overflow-x-auto snap-x snap-mandatory scroll-smooth pb-6 scrollbar-hide"
         >
           {projects.map((project, index) => (
             <article
               key={index}
-              className="group relative min-w-[55%] sm:min-w-[48%] lg:min-w-[calc((100%-3rem)/3)] snap-start overflow-hidden rounded-2xl border border-white/10 bg-[#15121e] transition-all duration-300 hover:border-purple-500/60"
+              className="group relative min-w-[45%] sm:min-w-[40%] lg:min-w-[calc((100%-3rem)/3)] snap-start overflow-hidden rounded-2xl border border-white/10 bg-[#15121e] transition-all duration-300 hover:border-purple-500/60"
             >
               {/* IMAGEM DO PROJETO */}
               <a
@@ -144,6 +144,7 @@ export default function PortfolioBlackFriday() {
         </div>
 
         {/* NAVEGAÇÃO */}
+        {/*
         <div className="flex justify-center gap-4 mt-6">
           <button
             type="button"
@@ -181,6 +182,7 @@ export default function PortfolioBlackFriday() {
             </svg>
           </button>
         </div>
+    */}
 
         {/* CTA */}
         <div className="mt-16 text-center">
