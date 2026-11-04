@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 
   title: {
     default:
-      "Esepecialista em Desenvolimento de Sites, Aplicativo Mobile e Sistema Web Personalizado",
+      "Especialista em Desenvolimento de Sites, Aplicativo Mobile e Sistema Web Personalizado",
     template: "%s | Clintin dos Sites",
   },
 
