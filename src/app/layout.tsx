@@ -26,12 +26,35 @@ export const metadata: Metadata = {
 
   title: {
     default:
-      "Esepecialista em Desenvolimento de Sites, App Mobile e Sistemas Web Personalizado",
+      "Esepecialista em Desenvolimento de Sites, Aplicativo Mobile e Sistema Web Personalizado",
     template: "%s | Clintin dos Sites",
   },
 
   description:
-    "Desenvolvedor Full Stack programado para desenvolver estruturas digitais completas como sistema web personalizado, desenvolvimento de aplicativos mobile, sites, landing pages e automações.",
+    "Clintin dos Sites é o desenvolvedor Full Stack programado para desenvolver estruturas digitais completas como sistema web personalizado, desenvolvimento de aplicativos mobile, sites institucionais, landing pages e automações.",
+  keywords: [
+    "desenvolvedor de site",
+    "sistema web personalizado",
+    "empresa de desenvolvimento de aplicativos mobile",
+    "desenvolvimento de site",
+    "reparo de servidores",
+    "desenvolvedor de sites",
+    "criação de sites em contagem",
+    "criação de sites em bh",
+    "criação de sites em belo horizonte",
+    "criação de sites em sp",
+    "criação de sites em são paulo",
+    "criação de sites em",
+    "desenvolvedor de software",
+    "software development",
+    "empresa de desenvolvimento de aplicativos para celular",
+    "empresa de desenvolvimento de site",
+    "empresa de criação de sites",
+    "empresa de desenvolvimento de aplicativos",
+    "desenvolvimento de loja virtual",
+    "empresa que desenvolve site",
+    "freelancer que desenvolve site",
+  ],
 
   openGraph: {
     title: {

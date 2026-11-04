@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import PageTracker from "./components/PageTracker";
 import Analytics from "./components/Analytics";
-import BlogHeader from "./components/BlogHeader";
+
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export default function BlogLayout({
     <div className="blog-layout">
       <Analytics />
       <PageTracker />
-      <BlogHeader />
+
       {children}
       <Footer />
     </div>

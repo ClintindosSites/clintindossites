@@ -4,8 +4,6 @@ import { useEffect, useRef } from "react";
 import { reportConversion, trackEvent } from "@/lib/tracking";
 import Link from "next/link";
 
-import HeroContato from "@/app/contato/page";
-
 export default function Hero() {
   const heroRef = useRef<HTMLElement>(null);
 
@@ -40,46 +38,20 @@ export default function Hero() {
     >
       <div className="container max-w-300 flex gap-8 justify-center items-center">
         <div className="heroText flex flex-col text-left gap-8 flex-1 justify-between my-0 mx-0 p-0 ">
-          <h1 className="title-purple text-4xl font-title">
+          <h1 className="title-purple text-4xl font-title text-center">
             Desenvolvedor Full Stack de Estruturas Digitais Completas do Zero ao
             Online
           </h1>
 
-          <p className="text-lg text-gray-300">
-            Ajudo empresas que precisam de um programador profissional para
-            desenvolver estruturas digitais completas e funcionais como:
+          <p className="text-lg text-gray-300 text-center">
+            Ajudo empresas que precisam de um desenvolvedor profissional para
+            desenvolvimentos de sites, aplicativos mobile, landing page, loja
+            virtual, automações e outras soluções digitais
           </p>
 
-          <div className="heroList flex flex-col gap-6 text-sm text-gray-300">
-            <span>
-              <div className="badgeHeroList">✔</div> Desenvolvimento de Sistema
-              Web Personalizado
-            </span>
-
-            <span>
-              <div className="badgeHeroList">✔</div>Desenvolvimento de
-              Automações Digitais
-            </span>
-            <span>
-              <div className="badgeHeroList">✔</div> Desenvolvimento de Sites
-              Profissionais
-            </span>
-            <span>
-              <div className="badgeHeroList">✔</div> Desenvolvimento de
-              Aplicativo Mobile
-            </span>
-            <span>
-              <div className="badgeHeroList">✔</div> Desenvolvimento de Landing
-              Page
-            </span>
-            <span>
-              <div className="badgeHeroList">✔</div> Desenvolvimento de Loja
-              Virtual
-            </span>
-          </div>
           <Link
             href="#"
-            className="cta-button whatsapp-track mx-0"
+            className="bg-[linear-gradient(135deg,#4b1fb8,#7f3dff,#9b6cff)] whatsapp-track mx-auto p-6 rounded-full font-bold uppercase"
             id="orcamento-wpp"
             target="_blank"
             onClick={e => {
@@ -96,9 +68,7 @@ export default function Hero() {
             Enviar projeto direto para o desenvolvedor
           </Link>
         </div>
-        <div className="formHero flex-1 w-full flex">
-          <HeroContato />
-        </div>
+
         {/*<div className="flex-1">
           <Image src="" />
         </div>*/}

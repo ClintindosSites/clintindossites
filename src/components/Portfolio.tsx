@@ -6,30 +6,30 @@ const rows = [
   {
     titulo: "Websites para Construtores",
     itens: [
-      {
+      /* {
         // link: "https://www.vidrosa.com.br",
         img: "/assets/images/vidrosa-site.webp",
-      },
-      {
+      },*/
+      /*{
         // link: "https://wmaesquadriasevidros.com.br/",
         img: "/assets/images/wmaesquadriasevidros.webp",
-      },
+      }, */
       {
         // link: "https://www.bnesquadrias.com.br",
         img: "/assets/images/bnesquadrias-site.webp",
       },
-      {
+      /*{
         // link: "https://www.newformesquadrias.com.br",
         img: "/assets/images/newformesquadrias-site.webp",
-      },
+      },*/
       {
         // link: "https://www.gmglass.com.br",
         img: "/assets/images/gmglass-site.webp",
       },
-      {
+      /*{
         // link: "https://www.jcesquadriasmg.com.br",
         img: "/assets/images/jc-esquadrias-site.webp",
-      },
+      },*/
       {
         //  link: "https://www.wedsonconstrucoes.com.br",
         img: "/assets/images/wedsonconstrucoes-site.webp",
@@ -55,10 +55,10 @@ const rows = [
         //  link: "https://hreletronicos.vercel.app",
         img: "/assets/images/hreletronicos-site.webp",
       },
-      {
+      /*  {
         //  link: "https://dnbluxembourgsa.vercel.app",
         img: "/assets/images/dbnluxembourg-site.webp",
-      },
+      }, */
       {
         // link: "https://internationalcarservices.vercel.app/",
         img: "/assets/images/international-car-services-site.webp",
@@ -67,14 +67,14 @@ const rows = [
         // link: "https://dllgroupcastro.vercel.app/",
         img: "/assets/images/dllgroup-site.webp",
       },
-      {
+      /*  {
         // link: "https://diniztransportes.vercel.app",
         img: "/assets/images/diniztransportes-site.webp",
-      },
-      {
+      }, */
+      /*{
         // link: "https://harmoniapsicanalitica.com.br",
         img: "/assets/images/harmoniapsicanalitica-site.webp",
-      },
+      },*/
       {
         // link: "https://salaokennoa.vercel.app/",
         img: "/assets/images/kennoa-beauty-site.webp",
@@ -125,38 +125,40 @@ const rows = [
   {
     titulo: "Landing pages de infoprodutos",
     itens: [
-      {
+      /*{
         //  link: "https://resistenciacavalar.vercel.app",
         img: "/assets/images/resistencia-cavalar-site.webp",
-      },
-      {
+      },*/
+      /* {
         //  link: "https://amandapas.vercel.app/",
         img: "/assets/images/amandapas-site.webp",
-      },
-      {
+      },*/
+      /* {
         //  link: "https://projeto-seca-rapido.vercel.app/",
         img: "/assets/images/lipotraining-site.webp",
-      },
+      }, /*
       {
         //  link: "https://paidosestofados.vercel.app/",
         img: "/assets/images/paidosestofados-site.webp",
       },
+      /*
       {
         // link: "https://fature1k.vercel.app/",
         img: "/assets/images/karinaferraira-site.webp",
       },
-      {
+      */
+      /*  {
         // link: "https://sissibolinhos.vercel.app/",
         img: "/assets/images/sissi-bolinhos.webp",
-      },
+      },*/
       {
         //  link: "https://clickschat.com.br",
         img: "/assets/images/clickschat-site.webp",
       },
-      {
+      /*{
         // link: "https://clube-dos-psicopedagogos.vercel.app/",
         img: "/assets/images/clubedospsicopedagogos-site.webp",
-      },
+      },*/
     ],
   },
   {

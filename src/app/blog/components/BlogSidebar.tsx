@@ -232,25 +232,26 @@ const BlogSidebar = ({ posts, currentSlug }: BlogSidebarProps) => {
       ========================= */}
       <div className="overflow-hidden rounded-2xl bg-[#111111] p-6 text-white shadow-sm">
         <div className="mb-4 inline-flex rounded-full bg-[#ff0f57]/10 px-3 py-1 text-xs font-bold uppercase tracking-wide text-[#ff0f57]">
-          Curso completo
+          Consiga um site para sua empresa
         </div>
 
         <h2 className="text-xl font-black leading-tight">
-          Quer dominar anúncios na internet?
+          Quer aumentar as vendas na internet?
         </h2>
 
         <p className="mt-3 text-sm leading-relaxed text-gray-300">
-          Aprenda anunciar nas principais plataformas da internet como Google e
-          Meta e aumente as vendas do seu negócio.
+          Consiga um site profissional que vai colocar o seu empreendimento
+          frente a frente com seu cliente. O sucesso do seu negócio está somente
+          a um clique de distancia
         </p>
 
         <a
-          href="https://go.hotmart.com/H101021157N?ap=4b22"
+          href="https://wa.me/5531984362710"
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-5 flex w-full items-center justify-center rounded-xl bg-[#ff0f57] px-4 py-3 text-sm font-bold text-white transition-all hover:scale-[1.02] hover:bg-[#e60d4d]"
+          className="cta-button text-center font-bold mt-4 uppercase"
         >
-          CONHECER O CURSO
+          Clique e fale direto com o desenvolvedor
         </a>
       </div>
     </aside>
