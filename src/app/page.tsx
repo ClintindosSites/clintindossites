@@ -6,6 +6,7 @@ import Oferta from "@/components/Oferta";
 import Faq from "@/components/Faq";
 import Contato from "@/components/Contato";
 import type { Metadata } from "next";
+import PortfolioHome from "@/components/PortfolioHome";
 
 export const metadata: Metadata = {
   title: "Criação de Sites Profissionais",
@@ -18,7 +19,7 @@ export default function Home() {
     <>
       <Hero />
       <Servicos />
-
+      <PortfolioHome />
       <Reviews />
       <Oferta />
       <Faq />

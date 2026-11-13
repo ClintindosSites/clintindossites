@@ -38,7 +38,7 @@ export default function Hero() {
     >
       <div className="container max-w-300 flex gap-8 justify-center items-center">
         <div className="heroText flex flex-col text-left gap-8 flex-1 justify-between my-0 mx-0 p-0 ">
-          <h1 className="title-purple text-4xl font-title text-center">
+          <h1 className="title-purple text-3xl font-title text-center">
             Desenvolvedor Full Stack de Estruturas Digitais Completas do Zero ao
             Online
           </h1>

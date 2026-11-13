@@ -1,9 +1,12 @@
 import CTAPortfolio from "./components/CTAPortfolio";
 import FaqPortfolio from "./components/FaqPortfolio";
+import PortfolioHero from "./components/HeroPortfolio";
 import HeroPortfolio from "./components/HeroPortfolio";
 import PortfolioGeral from "./components/PortfolioGeral";
 
 import type { Metadata } from "next";
+import PortfolioGrid from "./components/PortfolioGrid";
+import PortfolioForm from "./components/CTAPortfolio";
 
 export const metadata: Metadata = {
   title: "Portfólio de Sites",
@@ -13,11 +16,16 @@ export const metadata: Metadata = {
 
 export default function Portfolio() {
   return (
-    <>
-      <HeroPortfolio />
-      <PortfolioGeral />
+    <main>
+      <PortfolioHero />
+
+      <PortfolioGrid />
+
       <FaqPortfolio />
-      <CTAPortfolio />
-    </>
+
+      <section className="mx-auto max-w-[1200px] px-5 py-16">
+        <PortfolioForm />
+      </section>
+    </main>
   );
 }

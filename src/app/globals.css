@@ -10,6 +10,7 @@
 section {
   padding: 60px;
 }
+
 @media screen and (max-width: 768px) {
   section {
     display: flex;
@@ -34,6 +35,7 @@ section {
 
     align-items: flex-start;
   }
+
   .heroText {
     gap: 1rem;
     text-align: center;
