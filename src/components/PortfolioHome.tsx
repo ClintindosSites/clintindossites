@@ -14,10 +14,10 @@ import {
 const featuredIds = [
   "vidrosa",
   "bn-esquadrias",
-  "hr-eletronicos",
+  "dnb-luxembourg",
   "lipo-training",
   "ceara-delivery",
-  "linkcardflix",
+  "fujitel",
 ];
 
 const featuredProjects = featuredIds

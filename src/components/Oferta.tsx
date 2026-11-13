@@ -35,6 +35,12 @@ export default function Oferta() {
             medida? Clique no botão abaixo e envie uma mensagem direto par ao
             desenvolvedor.
           </p>
+          <p className="text-sm text-zinc-300 tracking-wide mb-5 mt-5">
+            Aproveite a nossa oferta especial de site profisional por apenas{" "}
+            <br />
+            <strong className="strong-oferta"> R$997</strong>
+            <br />
+          </p>
           <Link
             href={"https://wa.me/5531984362710"}
             className="cta-button"
@@ -43,21 +49,6 @@ export default function Oferta() {
             Envie seu projeto direto para o desenvolvedor
           </Link>
           {/* ALERTA */}
-          <p className="text-sm text-zinc-300 tracking-wide mb-5 mt-5">
-            Aproveite a nossa oferta especial de site profisional por apenas{" "}
-            <br />
-            <strong className="strong-oferta"> R$997</strong>
-            <br />
-            Clique em saiba mais para mais informações
-          </p>
-
-          {/* BOTÃO */}
-          <Link
-            href="/servicos/criacao-de-sites#checkout"
-            className="cta-button mt-2"
-          >
-            Saiba mais
-          </Link>
         </div>
       </div>
     </section>
