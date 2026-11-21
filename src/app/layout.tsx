@@ -73,7 +73,9 @@ export const metadata: Metadata = {
       },
     ],
   },
-
+  other: {
+    "facebook-domain-verification": "7em1ufrh6x78mab9381wkll2439hfh",
+  },
   twitter: {
     card: "summary_large_image",
     title: {
