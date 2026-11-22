@@ -178,10 +178,11 @@ export default function RootLayout({
     );
 
     fbq('init', '886826747308036');
+    fbq('init', '2605868133188726');
+
     fbq('track', 'PageView');
   `}
         </Script>
-
         <TrackingButtons />
         <Header />
         <script
@@ -201,7 +202,7 @@ export default function RootLayout({
             width={1}
             alt="Meta Pixel Fallback"
             style={{ display: "none" }}
-            src="https://www.facebook.com/tr?id=1253175769645630&ev=PageView&noscript=1"
+            src="https://www.facebook.com/tr?id=2605868133188726&ev=PageView&noscript=1"
           />
         </noscript>
       </body>
