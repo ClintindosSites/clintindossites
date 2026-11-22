@@ -67,7 +67,7 @@ export default function PortfolioBlackFriday() {
             Nosso portfólio
           </span>
 
-          <h2 className="w-full text-2xl sm:text-3xl md:text-5xl font-bold text-white mt-5 md:mt-6 leading-tight whitespace-normal break-words">
+          <h2 className="w-full text-2xl sm:text-3xl md:text-5xl font-bold text-white mt-5 md:mt-6 leading-tight whitespace-normal wrap-break-word">
             Projetos que levam{" "}
             <span className="title-purple whitespace-normal">
               negócios mais longe.
@@ -97,7 +97,7 @@ export default function PortfolioBlackFriday() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={`Visitar ${project.title}`}
-                className="block relative aspect-[4/3] overflow-hidden bg-[#20192c]"
+                className="block relative aspect-4/3 overflow-hidden bg-[#20192c]"
               >
                 <Image
                   src={project.image}
@@ -107,7 +107,7 @@ export default function PortfolioBlackFriday() {
                   className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
                 />
 
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-70" />
+                <div className="absolute inset-0 bg-linear-to-t from-black/70 via-transparent to-transparent opacity-70" />
 
                 <span className="absolute top-4 left-4 rounded-full border border-purple-400/30 bg-black/70 backdrop-blur-md px-3 py-1.5 text-xs font-semibold text-purple-300">
                   {project.category}

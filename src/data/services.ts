@@ -36,11 +36,13 @@ export const services: Record<string, Service> = {
     },
 
     hero: {
-      title: "Criação de Sites Profissionais que vendem todos os dias",
-      subtitle:
-        "Desenvolvimento de sites profissionais sob medida para pequenas e grandes empresas a partir de R$997",
+      title:
+        "Criação de Sites Profissionais para Destacar Sua Empresa no Google",
 
-      ctaBtn: "Quero um site profissional para minha empresa",
+      subtitle:
+        "Tenha um site moderno, rápido e personalizado para apresentar seus serviços, transmitir credibilidade e facilitar o contato com novos clientes. Projetos a partir de R$ 997.",
+
+      ctaBtn: "Conhecer planos e preços",
       image: "/logo.png",
     },
 
@@ -68,88 +70,85 @@ export const services: Record<string, Service> = {
     },
 
     pains: {
-      title: "Sua empresa passa por esses problemas?",
+      title: "Sua empresa está perdendo oportunidades na internet?",
+
       subtitle:
-        "Se sua empresa se identifica com algum desses desafios abaixo, nós podemos ajudar!",
+        "Antes de contratar, muitos clientes pesquisam no Google, comparam empresas e procuram informações. Sua empresa está preparada para receber essas pessoas?",
+
       items: [
         {
-          titulo: "Poucos Clientes",
+          titulo: "Sua empresa não aparece nas pesquisas",
           descricao:
-            "Sua empresa conta apenas com clientes que passam na região ou vem de alguma indicação de um conhecido distante.",
+            "Enquanto potenciais clientes procuram pelos serviços que você oferece, seus concorrentes podem estar recebendo esses contatos.",
         },
         {
-          titulo: "Ninguém te acha na internet",
+          titulo: "Você depende apenas de indicações",
           descricao:
-            "As pessoas procuram por serviços que sua empresa oferecem mas não te encontram, e nesse caso, você perdeu um cliente para seu concorrente.",
+            "Seu negócio precisa de novas oportunidades, mas ainda depende principalmente do boca a boca e das redes sociais.",
         },
         {
-          titulo: "Faturamento Baixo",
+          titulo: "Falta uma apresentação profissional",
           descricao:
-            "Sua empresa tem um baixo faturamento por não ter vendas de produto e serviços em grande escala.",
+            "Sem um site próprio, fica mais difícil reunir seus serviços, diferenciais, portfólio e informações de contato em um só lugar.",
         },
         {
-          titulo: "Poucas vendas",
+          titulo: "Clientes desistem antes de entrar em contato",
           descricao:
-            "Sua empresa só conta com o comércio local e não está conseguindo alcançar as metas de vendas para o sucesso do negócio.",
-        },
-        {
-          titulo: "Vontade de fechar as portas",
-          descricao:
-            "Você já está enlouquecendo com contas a pagar e despesas com funcionários, mas o dinheiro não entra e você já está pensando se vale a pena ou não continuar o seu negócio.",
-        },
-
-        {
-          titulo: "Sensação de fracasso",
-          descricao:
-            "Você sente culpado por não estar conseguindo alcançar o sucesso que merece nos seus negócios e se julga pelo negócio não progredir como deseja.",
+            "Quando não encontram informações claras sobre sua empresa, algumas pessoas simplesmente continuam procurando outras opções.",
         },
       ],
     },
 
     benefits: {
-      title: "A boa notícia é que agora o jogo mudou!",
+      title:
+        "Sua empresa merece mais do que apenas um perfil nas redes sociais",
+
       subtitle:
-        "Com um site profissional a sua empresa se destaca dos seus concorrentes e suas vendas aumentam significativamente.",
-      ctaButton: "Quero meu site profissional",
+        "Um site profissional ajuda sua empresa a construir credibilidade, apresentar seus serviços e transformar o interesse dos visitantes em oportunidades de negócio.",
+
+      ctaButton: "Quero um site para minha empresa",
+
       items: [
         {
-          titulo: "Seus clientes podem te encontrar",
+          titulo: "Mais oportunidades de ser encontrado",
           descricao:
-            "Clientes que pesquisam pelo produto ou serviço que sua empresa oferece agora poderão te encontrar pelo Google.",
+            "Tenha um site preparado para mecanismos de busca e aumente suas possibilidades de alcançar pessoas que pesquisam por seus serviços.",
         },
         {
-          titulo: "Os clientes veem seriedade no seu negócio",
+          titulo: "Uma apresentação que transmite confiança",
           descricao:
-            "Agora os clientes veem o seu negócio a um nível profissional pois agora sua empresa pode ser encontrada e avaliada na internet.",
+            "Mostre seus serviços, diferenciais, trabalhos realizados e informações de contato em um ambiente profissional.",
         },
         {
-          titulo: "Faturamento aumenta",
+          titulo: "Seu negócio disponível 24 horas",
           descricao:
-            "Com visibilidade online, a sua empresa começa a crescer e se destacar no mercado passando seriedade, compromisso e profissionalismo para os seus clientes",
+            "Seus clientes podem conhecer sua empresa e consultar informações importantes mesmo fora do horário comercial.",
         },
         {
-          titulo: "Suas vendas aumentam",
+          titulo: "Contato facilitado pelo WhatsApp",
           descricao:
-            "Sua empresa agora pode vender pela internet para qualquer pessoa do país, considerando a sua area de atendimento.",
+            "Direcione visitantes interessados para uma conversa com sua empresa de maneira rápida e prática.",
         },
         {
-          titulo: "A vontade de crescer só aumenta",
+          titulo: "Experiência profissional no celular",
           descricao:
-            "Com presença online, suas vendas aumentam e logo aquela vontade de fechar as portas não existe mais, pois agora sua empresa é sempre encontrada por quem procura.",
+            "Seu site se adapta a smartphones, tablets e computadores para oferecer uma navegação confortável.",
         },
         {
-          titulo: "Sensação de sucesso",
+          titulo: "Uma estrutura preparada para crescer",
           descricao:
-            "Sua empresa vende todos os dias, torna-se refêrencia no mercado, bem avaliada no Google e o sucesso vem até a sua porta.",
+            "Comece com as páginas essenciais e amplie seu projeto conforme surgirem novas necessidades para sua empresa.",
         },
       ],
     },
 
     technologies: {
-      title: "Como os sites são desenvolvidos?",
+      title: "Seu site desenvolvido com tecnologia profissional",
+
       subtitle:
-        "Utilizamos as melhores linguagens de programação para o desenvolvimento do seu site de acordo com a complexidade do projeto. Os sites são construídos do zero, com código limpo, rápido, layout responsivo adapatado para computadores e dispositivos móveis e SEO otimizado. Para o desenvolvimento das aplicações, utilizamos as seguintes linguagens:",
-      ctaButton: "Quero meu site profissional",
+        "Nada de soluções genéricas. Desenvolvemos projetos com tecnologias modernas, código organizado, design responsivo e boas práticas de desempenho e SEO. Tudo pensado para oferecer uma experiência profissional aos seus visitantes.",
+
+      ctaButton: "Solicitar meu orçamento",
       items: [
         {
           nome: "HTML5",
@@ -203,8 +202,10 @@ export const services: Record<string, Service> = {
     },
 
     portfolio: {
-      title: "Confira projetos já realizados",
-      subtitle: "Projetos que já estão no ar sem fronteira de faturamento.",
+      title: "Veja alguns sites que já desenvolvemos",
+
+      subtitle:
+        "Conheça projetos reais criados para empresas de diferentes segmentos. Cada site foi pensado para atender às necessidades do negócio.",
 
       items: [
         {
@@ -440,61 +441,74 @@ export const services: Record<string, Service> = {
     },
 
     pricing: {
-      title: "E quanto custa um site?",
+      title: "Quanto custa criar um site profissional?",
+
       subtitle:
-        "Investir em um site profissional custa menos do que perder clientes todos os dias para os seus concorrentes.",
+        "Escolha a solução ideal para o momento da sua empresa. Temos opções para quem está começando e projetos personalizados para negócios que precisam de mais funcionalidades.",
+
       cards: [
         {
           titulo: "Site Institucional",
           condicaoPagamento: "A partir de",
           preco: "R$ 1.497",
-          parcela: "Ou parcele em até 5 vezes",
+          parcela: "Parcelamento em até 5 vezes",
+
           descricao:
-            "Ideal para empresas que precisam de presença profissional na internet.",
+            "Para empresas que querem apresentar seus serviços, transmitir confiança e facilitar o contato com clientes.",
+
           itens: [
             "Até 5 páginas",
+            "Design responsivo",
             "SEO básico",
-            "WhatsApp",
-            "Formulário",
-            "Responsivo",
+            "Integração com WhatsApp",
+            "Formulário de contato",
           ],
-          ctaBtn: "Quero comprar meu site hoje mesmo",
+
+          ctaBtn: "Quero meu site institucional",
         },
 
         {
           titulo: "Site Profissional",
           condicaoPagamento: "A partir de",
           preco: "R$ 2.997",
-          parcela: "Ou parcele em até 5 vezes",
+          parcela: "Parcelamento em até 5 vezes",
+
           descricao:
-            "Ideal para empresas que precisam de funcionalidades avançadas e banco de dados.",
+            "Para empresas que precisam de funcionalidades personalizadas e recursos além de um site institucional.",
+
           destaque: true,
+
           itens: [
+            "Funcionalidades sob medida",
             "Área administrativa",
-            "Banco de dados",
-            "Painel personalizado",
-            "APIs",
-            "Escalável",
+            "Integração com banco de dados",
+            "Integração com APIs",
+            "Estrutura escalável",
           ],
-          ctaBtn: "Solicitar Orçamento pelo WhatsApp",
+
+          ctaBtn: "Solicitar proposta personalizada",
         },
 
         {
-          titulo: "Oferta Especial",
-          condicaoPagamento: "Por apenas",
+          titulo: "Site Essencial",
+          condicaoPagamento: "Condição especial",
           preco: "R$ 997",
-          parcela: "No pagamento à vista",
+          parcela: "Pagamento à vista",
+
           descricao:
-            "Oferta por tempo limitado para pequenas empresas e empreendedores.",
+            "Uma opção mais acessível para pequenos negócios que querem começar com uma presença digital profissional.",
+
           promocao: true,
+
           itens: [
-            "Site profissional",
             "Até 3 páginas",
-            "WhatsApp",
+            "Design responsivo",
+            "Botão de WhatsApp",
             "SEO básico",
-            "Entrega rápida",
+            "Entrega conforme escopo",
           ],
-          ctaBtn: "Saiba mais sobre a promoção",
+
+          ctaBtn: "Conhecer oferta especial",
           href: "/promocao/oferta-criacao-de-sites",
         },
       ],
@@ -508,9 +522,11 @@ export const services: Record<string, Service> = {
     },
 
     clients: {
-      title: "Empresas que confiaram no Clintin dos Sites",
+      title: "Empresas que escolheram a Clintin dos Sites",
+
       subtitle:
-        "Conheça algumas empresas que já escolheram nossos serviços para desenvolver sua presença digital.",
+        "Conheça algumas das marcas que confiaram em nosso trabalho para desenvolver suas soluções digitais.",
+
       items: [
         {
           nome: "Vidrosa",
@@ -676,18 +692,6 @@ export const services: Record<string, Service> = {
         },
 
         {
-          nome: "Turn One Technology",
-          segmento: "Empresa de segurança no transporte rodoviário",
-
-          descricao:
-            "Landing page desenvolvida para captar leads de empresas que precisam de segurança rodoviária.",
-
-          logo: "/assets/logos/turnone-logo.svg",
-
-          link: "https://turnone.com.br",
-        },
-
-        {
           nome: "VH Refrigeração",
           segmento: "Técnico de refrigeração",
 
@@ -755,39 +759,46 @@ export const services: Record<string, Service> = {
     },
 
     faq: {
-      title: "Ainda está com alguma dúvida?",
+      title: "Dúvidas antes de contratar seu site?",
+
       subtitle:
-        "Estas são algumas das perguntas mais comuns antes de contratar um site profissional.",
+        "Confira as respostas para algumas das perguntas mais comuns sobre nossos serviços.",
+
       items: [
         {
-          pergunta: "Ter um site realmente traz mais clientes?",
+          pergunta: "Quanto custa criar um site profissional?",
           resposta:
-            "Sim. Todos os dias pessoas pesquisam no Google por produtos e serviços. Um site profissional permite que sua empresa seja encontrada por esses clientes.",
+            "Temos opções a partir de R$ 997. O valor depende da quantidade de páginas, funcionalidades e necessidades do projeto. Você pode escolher um dos nossos planos ou solicitar uma proposta personalizada.",
         },
         {
-          pergunta: "Eu já tenho Instagram, preciso mesmo de um site?",
+          pergunta: "Meu site vai aparecer no Google?",
           resposta:
-            "Sim. As redes sociais são importantes, mas um site transmite mais profissionalismo, aumenta a credibilidade e permite aparecer no Google.",
+            "Desenvolvemos sites com boas práticas de SEO e estrutura preparada para indexação. O posicionamento nos resultados depende de fatores como concorrência, conteúdo e autoridade do domínio.",
         },
         {
-          pergunta: "Meu negócio é pequeno, vale a pena investir?",
+          pergunta: "Preciso ter um site mesmo usando Instagram?",
           resposta:
-            "Com certeza. Um site é um investimento que trabalha para sua empresa 24 horas por dia, ajudando a conquistar novos clientes.",
+            "As redes sociais ajudam na divulgação, enquanto o site funciona como um espaço próprio para apresentar sua empresa, organizar informações e receber contatos. As duas ferramentas podem trabalhar juntas.",
         },
         {
-          pergunta: "O site funciona no celular?",
+          pergunta: "Em quanto tempo meu site fica pronto?",
           resposta:
-            "Sim. Todos os nossos projetos são responsivos e funcionam perfeitamente em computadores, tablets e smartphones.",
+            "O prazo depende do plano e da complexidade. Projetos simples podem ser concluídos em poucos dias após o recebimento dos materiais necessários. O prazo exato é informado na proposta.",
         },
         {
-          pergunta: "Depois de pronto eu posso fazer alterações?",
+          pergunta: "O site funciona em celulares?",
           resposta:
-            "Sim. Você pode solicitar alterações e também oferecemos planos de manutenção para manter o site sempre atualizado.",
+            "Sim. Desenvolvemos layouts responsivos para oferecer uma boa experiência em smartphones, tablets e computadores.",
         },
         {
-          pergunta: "Em quanto tempo o site fica pronto?",
+          pergunta: "Posso solicitar alterações depois da entrega?",
           resposta:
-            "O prazo depende da complexidade do projeto, mas muitos sites são entregues em até 3 dias.",
+            "Sim. Oferecemos suporte e opções de manutenção. As alterações incluídas e as condições de atendimento são definidas conforme o projeto contratado.",
+        },
+        {
+          pergunta: "Vou precisar pagar mensalidade?",
+          resposta:
+            "O desenvolvimento é cobrado conforme a proposta. Custos recorrentes, como domínio, hospedagem e manutenção, quando aplicáveis, são informados separadamente antes da contratação.",
         },
       ],
     },
@@ -800,30 +811,37 @@ export const services: Record<string, Service> = {
       whatsappMessage:
         "Olá, vim pelo site e queria um orçamento para fazer um site...",
     },
+
     finalCTA: {
-      title: "Transforme visitantes em clientes com um site profissional",
-      plan: "Site Profissional",
+      title: "Sua empresa merece um site profissional. Vamos começar?",
+
+      plan: "Site Essencial",
+
       subtitle:
-        "Desenvolvemos um site moderno, rápido e totalmente personalizado para destacar sua empresa na internet, transmitir mais credibilidade e facilitar o contato com seus clientes através do WhatsApp e formulários inteligentes. Você recebe um projeto completo, pronto para divulgar seu negócio e começar a vender.",
+        "Apresente sua empresa com mais profissionalismo, destaque seus serviços e facilite o contato com novos clientes. Comece com uma solução acessível e preparada para o seu negócio.",
 
       oldPrice: "R$ 1.497",
-
       price: "R$ 997",
-
       installment: "Pagamento à vista",
 
-      badge: "Oferta válida até 31/07/2026",
+      badge: "Condição especial para pequenos negócios",
 
-      cta: "Quero essa promoção",
+      cta: "Quero meu site por R$ 997",
 
       whatsapp:
-        "Olá! Vi a promoção do Site Profisional por R$997 e gostaria de fazer um projeto...",
+        "Olá! Vi a oferta do Site Essencial por R$ 997 e gostaria de saber mais sobre a contratação.",
 
-      benefits: [],
+      benefits: [
+        "Site com até 3 páginas",
+        "Layout profissional e responsivo",
+        "Integração com WhatsApp",
+        "Configuração básica de SEO",
+        "Atendimento direto com o desenvolvedor",
+      ],
 
-      guarantee: "Garantia de suporte após a entrega.",
+      guarantee: "Suporte após a entrega conforme as condições contratadas.",
 
-      urgency: "Vagas limitadas para início imediato.",
+      urgency: "Consulte a disponibilidade para iniciar seu projeto.",
     },
   },
   "desenvolvimento-landing-page": {
@@ -1097,21 +1115,7 @@ export const services: Record<string, Service> = {
 
           link: "https://vitaltelecom.vercel.app",
         },
-        {
-          titulo: "Turn One Technology",
 
-          cliente: "Turn One Technology",
-
-          segmento: "Segurança de Transito",
-
-          descricao: "...",
-
-          tecnologias: ["HTML", "CSS", "JAVASCRIPT", "PHP"],
-
-          img: "/assets/images/turnone.webp",
-
-          link: "https://turnone.com.br",
-        },
         {
           titulo: "BN Esquadrias",
 

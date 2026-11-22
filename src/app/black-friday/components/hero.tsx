@@ -64,7 +64,7 @@ export default function HeroBlackFriday() {
               e.preventDefault();
 
               reportConversion({
-                url: "https://wa.me/5531984362710?text=Olá,%20tenho%20interesse%20em%20adquirir%20um%20website.%20Pode%20me%20explicar%20como%20funciona?",
+                url: "https://wa.me/5531984362710?text=Olá,%20tenho%20interesse%20em%20adquirir%20um%20website%20da%20black%20friday%20dos%20sites.%20Pode%20me%20explicar%20como%20funciona?",
                 service: "Black Friday",
                 origin: "Black Friday",
                 value: 1,

@@ -101,7 +101,7 @@ function getWhatsAppLink(message: string) {
 export default function CheckoutBlackFriday() {
   return (
     <section
-      id="ofertas"
+      id="checkout-blackfriday"
       className="relative overflow-hidden bg-[#09070f] px-5 py-24"
     >
       {/* EFEITOS DE FUNDO */}
